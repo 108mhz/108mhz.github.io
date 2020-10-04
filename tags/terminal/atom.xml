@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Terminal on 108Mhz</title><link>/tags/terminal.html</link><description>Recent content in Terminal on 108Mhz</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 08 Mar 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/terminal/atom.xml" rel="self" type="application/rss+xml"/><item><title>Start a web server in terminal</title><link>/2020/03/08/we-server-terminal.html</link><pubDate>Sun, 08 Mar 2020 00:00:00 +0000</pubDate><guid>/2020/03/08/we-server-terminal.html</guid><description>I&amp;rsquo;ve searched for this three times this week, so I figured I&amp;rsquo;d better make sure I have a copy of it.
+Python 2:
+python -m SimpleHTTPServer 8000
+Navigate to the project directory in the terminal and do that command. Then http://localhost:8000 will server up that directory (as in, it&amp;rsquo;s index.html file).
+Python 3:
+python3 -m http.server &amp;ndash;cgi 8080
+PHP:
+php -S localhost:2222
+npm:
+npm i -g serve serve</description></item><item><title>Scheduling a shutdown</title><link>/2019/09/08/shutdown-schedule.html</link><pubDate>Sun, 08 Sep 2019 00:00:00 +0000</pubDate><guid>/2019/09/08/shutdown-schedule.html</guid><description>Scheduling a shutdown # To shutdown run the command:
+sudo shutdown -P +60
+That will wait 60 mins before starting the shutdown sequence.
+You could do:
+sudo shutdown -P 1:00
+to shutdown at 1 AM and
+sudo shutdown -P now
+to shutdown now.
+A message is broadcast to all terminals to warn about the shutdown.
+Cancel a pending shutdown After, starting a shutdown, if the time argument is not &amp;ldquo;+0&amp;rdquo; or &amp;ldquo;now&amp;rdquo;, you can use:</description></item></channel></rss>

@@ -1,7 +1,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>108Mhz</title><description/><link>/</link><language>en</language><copyright>Copyright 2020, Ronalds Vilcins</copyright><lastBuildDate>Sat, 03 Oct 2020 00:00:00 +0000</lastBuildDate><generator>Hugo - gohugo.io</generator><docs>http://cyber.harvard.edu/rss/rss.html</docs><atom:link href="https://ronaldsvilcins.com/atom.xml" rel="self" type="application/atom+xml"/><item><title>Climax</title><link>/2020/10/03/climax.html</link><description>
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
 &lt;iframe src="https://www.youtube.com/embed/gNp0jlfbgqM" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
-&lt;/div></description><author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author><guid>/2020/10/03/climax.html</guid><pubDate>Sat, 03 Oct 2020 00:00:00 +0000</pubDate></item><item><title>Simple Password Generator</title><link>/2020/09/04/password-generator.html</link><description>&lt;p>#!/bin/bash&lt;/p>
+&lt;/div></description><author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author><guid>/2020/10/03/climax.html</guid><pubDate>Sat, 03 Oct 2020 00:00:00 +0000</pubDate></item><item><title>Add Firefox profile manager launcher Gnome</title><link>/2020/09/08/gnome-firefox-profiles.html</link><description>&lt;p>In terminal:&lt;/p>
+&lt;blockquote>
+&lt;p>/home/user/.local/share/applications/firefox-profiles.desktop&lt;/p>
+&lt;/blockquote>
+&lt;p>paste and save:&lt;/p>
+&lt;blockquote>
+&lt;p>Desktop Entry] Encoding=UTF-8 Name=Firefox Profiles Exec=firefox -P profiles -no-remote –class NAMEProfile Icon=firefox Type=Application StartupNotify=True StartupWMClass=NAMEProfile&lt;/p>
+&lt;/blockquote></description><author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author><guid>/2020/09/08/gnome-firefox-profiles.html</guid><pubDate>Tue, 08 Sep 2020 00:00:00 +0000</pubDate></item><item><title>Simple Password Generator</title><link>/2020/09/04/password-generator.html</link><description>&lt;p>#!/bin/bash&lt;/p>
 &lt;p>#Simple Password Generator&lt;/p>
 &lt;p>echo &amp;ldquo;This is a simple password generator&amp;rdquo;
 echo &amp;ldquo;Please enter the length of the password: &amp;quot;
@@ -10,7 +17,123 @@ read PASS_LENGTH&lt;/p>
 do
 openssl rand -base64 48 | cut -c1-$PASS_LENGTH&lt;/p>
 &lt;p>done&lt;/p>
-&lt;p>&lt;a href="https://github.com/AlexisAhmed/Shell-Scripts/blob/master/PasswordGenerator.sh">&amp;raquo;&amp;raquo;&lt;/a>&lt;/p></description><author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author><guid>/2020/09/04/password-generator.html</guid><pubDate>Fri, 04 Sep 2020 00:00:00 +0000</pubDate></item><item><title>Markdown Syntax Guide</title><link>/2019/03/11/markdown-syntax.html</link><description>&lt;p>This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p>
+&lt;p>&lt;a href="https://github.com/AlexisAhmed/Shell-Scripts/blob/master/PasswordGenerator.sh">&amp;raquo;&amp;raquo;&lt;/a>&lt;/p></description><author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author><guid>/2020/09/04/password-generator.html</guid><pubDate>Fri, 04 Sep 2020 00:00:00 +0000</pubDate></item><item><title>Google Dorks Scanner Tool</title><link>/2020/05/08/google-dorks.html</link><description>&lt;p>&lt;strong>Let&amp;rsquo;s use a easy-handy tool for pentesting a website and getting the required information in one key-press.&lt;/strong>&lt;/p>
+&lt;blockquote>
+&lt;p>Supports Linux Distributions only.&lt;br>
+Because its written in Shell Code, it runs even in Termux!!!&lt;/p>
+&lt;/blockquote>
+&lt;p>&lt;strong>Step #1 Clone &amp;lsquo;&lt;a href="https://github.com/IvanGlinkin/Fast-Google-Dorks-Scan">Fast-Google-Dorks-Scan&lt;/a>&amp;rsquo; Repository and Change Directory (cd) to Fast-Google-Dorks-Scan&lt;/strong>&lt;/p>
+&lt;p>$ git clone &lt;a href="https://github.com/IvanGlinkin/Fast-Google-Dorks-Scan.git">https://github.com/IvanGlinkin/Fast-Google-Dorks-Scan.git&lt;/a>
+$ cd Fast-Google-Dorks-Scan
+$ ls&lt;/p>
+&lt;p>&lt;strong>Step #2 Set executable permissions ( +x or 777 ) to the FGDS.sh file&lt;/strong> to make the google dorks finder runnable by system.&lt;/p>
+&lt;p>$ chmod +x FGDS.sh&lt;/p>
+&lt;p>&lt;strong>Step #3 Run the executable with website name with domain or also subdomain&lt;/strong> of which website you want to find google dorks of.&lt;/p>
+&lt;p>$ ./FGDS.sh ethicalhackx.com&lt;/p>
+&lt;p>&lt;strong>Optional Step:&lt;/strong> If you want to save the google dorks report into a text file then run with the following command.&lt;/p>
+&lt;p>$ ./FGDS.sh ethicalhackx.com &amp;gt; ethicalhackx_report.txt&lt;/p></description><author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author><guid>/2020/05/08/google-dorks.html</guid><pubDate>Fri, 08 May 2020 00:00:00 +0000</pubDate></item><item><title>Start a web server in terminal</title><link>/2020/03/08/we-server-terminal.html</link><description>&lt;p>I&amp;rsquo;ve searched for this three times this week, so I figured I&amp;rsquo;d better make sure I have a copy of it.&lt;/p>
+&lt;p>&lt;strong>Python 2:&lt;/strong>&lt;/p>
+&lt;blockquote>
+&lt;p>python -m SimpleHTTPServer 8000&lt;/p>
+&lt;/blockquote>
+&lt;p>Navigate to the project directory in the terminal and do that command. Then http://localhost:8000 will server up that directory (as in, it&amp;rsquo;s &lt;code>index.html&lt;/code> file).&lt;/p>
+&lt;p>&lt;strong>Python 3:&lt;/strong>&lt;/p>
+&lt;blockquote>
+&lt;p>python3 -m http.server &amp;ndash;cgi 8080&lt;/p>
+&lt;/blockquote>
+&lt;p>&lt;strong>PHP:&lt;/strong>&lt;/p>
+&lt;blockquote>
+&lt;p>php -S localhost:2222&lt;/p>
+&lt;/blockquote>
+&lt;p>&lt;strong>npm:&lt;/strong>&lt;/p>
+&lt;blockquote>
+&lt;p>npm i -g serve serve&lt;/p>
+&lt;/blockquote></description><author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author><guid>/2020/03/08/we-server-terminal.html</guid><pubDate>Sun, 08 Mar 2020 00:00:00 +0000</pubDate></item><item><title>Noisy</title><link>/2019/09/08/noisy.html</link><description>&lt;h1 id="noisy">Noisy &lt;a href="#noisy" class="hash">#&lt;/a>&lt;/h1>
+&lt;p>A simple python script that generates random HTTP/DNS traffic noise in the background while you go about your regular web browsing, to make your web traffic data less valuable for selling and for extra obscurity.&lt;/p>
+&lt;p>Tested on MacOS High Sierra, Ubuntu 16.04 and Raspbian Stretch and is compatable with both Python 2.7 and 3.6&lt;/p>
+&lt;h2 id="getting-started">Getting Started &lt;a href="#getting-started" class="hash">#&lt;/a>&lt;/h2>
+&lt;p>These instructions will get you a copy of the project up and running on your local machine&lt;/p>
+&lt;h3 id="dependencies">Dependencies &lt;a href="#dependencies" class="hash">#&lt;/a>&lt;/h3>
+&lt;p>Install &lt;code>requests&lt;/code> if you do not have it already installed, using &lt;code>pip&lt;/code>:&lt;/p>
+&lt;pre>&lt;code>pip install requests
+&lt;/code>&lt;/pre>
+&lt;h3 id="usage">Usage &lt;a href="#usage" class="hash">#&lt;/a>&lt;/h3>
+&lt;p>Clone the repository&lt;/p>
+&lt;pre>&lt;code>git clone https://github.com/1tayH/noisy.git
+&lt;/code>&lt;/pre>
+&lt;p>Navigate into the &lt;code>noisy&lt;/code> directory&lt;/p>
+&lt;pre>&lt;code>cd noisy
+&lt;/code>&lt;/pre>
+&lt;p>Run the script&lt;/p>
+&lt;pre>&lt;code>python noisy.py --config config.json
+&lt;/code>&lt;/pre>
+&lt;p>The program can accept a number of command line arguments:&lt;/p>
+&lt;pre>&lt;code>$ python noisy.py --help
+usage: noisy.py [-h] [--log -l] --config -c [--timeout -t]
+optional arguments:
+-h, --help show this help message and exit
+--log -l logging level
+--config -c config file
+--timeout -t for how long the crawler should be running, in seconds
+&lt;/code>&lt;/pre>
+&lt;p>only the config file argument is required.&lt;/p>
+&lt;h3 id="output">Output &lt;a href="#output" class="hash">#&lt;/a>&lt;/h3>
+&lt;pre>&lt;code>$ docker run -it noisy --config config.json --log debug
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 4chan.org:80
+DEBUG:urllib3.connectionpool:http://4chan.org:80 &amp;quot;GET / HTTP/1.1&amp;quot; 301 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): www.4chan.org:80
+DEBUG:urllib3.connectionpool:http://www.4chan.org:80 &amp;quot;GET / HTTP/1.1&amp;quot; 200 None
+DEBUG:root:found 92 links
+INFO:root:Visiting http://boards.4chan.org/s4s/
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): boards.4chan.org:80
+DEBUG:urllib3.connectionpool:http://boards.4chan.org:80 &amp;quot;GET /s4s/ HTTP/1.1&amp;quot; 200 None
+INFO:root:Visiting http://boards.4chan.org/s4s/thread/6850193#p6850345
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): boards.4chan.org:80
+DEBUG:urllib3.connectionpool:http://boards.4chan.org:80 &amp;quot;GET /s4s/thread/6850193 HTTP/1.1&amp;quot; 200 None
+INFO:root:Visiting http://boards.4chan.org/o/
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): boards.4chan.org:80
+DEBUG:urllib3.connectionpool:http://boards.4chan.org:80 &amp;quot;GET /o/ HTTP/1.1&amp;quot; 200 None
+DEBUG:root:Hit a dead end, moving to the next root URL
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.reddit.com:443
+DEBUG:urllib3.connectionpool:https://www.reddit.com:443 &amp;quot;GET / HTTP/1.1&amp;quot; 200 None
+DEBUG:root:found 237 links
+INFO:root:Visiting https://www.reddit.com/user/Saditon
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.reddit.com:443
+DEBUG:urllib3.connectionpool:https://www.reddit.com:443 &amp;quot;GET /user/Saditon HTTP/1.1&amp;quot; 200 None
+...
+&lt;/code>&lt;/pre>
+&lt;h2 id="build-using-docker">Build Using Docker &lt;a href="#build-using-docker" class="hash">#&lt;/a>&lt;/h2>
+&lt;ol>
+&lt;li>Build the image&lt;/li>
+&lt;/ol>
+&lt;p>&lt;code>docker build -t noisy .&lt;/code>&lt;/p>
+&lt;p>&lt;strong>Or&lt;/strong> if you&amp;rsquo;d like to build it for a &lt;strong>Raspberry Pi&lt;/strong> (running Raspbian stretch):&lt;/p>
+&lt;p>&lt;code>docker build -f Dockerfile.pi -t noisy .&lt;/code>&lt;/p>
+&lt;ol>
+&lt;li>Create the container and run:&lt;/li>
+&lt;/ol>
+&lt;p>&lt;code>docker run -it noisy --config config.json&lt;/code>&lt;/p>
+&lt;h2 id="custom-noisyconf-file">Custom noisy.conf file: &lt;a href="#custom-noisyconf-file" class="hash">#&lt;/a>&lt;/h2>
+&lt;p>&lt;a href="https://github.com/holdTheDoorHoid/NoisyConfigg/blob/master/config.json">Noisy.conf&lt;/a>&lt;/p></description><author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author><guid>/2019/09/08/noisy.html</guid><pubDate>Sun, 08 Sep 2019 00:00:00 +0000</pubDate></item><item><title>Scheduling a shutdown</title><link>/2019/09/08/shutdown-schedule.html</link><description>&lt;h2 id="scheduling-a-shutdown">Scheduling a shutdown &lt;a href="#scheduling-a-shutdown" class="hash">#&lt;/a>&lt;/h2>
+&lt;p>To shutdown run the command:&lt;/p>
+&lt;blockquote>
+&lt;p>sudo shutdown -P +60&lt;/p>
+&lt;/blockquote>
+&lt;p>That will wait 60 mins before starting the shutdown sequence.&lt;/p>
+&lt;p>You could do:&lt;/p>
+&lt;blockquote>
+&lt;p>sudo shutdown -P 1:00&lt;/p>
+&lt;/blockquote>
+&lt;p>to shutdown at 1 AM and&lt;/p>
+&lt;blockquote>
+&lt;p>sudo shutdown -P now&lt;/p>
+&lt;/blockquote>
+&lt;p>to shutdown now.&lt;/p>
+&lt;p>A message is broadcast to all terminals to warn about the shutdown.&lt;/p>
+&lt;p>Cancel a pending shutdown After, starting a shutdown, if the time argument is not &amp;ldquo;+0&amp;rdquo; or &amp;ldquo;now&amp;rdquo;, you can use:&lt;/p>
+&lt;blockquote>
+&lt;p>sudo shutdown -c&lt;/p>
+&lt;/blockquote></description><author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author><guid>/2019/09/08/shutdown-schedule.html</guid><pubDate>Sun, 08 Sep 2019 00:00:00 +0000</pubDate></item><item><title>Markdown Syntax Guide</title><link>/2019/03/11/markdown-syntax.html</link><description>&lt;p>This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p>
 &lt;h2 id="headings">Headings &lt;a href="#headings" class="hash">#&lt;/a>&lt;/h2>
 &lt;p>The following HTML &lt;code>&amp;lt;h1&amp;gt;&lt;/code>—&lt;code>&amp;lt;h6&amp;gt;&lt;/code> elements represent six levels of section headings. &lt;code>&amp;lt;h1&amp;gt;&lt;/code> is the highest section level while &lt;code>&amp;lt;h6&amp;gt;&lt;/code> is the lowest.&lt;/p>
 &lt;h1 id="h1">H1 &lt;a href="#h1" class="hash">#&lt;/a>&lt;/h1>
@@ -214,27 +337,7 @@ cursor: pointer;
 &lt;h2 id="mane-refeci-capiebant-unda-mulcebat">Mane refeci capiebant unda mulcebat &lt;a href="#mane-refeci-capiebant-unda-mulcebat" class="hash">#&lt;/a>&lt;/h2>
 &lt;p>Victa caducifer, malo vulnere contra dicere aurato, ludit regale, voca! Retorsit colit est profanae esse virescere furit nec; iaculi matertera et visa est, viribus. Divesque creatis, tecta novat collumque vulnus est, parvas. &lt;strong>Faces illo pepulere&lt;/strong> tempus adest. Tendit flamma, ab opes virum sustinet, sidus sequendo urbis.&lt;/p>
 &lt;p>Iubar proles corpore raptos vero auctor imperium; sed et huic: manus caeli Lelegas tu lux. Verbis obstitit intus oblectamina fixis linguisque ausus sperare Echionides cornuaque tenent clausit possit. Omnia putatur. Praeteritae refert ausus; ferebant e primus lora nutat, vici quae mea ipse. Et iter nil spectatae vulnus haerentia iuste et exercebat, sui et.&lt;/p>
-&lt;p>Eurytus Hector, materna ipsumque ut Politen, nec, nate, ignari, vernum cohaesit sequitur. Vel &lt;strong>mitis temploque&lt;/strong> vocatus, inque alis, &lt;em>oculos nomen&lt;/em> non silvis corpore coniunx ne displicet illa. Crescunt non unus, vidit visa quantum inmiti flumina mortis facto sic: undique a alios vincula sunt iactata abdita! Suspenderat ego fuit tendit: luna, ante urbem Propoetides &lt;strong>parte&lt;/strong>.&lt;/p></description><author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author><guid>/2019/03/09/placeholder-text.html</guid><pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate></item><item><title>Math Typesetting</title><link>/2019/03/08/math-typesetting.html</link><description>&lt;p>Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.&lt;/p>
-&lt;p>In this example we will be using &lt;a href="https://katex.org/">KaTeX&lt;/a>&lt;/p>
-&lt;ul>
-&lt;li>Create a partial under &lt;code>/layouts/partials/math.html&lt;/code>&lt;/li>
-&lt;li>Within this partial reference the &lt;a href="https://katex.org/docs/autorender.html">Auto-render Extension&lt;/a> or host these scripts locally.&lt;/li>
-&lt;li>Include the partial in your templates like so:&lt;/li>
-&lt;/ul>
-&lt;pre>&lt;code class="language-bash">{{ if or .Params.math .Site.Params.math }}
-{{ partial &amp;quot;math.html&amp;quot; . }}
-{{ end }}
-&lt;/code>&lt;/pre>
-&lt;ul>
-&lt;li>To enable KaTex globally set the parameter &lt;code>math&lt;/code> to &lt;code>true&lt;/code> in a project&amp;rsquo;s configuration&lt;/li>
-&lt;li>To enable KaTex on a per page basis include the parameter &lt;code>math: true&lt;/code> in content files&lt;/li>
-&lt;/ul>
-&lt;p>&lt;strong>Note:&lt;/strong> Use the online reference of &lt;a href="https://katex.org/docs/supported.html">Supported TeX Functions&lt;/a>&lt;/p>
-&lt;h3 id="examples">Examples &lt;a href="#examples" class="hash">#&lt;/a>&lt;/h3>
-&lt;p>Block math:
-$$
-\varphi = 1+\frac{1} {1+\frac{1} {1+\frac{1} {1+\cdots} } }
-$$&lt;/p></description><author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author><guid>/2019/03/08/math-typesetting.html</guid><pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate></item><item><title>Emoji Support</title><link>/2019/03/05/emoji-support.html</link><description>&lt;p>Emoji can be enabled in a Hugo project in a number of ways.&lt;/p>
+&lt;p>Eurytus Hector, materna ipsumque ut Politen, nec, nate, ignari, vernum cohaesit sequitur. Vel &lt;strong>mitis temploque&lt;/strong> vocatus, inque alis, &lt;em>oculos nomen&lt;/em> non silvis corpore coniunx ne displicet illa. Crescunt non unus, vidit visa quantum inmiti flumina mortis facto sic: undique a alios vincula sunt iactata abdita! Suspenderat ego fuit tendit: luna, ante urbem Propoetides &lt;strong>parte&lt;/strong>.&lt;/p></description><author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author><guid>/2019/03/09/placeholder-text.html</guid><pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate></item><item><title>Emoji Support</title><link>/2019/03/05/emoji-support.html</link><description>&lt;p>Emoji can be enabled in a Hugo project in a number of ways.&lt;/p>
 &lt;p>The &lt;a href="https://gohugo.io/functions/emojify/">&lt;code>emojify&lt;/code>&lt;/a> function can be called directly in templates or &lt;a href="https://gohugo.io/templates/shortcode-templates/#inline-shortcodes">Inline Shortcodes&lt;/a>.&lt;/p>
 &lt;p>To enable emoji globally, set &lt;code>enableEmoji&lt;/code> to &lt;code>true&lt;/code> in your site&amp;rsquo;s &lt;a href="https://gohugo.io/getting-started/configuration/">configuration&lt;/a> and then you can type emoji shorthand codes directly in content files; e.g.&lt;/p>
 &lt;!-- raw HTML omitted -->
@@ -246,8 +349,6 @@ font-family: Apple Color Emoji, Segoe UI Emoji, NotoColorEmoji, Segoe UI Symbol,
 }&lt;/code>&lt;/pre>&lt;/div></description><author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author><guid>/2019/03/05/emoji-support.html</guid><pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate></item><item><title>Lorem ipsum</title><link>/2017/03/11/lorem-ipsum.html</link><description>&lt;p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?&lt;/p>
 &lt;p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?&lt;/p>
 &lt;p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?&lt;/p>
-&lt;p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?&lt;/p></description><author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author><guid>/2017/03/11/lorem-ipsum.html</guid><pubDate>Sat, 11 Mar 2017 00:00:00 +0000</pubDate></item><item><title>Lorem ipsum sit ale natus unde</title><link>/2016/09/08/lorem-ipsum-sit-ale.html</link><description>&lt;p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?&lt;/p>
+&lt;p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?&lt;/p></description><author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author><guid>/2017/03/11/lorem-ipsum.html</guid><pubDate>Sat, 11 Mar 2017 00:00:00 +0000</pubDate></item><item><title>Lorem ipsum magni dolores eos qui ratione voluptatem</title><link>/2015/09/08/lorem-catu-ale.html</link><description>&lt;p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?&lt;/p>
 &lt;p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?&lt;/p>
-&lt;p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?&lt;/p></description><author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author><guid>/2016/09/08/lorem-ipsum-sit-ale.html</guid><pubDate>Thu, 08 Sep 2016 00:00:00 +0000</pubDate></item><item><title>Lorem ipsum magni dolores eos qui ratione voluptatem</title><link>/2015/09/08/lorem-catu-ale.html</link><description>&lt;p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?&lt;/p>
-&lt;p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?&lt;/p>
-&lt;p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?&lt;/p></description><author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author><guid>/2015/09/08/lorem-catu-ale.html</guid><pubDate>Tue, 08 Sep 2015 00:00:00 +0000</pubDate></item><item><title>Lorem ipsum</title><link>/2014/09/08/ipsum-lore-de.html</link><description/><author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author><guid>/2014/09/08/ipsum-lore-de.html</guid><pubDate>Mon, 08 Sep 2014 00:00:00 +0000</pubDate></item><item><title>Lorem ipsum ut pers unde</title><link>/2014/09/08/ipsum-lore-de-re-mo.html</link><description>&lt;p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?&lt;/p></description><author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author><guid>/2014/09/08/ipsum-lore-de-re-mo.html</guid><pubDate>Mon, 08 Sep 2014 00:00:00 +0000</pubDate></item><item><title>Lorem ipsum unde omnis iste</title><link>/2014/05/08/ipsum-lore-de-re.html</link><description>&lt;p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?&lt;/p></description><author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author><guid>/2014/05/08/ipsum-lore-de-re.html</guid><pubDate>Thu, 08 May 2014 00:00:00 +0000</pubDate></item><item><title>Lorem ipsum tut</title><link>/2013/09/08/ipsum-lore.html</link><description/><author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author><guid>/2013/09/08/ipsum-lore.html</guid><pubDate>Sun, 08 Sep 2013 00:00:00 +0000</pubDate></item></channel></rss>
+&lt;p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?&lt;/p></description><author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author><guid>/2015/09/08/lorem-catu-ale.html</guid><pubDate>Tue, 08 Sep 2015 00:00:00 +0000</pubDate></item><item><title>Lorem ipsum</title><link>/2014/09/08/ipsum-lore-de.html</link><description/><author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author><guid>/2014/09/08/ipsum-lore-de.html</guid><pubDate>Mon, 08 Sep 2014 00:00:00 +0000</pubDate></item></channel></rss>
