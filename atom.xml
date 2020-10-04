@@ -10,7 +10,7 @@ read PASS_LENGTH&lt;/p>
 do
 openssl rand -base64 48 | cut -c1-$PASS_LENGTH&lt;/p>
 &lt;p>done&lt;/p>
-&lt;p>&lt;a href="https://github.com/AlexisAhmed/Shell-Scripts/blob/master/PasswordGenerator.sh">Souce&lt;/a>&lt;/p></description><author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author><guid>/2020/09/04/password-generator.html</guid><pubDate>Fri, 04 Sep 2020 00:00:00 +0000</pubDate></item><item><title>Markdown Syntax Guide</title><link>/2019/03/11/markdown-syntax.html</link><description>&lt;p>This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p>
+&lt;p>&lt;a href="https://github.com/AlexisAhmed/Shell-Scripts/blob/master/PasswordGenerator.sh">&amp;raquo;&amp;raquo;&lt;/a>&lt;/p></description><author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author><guid>/2020/09/04/password-generator.html</guid><pubDate>Fri, 04 Sep 2020 00:00:00 +0000</pubDate></item><item><title>Markdown Syntax Guide</title><link>/2019/03/11/markdown-syntax.html</link><description>&lt;p>This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p>
 &lt;h2 id="headings">Headings &lt;a href="#headings" class="hash">#&lt;/a>&lt;/h2>
 &lt;p>The following HTML &lt;code>&amp;lt;h1&amp;gt;&lt;/code>—&lt;code>&amp;lt;h6&amp;gt;&lt;/code> elements represent six levels of section headings. &lt;code>&amp;lt;h1&amp;gt;&lt;/code> is the highest section level while &lt;code>&amp;lt;h6&amp;gt;&lt;/code> is the lowest.&lt;/p>
 &lt;h1 id="h1">H1 &lt;a href="#h1" class="hash">#&lt;/a>&lt;/h1>
