@@ -6,7 +6,7 @@ Desktop Entry] Encoding=UTF-8 Name=Firefox Profiles Exec=firefox -P profiles -no
 echo &amp;ldquo;This is a simple password generator&amp;rdquo; echo &amp;ldquo;Please enter the length of the password: &amp;quot; read PASS_LENGTH
 for p in $(seq 1 5); do openssl rand -base64 48 | cut -c1-$PASS_LENGTH
 done
-&amp;raquo;&amp;raquo;</description></item><item><title>Start a web server in terminal</title><link>/2020/03/08/we-server-terminal/</link><pubDate>Sun, 08 Mar 2020 00:00:00 +0000</pubDate><guid>/2020/03/08/we-server-terminal/</guid><description>I&amp;rsquo;ve searched for this three times this week, so I figured I&amp;rsquo;d better make sure I have a copy of it.
+&amp;raquo;&amp;raquo;</description></item><item><title>Start a web server in terminal</title><link>/2020/03/08/web-server-terminal/</link><pubDate>Sun, 08 Mar 2020 00:00:00 +0000</pubDate><guid>/2020/03/08/web-server-terminal/</guid><description>I&amp;rsquo;ve searched for this three times this week, so I figured I&amp;rsquo;d better make sure I have a copy of it.
 Python 2:
 python -m SimpleHTTPServer 8000
 Navigate to the project directory in the terminal and do that command. Then http://localhost:8000 will server up that directory (as in, it&amp;rsquo;s index.html file).
@@ -15,7 +15,25 @@ python3 -m http.server &amp;ndash;cgi 8080
 PHP:
 php -S localhost:2222
 npm:
-npm i -g serve serve</description></item><item><title>Scheduling a shutdown</title><link>/2019/09/08/shutdown-schedule/</link><pubDate>Sun, 08 Sep 2019 00:00:00 +0000</pubDate><guid>/2019/09/08/shutdown-schedule/</guid><description>Scheduling a shutdown # To shutdown run the command:
+npm i -g serve serve</description></item><item><title>How host a website on Tor</title><link>/2020/02/12/onion-website/</link><pubDate>Wed, 12 Feb 2020 00:00:00 +0000</pubDate><guid>/2020/02/12/onion-website/</guid><description>Install nginx
+sudo apt install nginx
+Install tor
+sudo apt install tor
+Uncomment the 2 hiddenservice lines in /etc/torrc
+nano /etc/tor/torrc
+systemctl restart tor
+This will show you tour onion address copy it to somewhere cause we will need it:
+cat /var/lib/tor/hidden_service/hostname
+Create site directory
+mkdir /var/www/hidden_service
+Configure nginx default vhost
+nano /etc/nginx/sites-available/default
+Uncomment everything or remove everything and paste this into the file with your onion address:</description></item><item><title>How change LUKS encryption</title><link>/2020/02/08/luks-encryption/</link><pubDate>Sat, 08 Feb 2020 00:00:00 +0000</pubDate><guid>/2020/02/08/luks-encryption/</guid><description>Changing the Passphrase:
+sudo cryptsetup luksChangeKey /dev/sdX
+LUKs Drives With Multiple Passphrases:
+LUKS Drives can actually have multiple passphrases or key files associated with them, up to eight. To start, take a look at your drive and see how many keys it has. Chances are, you&amp;rsquo;ll only see key slot 0 occupied. That&amp;rsquo;s the first one.
+sudo cryptsetup luksDump /dev/sdX | grep -i key
+If you have free slots open, you can always add another passphrase to your drive.</description></item><item><title>Scheduling a shutdown</title><link>/2019/09/08/shutdown-schedule/</link><pubDate>Sun, 08 Sep 2019 00:00:00 +0000</pubDate><guid>/2019/09/08/shutdown-schedule/</guid><description>Scheduling a shutdown # To shutdown run the command:
 sudo shutdown -P +60
 That will wait 60 mins before starting the shutdown sequence.
 You could do:
