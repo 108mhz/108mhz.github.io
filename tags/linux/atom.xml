@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Linux on 108Mhz</title><link>/tags/linux/</link><description>Recent content in Linux on 108Mhz</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 08 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/linux/atom.xml" rel="self" type="application/rss+xml"/><item><title>Add Firefox profile manager launcher Gnome</title><link>/2020/09/08/gnome-firefox-profiles/</link><pubDate>Tue, 08 Sep 2020 00:00:00 +0000</pubDate><guid>/2020/09/08/gnome-firefox-profiles/</guid><description>In terminal:
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Linux on 108Mhz</title><link>/tags/linux/</link><description>Recent content in Linux on 108Mhz</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>©108 Mhz</copyright><lastBuildDate>Tue, 06 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/linux/atom.xml" rel="self" type="application/rss+xml"/><item><title>Enable ssh on Ubuntu</title><link>/2020/10/06/enable-ssh/</link><pubDate>Tue, 06 Oct 2020 00:00:00 +0000</pubDate><guid>/2020/10/06/enable-ssh/</guid><description>Install it by running the following command in your terminal:
+sudo apt-get install openssh-server -y
+Configure SSH
+Now that you’ve installed SSH, you can configure it. Like changing the default port (recommended for security reasons), disabling “root” user login etc.
+For now, we’ll just update our default SSH key.
+To backup the original keys first as a precaution use:
+mkdir /etc/ssh/default_keys
+mv /etc/ssh/ssh_host_* /etc/ssh/default_keys/
+Then to regenerate the keys:</description></item><item><title>Add Firefox profile manager launcher Gnome</title><link>/2020/09/08/gnome-firefox-profiles/</link><pubDate>Tue, 08 Sep 2020 00:00:00 +0000</pubDate><guid>/2020/09/08/gnome-firefox-profiles/</guid><description>In terminal:
 /home/user/.local/share/applications/firefox-profiles.desktop
 paste and save:
 Desktop Entry] Encoding=UTF-8 Name=Firefox Profiles Exec=firefox -P profiles -no-remote –class NAMEProfile Icon=firefox Type=Application StartupNotify=True StartupWMClass=NAMEProfile</description></item><item><title>Simple Password Generator</title><link>/2020/09/04/password-generator/</link><pubDate>Fri, 04 Sep 2020 00:00:00 +0000</pubDate><guid>/2020/09/04/password-generator/</guid><description>#!/bin/bash

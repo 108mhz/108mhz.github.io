@@ -1,4 +1,79 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>108Mhz</title><description/><link>/</link><language>en</language><copyright>Copyright 2020, Ronalds Vilcins</copyright><lastBuildDate>Sat, 03 Oct 2020 00:00:00 +0000</lastBuildDate><generator>Hugo - gohugo.io</generator><docs>http://cyber.harvard.edu/rss/rss.html</docs><atom:link href="https://ronaldsvilcins.com/atom.xml" rel="self" type="application/atom+xml"/><item><title>Climax</title><link>/2020/10/03/climax/</link><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>108Mhz</title><description/><link>/</link><language>en</language><copyright>Copyright 2020, Ronalds Vilcins</copyright><lastBuildDate>Tue, 06 Oct 2020 00:00:00 +0000</lastBuildDate><generator>Hugo - gohugo.io</generator><docs>http://cyber.harvard.edu/rss/rss.html</docs><atom:link href="https://ronaldsvilcins.com/atom.xml" rel="self" type="application/atom+xml"/><item><title>Enable ssh on Ubuntu</title><link>/2020/10/06/enable-ssh/</link><description>&lt;p>&lt;strong>Install it by running the following command in your terminal:&lt;/strong>&lt;/p>
+&lt;blockquote>
+&lt;p>sudo apt-get install openssh-server -y&lt;/p>
+&lt;/blockquote>
+&lt;p>&lt;strong>Configure SSH&lt;/strong>&lt;/p>
+&lt;p>Now that you’ve installed SSH, you can configure it. Like changing the default port (recommended for security reasons), disabling “root” user login etc.&lt;/p>
+&lt;p>For now, we’ll just update our default SSH key.&lt;/p>
+&lt;p>To backup the original keys first as a precaution use:&lt;/p>
+&lt;blockquote>
+&lt;p>mkdir /etc/ssh/default_keys&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>mv /etc/ssh/ssh_host_* /etc/ssh/default_keys/&lt;/p>
+&lt;/blockquote>
+&lt;p>Then to regenerate the keys:&lt;/p>
+&lt;blockquote>
+&lt;p>dpkg-reconfigure openssh-server&lt;/p>
+&lt;/blockquote>
+&lt;p>The next step is to edit the SSH server configuration file with the settings you need:&lt;/p>
+&lt;blockquote>
+&lt;p>sudo nano /etc/ssh/sshd_config&lt;/p>
+&lt;/blockquote>
+&lt;p>Once you open the file, find and change the following line from:&lt;/p>
+&lt;blockquote>
+&lt;p>#Port 22&lt;/p>
+&lt;/blockquote>
+&lt;p>to&lt;/p>
+&lt;blockquote>
+&lt;p>Port 148&lt;/p>
+&lt;/blockquote>
+&lt;p>Before restarting SSH you need to configure your firewall to allow the port you provided before. If you’re using UFW, just run:&lt;/p>
+&lt;blockquote>
+&lt;p>sudo ufw allow 148&lt;/p>
+&lt;/blockquote>
+&lt;p>Now you can use SSH to log into your server. Just open up Terminal and run:&lt;/p>
+&lt;blockquote>
+&lt;p>ssh username@ip -p148&lt;/p>
+&lt;/blockquote>
+&lt;p>If you are only planning on using SSH briefly the defaults are probably fine. If you think you will use it for a length of time I would recommend at minimum enabling public key authentication:&lt;/p>
+&lt;blockquote>
+&lt;p>PubkeyAuthentication yes&lt;/p>
+&lt;/blockquote>
+&lt;p>Then disabling password authentication:&lt;/p>
+&lt;blockquote>
+&lt;p>PasswordAuthentication no&lt;/p>
+&lt;/blockquote>
+&lt;p>You could also allow the root user login here, but instead consider creating a non-privileged user account instead.&lt;/p>
+&lt;p>It’s useful to know that Systemd has different units, a unit configuration file encodes information. The units relevant to SSH are ssh.service and ssh.socket. At a basic level a service unit controls a process and a socket unit controls a filesystem or network socket.&lt;/p>
+&lt;p>If you only need to temporarily start up the SSH service it’s recommended to use ssh.socket:&lt;/p>
+&lt;blockquote>
+&lt;p>systemctl start ssh.socket&lt;/p>
+&lt;/blockquote>
+&lt;p>When finished:&lt;/p>
+&lt;blockquote>
+&lt;p>systemctl stop ssh.socket&lt;/p>
+&lt;/blockquote>
+&lt;p>To instead permanently enable the SSH service to start whenever the system is booted use:&lt;/p>
+&lt;blockquote>
+&lt;p>systemctl enable ssh.service&lt;/p>
+&lt;/blockquote>
+&lt;p>Then to use SSH immediately without having to reboot use:&lt;/p>
+&lt;blockquote>
+&lt;p>systemctl start ssh.service&lt;/p>
+&lt;/blockquote>
+&lt;p>To check the status of the service you can use:&lt;/p>
+&lt;blockquote>
+&lt;p>systemctl status ssh.service&lt;/p>
+&lt;/blockquote>
+&lt;p>To stop the SSH service use:&lt;/p>
+&lt;blockquote>
+&lt;p>systemctl stop ssh.service&lt;/p>
+&lt;/blockquote>
+&lt;p>And to disable the SSH service so it no longer starts at boot:&lt;/p>
+&lt;blockquote>
+&lt;p>systemctl disable ssh.service&lt;/p>
+&lt;/blockquote></description><author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author><guid>/2020/10/06/enable-ssh/</guid><pubDate>Tue, 06 Oct 2020 00:00:00 +0000</pubDate></item><item><title>Climax</title><link>/2020/10/03/climax/</link><description>
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
 &lt;iframe src="https://www.youtube.com/embed/gNp0jlfbgqM" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
 &lt;/div></description><author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author><guid>/2020/10/03/climax/</guid><pubDate>Sat, 03 Oct 2020 00:00:00 +0000</pubDate></item><item><title>Add Firefox profile manager launcher Gnome</title><link>/2020/09/08/gnome-firefox-profiles/</link><description>&lt;p>In terminal:&lt;/p>
