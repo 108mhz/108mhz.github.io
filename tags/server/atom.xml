@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>server on 108Mhz</title><link>/tags/server/</link><description>Recent content in server on 108Mhz</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>©108 Mhz</copyright><lastBuildDate>Sun, 20 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/server/atom.xml" rel="self" type="application/rss+xml"/><item><title>Start a web server in terminal</title><link>/2020/09/20/start-a-web-server-with-one-terminal-command/</link><pubDate>Sun, 20 Sep 2020 00:00:00 +0000</pubDate><guid>/2020/09/20/start-a-web-server-with-one-terminal-command/</guid><description>I&amp;rsquo;ve searched for this three times this week, so I figured I’d better make sure I have a copy of it.
+Python 2:
+python -m SimpleHTTPServer 8000
+Navigate to the project directory in the terminal and do that command. Then (http://localhost:8000) will server up that directory (as in, it’s index.html file).
+Python 3:
+python3 -m http.server &amp;ndash;cgi 8080
+PHP:
+php -S localhost:2222
+npm:
+npm i -g serve serve</description></item></channel></rss>

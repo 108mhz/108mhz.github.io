@@ -1,4 +1,17 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tor on 108Mhz</title><link>/tags/tor/</link><description>Recent content in Tor on 108Mhz</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>©108 Mhz</copyright><lastBuildDate>Wed, 12 Feb 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/tor/atom.xml" rel="self" type="application/rss+xml"/><item><title>How host a website on Tor</title><link>/2020/02/12/onion-website/</link><pubDate>Wed, 12 Feb 2020 00:00:00 +0000</pubDate><guid>/2020/02/12/onion-website/</guid><description>Install nginx
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>tor on 108Mhz</title><link>/tags/tor/</link><description>Recent content in tor on 108Mhz</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>©108 Mhz</copyright><lastBuildDate>Wed, 12 Feb 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/tor/atom.xml" rel="self" type="application/rss+xml"/><item><title>How host a website on Tor</title><link>/2020/02/12/onion-website/</link><pubDate>Wed, 12 Feb 2020 00:00:00 +0000</pubDate><guid>/2020/02/12/onion-website/</guid><description>Install nginx
+sudo apt install nginx
+Install tor
+sudo apt install tor
+Uncomment the 2 hiddenservice lines in /etc/torrc
+nano /etc/tor/torrc
+systemctl restart tor
+This will show you tour onion address copy it to somewhere cause we will need it:
+cat /var/lib/tor/hidden_service/hostname
+Create site directory
+mkdir /var/www/hidden_service
+Configure nginx default vhost
+nano /etc/nginx/sites-available/default
+Uncomment everything or remove everything and paste this into the file with your onion address:</description></item><item><title>How to host deepweb onion site and make it untraceable nginx</title><link>/2020/02/03/host-deep-onion-website/</link><pubDate>Mon, 03 Feb 2020 00:00:00 +0000</pubDate><guid>/2020/02/03/host-deep-onion-website/</guid><description>Install nginx
 sudo apt install nginx
 Install tor
 sudo apt install tor

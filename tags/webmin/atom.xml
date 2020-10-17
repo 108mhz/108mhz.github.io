@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>webmin on 108Mhz</title><link>/tags/webmin/</link><description>Recent content in webmin on 108Mhz</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>©108 Mhz</copyright><lastBuildDate>Sun, 15 Mar 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/webmin/atom.xml" rel="self" type="application/rss+xml"/><item><title>How to Install Webmin on Ubuntu 18.04</title><link>/2020/03/15/webmin-ubuntu/</link><pubDate>Sun, 15 Mar 2020 00:00:00 +0000</pubDate><guid>/2020/03/15/webmin-ubuntu/</guid><description>Start by updating the packages list and installing the dependencies:
+sudo apt update
+sudo apt install software-properties-common apt-transport-https wget
+Next, import the Webmin GPG key using the following wget command:
+wget -q http://www.webmin.com/jcameron-key.asc -O- | sudo apt-key add -
+And enable the Webmin repository by typing:
+sudo add-apt-repository &amp;ldquo;deb [arch=amd64] http://download.webmin.com/download/repository sarge contrib&amp;rdquo;
+Install the latest version of Webmin by typing:
+sudo apt install webmin</description></item></channel></rss>

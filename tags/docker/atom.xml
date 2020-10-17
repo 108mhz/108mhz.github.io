@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>docker on 108Mhz</title><link>/tags/docker/</link><description>Recent content in docker on 108Mhz</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>©108 Mhz</copyright><lastBuildDate>Thu, 20 Feb 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/docker/atom.xml" rel="self" type="application/rss+xml"/><item><title>Copy files in Docker</title><link>/2020/02/20/copy-docker/</link><pubDate>Thu, 20 Feb 2020 00:00:00 +0000</pubDate><guid>/2020/02/20/copy-docker/</guid><description>Copying files/folders from host to Docker container # docker cp CONTAINER_ID:SOURCE_PATH DESTINATION_PATH docker cp SOURCE_PATH CONTAINER_ID:DESTINATION_PATH In Docker versions prior to 1.8 it was only possible to copy files from a docker container to the host.
+Not from the host to a docker container.
+Copy files from host to docker container # To copy a file from host to docker container the below steps.
+Get the docker container id by using docker ps command:</description></item><item><title>Some dockers commands</title><link>/2020/02/11/docker-commands/</link><pubDate>Tue, 11 Feb 2020 00:00:00 +0000</pubDate><guid>/2020/02/11/docker-commands/</guid><description>Docker images:
+docker images
+Run image:
+docker run -h &amp;ldquo;HostName&amp;rdquo; -t -i ImageName /bin/bash
+Running containers:
+docker ps
+All containers:
+docker ps -a
+Search image:
+docker search ImageName
+Install image:
+docker pull ImageName
+Remove container:
+docker rm IdContainer
+Delete all containers:
+docker container prune
+Delete image:
+docker rmi ImageId/ImageName
+Restart container:
+docker restart ContainerId</description></item></channel></rss>
