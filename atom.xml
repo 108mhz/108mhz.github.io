@@ -82,46 +82,11 @@
 &lt;p>And to disable the SSH service so it no longer starts at boot:&lt;/p>
 &lt;blockquote>
 &lt;p>systemctl disable ssh.service&lt;/p>
-&lt;/blockquote></description><author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author><guid>/2020/10/06/enable-ssh/</guid><pubDate>Tue, 06 Oct 2020 00:00:00 +0000</pubDate></item><item><title>Start a web server in terminal</title><link>/2020/09/20/start-a-web-server-with-one-terminal-command/</link><description>&lt;p>I&amp;rsquo;ve searched for this three times this week, so I figured I’d better make sure I have a copy of it.&lt;/p>
-&lt;p>&lt;strong>Python 2:&lt;/strong>&lt;/p>
-&lt;blockquote>
-&lt;p>python -m SimpleHTTPServer 8000&lt;/p>
-&lt;/blockquote>
-&lt;p>Navigate to the project directory in the terminal and do that command.
-Then (http://localhost:8000) will server up that directory (as in, it’s index.html file).&lt;/p>
-&lt;p>&lt;strong>Python 3:&lt;/strong>&lt;/p>
-&lt;blockquote>
-&lt;p>python3 -m http.server &amp;ndash;cgi 8080&lt;/p>
-&lt;/blockquote>
-&lt;p>&lt;strong>PHP:&lt;/strong>&lt;/p>
-&lt;blockquote>
-&lt;p>php -S localhost:2222&lt;/p>
-&lt;/blockquote>
-&lt;p>&lt;strong>npm:&lt;/strong>&lt;/p>
-&lt;blockquote>
-&lt;p>npm i -g serve
-serve&lt;/p>
-&lt;/blockquote></description><author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author><guid>/2020/09/20/start-a-web-server-with-one-terminal-command/</guid><pubDate>Sun, 20 Sep 2020 00:00:00 +0000</pubDate></item><item><title>Add Firefox profile manager launcher Gnome</title><link>/2020/09/08/gnome-firefox-profiles/</link><description>&lt;p>In terminal:&lt;/p>
+&lt;/blockquote></description><author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author><guid>/2020/10/06/enable-ssh/</guid><pubDate>Tue, 06 Oct 2020 00:00:00 +0000</pubDate></item><item><title>Add Firefox profile manager launcher Gnome</title><link>/2020/09/08/gnome-firefox-profiles/</link><description>&lt;p>In terminal:&lt;/p>
 &lt;blockquote>
 &lt;p>/home/user/.local/share/applications/firefox-profiles.desktop&lt;/p>
 &lt;/blockquote>
 &lt;p>paste and save:&lt;/p>
-&lt;blockquote>
-&lt;p>Desktop Entry] Encoding=UTF-8 Name=Firefox Profiles Exec=firefox -P profiles -no-remote –class NAMEProfile Icon=firefox Type=Application StartupNotify=True StartupWMClass=NAMEProfile&lt;/p>
-&lt;/blockquote></description><author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author><guid>/2020/09/08/gnome-firefox-profiles/</guid><pubDate>Tue, 08 Sep 2020 00:00:00 +0000</pubDate></item><item><title>Simple Password Generator</title><link>/2020/09/04/password-generator/</link><description>&lt;p>#!/bin/bash&lt;/p>
-&lt;p>#Simple Password Generator&lt;/p>
-&lt;p>echo &amp;ldquo;This is a simple password generator&amp;rdquo;
-echo &amp;ldquo;Please enter the length of the password: &amp;quot;
-read PASS_LENGTH&lt;/p>
-&lt;p>for p in $(seq 1 5);
-do
-openssl rand -base64 48 | cut -c1-$PASS_LENGTH&lt;/p>
-&lt;p>done&lt;/p>
-&lt;p>&lt;a href="https://github.com/AlexisAhmed/Shell-Scripts/blob/master/PasswordGenerator.sh">&amp;raquo;&amp;raquo;&lt;/a>&lt;/p></description><author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author><guid>/2020/09/04/password-generator/</guid><pubDate>Fri, 04 Sep 2020 00:00:00 +0000</pubDate></item><item><title>Add Firefox profile manager launcher Gnome</title><link>/2020/07/29/firefox-profiles-gnome/</link><description>&lt;p>in terminal:&lt;/p>
-&lt;blockquote>
-&lt;pre>&lt;code>/home/user/.local/share/applications/firefox-profiles.desktop
-&lt;/code>&lt;/pre>
-&lt;/blockquote>
 &lt;p>paste and save:&lt;/p>
 &lt;blockquote>
 &lt;p>Desktop Entry]
@@ -132,7 +97,16 @@ Icon=firefox
 Type=Application
 StartupNotify=True
 StartupWMClass=NAMEProfile&lt;/p>
-&lt;/blockquote></description><author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author><guid>/2020/07/29/firefox-profiles-gnome/</guid><pubDate>Wed, 29 Jul 2020 00:00:00 +0000</pubDate></item><item><title>Host your own website</title><link>/2020/07/06/host-your-own-website/</link><description>&lt;p>Cheapskate&amp;rsquo;s Guide&lt;/p>
+&lt;/blockquote></description><author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author><guid>/2020/09/08/gnome-firefox-profiles/</guid><pubDate>Tue, 08 Sep 2020 00:00:00 +0000</pubDate></item><item><title>Simple Password Generator</title><link>/2020/09/04/password-generator/</link><description>&lt;p>#!/bin/bash&lt;/p>
+&lt;p>#Simple Password Generator&lt;/p>
+&lt;p>echo &amp;ldquo;This is a simple password generator&amp;rdquo;
+echo &amp;ldquo;Please enter the length of the password: &amp;quot;
+read PASS_LENGTH&lt;/p>
+&lt;p>for p in $(seq 1 5);
+do
+openssl rand -base64 48 | cut -c1-$PASS_LENGTH&lt;/p>
+&lt;p>done&lt;/p>
+&lt;p>&lt;a href="https://github.com/AlexisAhmed/Shell-Scripts/blob/master/PasswordGenerator.sh">&amp;raquo;&amp;raquo;&lt;/a>&lt;/p></description><author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author><guid>/2020/09/04/password-generator/</guid><pubDate>Fri, 04 Sep 2020 00:00:00 +0000</pubDate></item><item><title>Host your own website</title><link>/2020/07/06/host-your-own-website/</link><description>&lt;p>Cheapskate&amp;rsquo;s Guide&lt;/p>
 &lt;p>&lt;a href="https://cheapskatesguide.org/">&lt;strong>Home&lt;/strong>&lt;/a> &lt;a href="https://cheapskatesguide.org/contact.html">&lt;strong>Contact&lt;/strong>&lt;/a>&lt;/p>
 &lt;p>Share on &amp;hellip; &lt;a href="https://www.facebook.com/sharer.php?u=https://cheapskatesguide.org/articles/raspberry-pi-website.html">[Facebook]&lt;/a> [[Twitter]](&lt;a href="https://twitter.com/share?url=https://cheapskatesguide.org/articles/raspberry-pi-website.html/&amp;amp;text=How">https://twitter.com/share?url=https://cheapskatesguide.org/articles/raspberry-pi-website.html/&amp;amp;text=How&lt;/a> to have Your Own Website for $2 a Year) [[Reddit]](&lt;a href="https://reddit.com/submit?url=https://cheapskatesguide.org/articles/raspberry-pi-website.html&amp;amp;title=How">https://reddit.com/submit?url=https://cheapskatesguide.org/articles/raspberry-pi-website.html&amp;amp;title=How&lt;/a> to have Your Own Website for $2 a Year) &lt;a href="https://www.linkedin.com/shareArticle?mini=true&amp;amp;url=https://cheapskatesguide.org/articles/raspberry-pi-website.html">[Linkedin]&lt;/a> [[Hacker News]](&lt;a href="https://news.ycombinator.com/submit?u=https://cheapskatesguide.org/articles/raspberry-pi-website.html&amp;amp;t=How">https://news.ycombinator.com/submit?u=https://cheapskatesguide.org/articles/raspberry-pi-website.html&amp;amp;t=How&lt;/a> to have Your Own Website for $2 a Year)&lt;/p>
 &lt;h1 id="how-to-host-your-own-website-at-home-for-2-a-year">How to Host Your Own Website at Home for $2 a Year &lt;a href="#how-to-host-your-own-website-at-home-for-2-a-year" class="hash">#&lt;/a>&lt;/h1>
@@ -1011,7 +985,7 @@ If your server runs a UFW firewall, you’ll need to open the Webmin port.&lt;/p
 &lt;p>Navigate to the project directory in the terminal and do that command. Then http://localhost:8000 will server up that directory (as in, it&amp;rsquo;s &lt;code>index.html&lt;/code> file).&lt;/p>
 &lt;p>&lt;strong>Python 3:&lt;/strong>&lt;/p>
 &lt;blockquote>
-&lt;p>python3 -m http.server &amp;ndash;cgi 8080&lt;/p>
+&lt;p>python3 -m http.server 8080&lt;/p>
 &lt;/blockquote>
 &lt;p>&lt;strong>PHP:&lt;/strong>&lt;/p>
 &lt;blockquote>
@@ -3447,7 +3421,7 @@ IPFS_PATH=~/.ipfs ipfs cat &lt;!-- raw HTML omitted -->&lt;/p>
 &lt;pre>&lt;code>cd noisy
 &lt;/code>&lt;/pre>
 &lt;p>Run the script&lt;/p>
-&lt;pre>&lt;code>python noisy.py --config config.json
+&lt;pre>&lt;code>python3 noisy.py --config config.json
 &lt;/code>&lt;/pre>
 &lt;p>The program can accept a number of command line arguments:&lt;/p>
 &lt;pre>&lt;code>$ python noisy.py --help

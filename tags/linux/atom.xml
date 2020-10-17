@@ -12,7 +12,8 @@ mv /etc/ssh/ssh_host_* /etc/ssh/default_keys/
 Then to regenerate the keys:</description></item><item><title>Add Firefox profile manager launcher Gnome</title><link>/2020/09/08/gnome-firefox-profiles/</link><pubDate>Tue, 08 Sep 2020 00:00:00 +0000</pubDate><guid>/2020/09/08/gnome-firefox-profiles/</guid><description>In terminal:
 /home/user/.local/share/applications/firefox-profiles.desktop
 paste and save:
-Desktop Entry] Encoding=UTF-8 Name=Firefox Profiles Exec=firefox -P profiles -no-remote –class NAMEProfile Icon=firefox Type=Application StartupNotify=True StartupWMClass=NAMEProfile</description></item><item><title>Simple Password Generator</title><link>/2020/09/04/password-generator/</link><pubDate>Fri, 04 Sep 2020 00:00:00 +0000</pubDate><guid>/2020/09/04/password-generator/</guid><description>#!/bin/bash
+paste and save:
+Desktop Entry] Encoding=UTF-8 Name=Firefox Profiles Exec=firefox -P profiles -no-remote &amp;ndash;class NAMEProfile Icon=firefox Type=Application StartupNotify=True StartupWMClass=NAMEProfile</description></item><item><title>Simple Password Generator</title><link>/2020/09/04/password-generator/</link><pubDate>Fri, 04 Sep 2020 00:00:00 +0000</pubDate><guid>/2020/09/04/password-generator/</guid><description>#!/bin/bash
 #Simple Password Generator
 echo &amp;ldquo;This is a simple password generator&amp;rdquo; echo &amp;ldquo;Please enter the length of the password: &amp;quot; read PASS_LENGTH
 for p in $(seq 1 5); do openssl rand -base64 48 | cut -c1-$PASS_LENGTH
@@ -22,7 +23,7 @@ Python 2:
 python -m SimpleHTTPServer 8000
 Navigate to the project directory in the terminal and do that command. Then http://localhost:8000 will server up that directory (as in, it&amp;rsquo;s index.html file).
 Python 3:
-python3 -m http.server &amp;ndash;cgi 8080
+python3 -m http.server 8080
 PHP:
 php -S localhost:2222
 npm:
