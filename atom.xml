@@ -6,6 +6,8 @@
 &lt;h2 id="books">Books &lt;a href="#books" class="hash">#&lt;/a>&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="https://swarm-gateways.net/bzz:/716242575c45b867e1115e03432f55f9e2bacb9ab128a90a71340e03b178dc87/Beginning">Beginning Ethical Hacking with Python&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://swarm-gateways.net/bzz:/0807a723a737da9349341b564279ddc290bce28920d28681d753051d1921eed9/Learn">Learn Python the Hard Way&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://swarm-gateways.net/bzz:/093223f72e0587ec70241df5023c2b3740ca6d40c5bb7736fb0c51e64c8405c8/Christopher%20Hadnagy%20-%20Human%20hacking.pdf">Human hacking&lt;/a>&lt;/li>
 &lt;/ul></description><author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author><guid>/2020/10/18/books-and-mags/</guid><pubDate>Sun, 18 Oct 2020 00:00:00 +0000</pubDate></item><item><title>Open as Administrator</title><link>/2020/10/15/open-as-root-mautilus/</link><description>&lt;p>Add &amp;lsquo;Open as Administrator&amp;rsquo; in Ubuntu 20.04 LTS&lt;/p>
 &lt;p>This simple tutorial shows how to add &amp;lsquo;&lt;strong>Open as Administrator&lt;/strong>&amp;rsquo; option to file browser right-click menu in Ubuntu 20.04 LTS.&lt;/p>
 &lt;p>Need to open or edit files with Administrator (root) user privilege directly from file browser in Ubuntu desktop? There&amp;rsquo;s an extension &lt;code>nautilus-admin&lt;/code> can do the job in the default Gnome desktop.&lt;/p>
