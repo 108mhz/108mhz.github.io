@@ -42,7 +42,69 @@ $find /etc -name ”hosts*”
 &lt;p>The grep expression files command searches the contents of the files and extracts lines matching the regular expression. Adding the &lt;strong>-r&lt;/strong> option enables a recursive search on all files contained in the directory. This allows you to look for a file when you only know a part of its contents.&lt;/p>
 &lt;h3 id="managing-processes">Managing Processes &lt;a href="#managing-processes" class="hash">#&lt;/a>&lt;/h3>
 &lt;p>The ps aux command lists the processes currently running and helps to identify them by showing their PID. Once you know the PID of a process, the kill -signal pid command allows you to send it a signal (if you own the process). Several signals exist; most commonly used are &lt;strong>TERM&lt;/strong>(a request to terminate gracefully) and &lt;strong>KILL&lt;/strong>(a forced kill).&lt;/p>
-&lt;p>The command interpreter can also run programs in the background if the command is followed by &lt;strong>“&amp;amp;”&lt;/strong>. By using the ampersand, you resume control of the shell immediately even though the command is still running (hidden from view as a background process). The jobs command lists the processes running in the background; running &lt;strong>fg %job-number&lt;/strong>(for foreground) restores a job to the foreground. When a command is running in the foreground (either because it was started normally, or brought back to the foreground with fg), the &lt;strong>Control+Z&lt;/strong> key combination pauses the process and resumes control of the command line. The process can then be restarted in the background with &lt;strong>bg %job-number&lt;/strong>(for background).&lt;/p></description><author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author><guid>/2020/10/21/useful-commands/</guid><pubDate>Wed, 21 Oct 2020 00:00:00 +0000</pubDate></item><item><title>Books and Magazines</title><link>/2020/10/18/books-and-mags/</link><description>&lt;h2 id="magazines">Magazines &lt;a href="#magazines" class="hash">#&lt;/a>&lt;/h2>
+&lt;p>The command interpreter can also run programs in the background if the command is followed by &lt;strong>“&amp;amp;”&lt;/strong>. By using the ampersand, you resume control of the shell immediately even though the command is still running (hidden from view as a background process). The jobs command lists the processes running in the background; running &lt;strong>fg %job-number&lt;/strong>(for foreground) restores a job to the foreground. When a command is running in the foreground (either because it was started normally, or brought back to the foreground with fg), the &lt;strong>Control+Z&lt;/strong> key combination pauses the process and resumes control of the command line. The process can then be restarted in the background with &lt;strong>bg %job-number&lt;/strong>(for background).&lt;/p>
+&lt;h3 id="managing-rights">Managing Rights &lt;a href="#managing-rights" class="hash">#&lt;/a>&lt;/h3>
+&lt;p>Linux is a multi-user system so it is necessary to provide a permissions system to control the set of authorized operations on files and directories, which includes all the system resources and devices(on a Unix system, any device is represented by a file or directory). This principle is common to all Unix-like systems.Each file or directory has specific permissions for three categories of users:&lt;/p>
+&lt;ul>
+&lt;li>Its owner (symbolized by u, as in user)&lt;/li>
+&lt;li>ts owner group (symbolized by g, as in group), representing all the members of the group.&lt;/li>
+&lt;li>The others (symbolized by o, as in other).&lt;/li>
+&lt;/ul>
+&lt;p>Three types of rights can be combined:&lt;/p>
+&lt;ul>
+&lt;li>reading (symbolized by r, as in read);&lt;/li>
+&lt;li>writing (or modifying, symbolized byw, as in write);&lt;/li>
+&lt;li>executing (symbolized by x, as in eXecute).&lt;/li>
+&lt;/ul>
+&lt;p>In the case of a file, these rights are easily understood: read access allows reading the content(including copying), write access allows changing it, and execute access allows running it (which will only work if it is a program).&lt;/p>
+&lt;blockquote>
+&lt;p>Two particular rights are relevant to executable files:setuid and setgid
+(symbolized with the letter “s”).Note that we frequently speak of bit,
+since each of these boolean values can be represented by a 0 or a 1.
+These two rights allow any user to execute the program with the rights
+of the owner or the group, respectively.This mechanism grants access
+to features requiring higher level permissions than those you would
+usually have. Since a setuid root program is systematically run under
+the super-user identity, it is very important to ensure it is secure and
+reliable. Any user who manages to subvert a setuid root program to call
+a command of their choice could then impersonate the root user and have
+all rights on the system. Penetration testers regularly search for these
+types of files when they gain access to a system as a way of escalating
+their privileges.&lt;/p>
+&lt;/blockquote>
+&lt;p>A directory is handled differently from a file. Read access gives the right to consult the list of its contents (files and directories); write access allows creating or deleting files; and execute access allows crossing through the directory to access its contents (for example, with the cd command).Being able to cross through a directory without being able to read it gives the user permission to access the entries therein that are known by name, but not to find them without knowing their exact name.&lt;/p>
+&lt;blockquote>
+&lt;p>Thes etgid bit also applies to directories. Any newly-created item in
+such directories is automatically assigned the owner group of the parent
+directory, instead of inheriting the creator’s main group as usual.
+Because of this, you don’t have to change your main group (with the new
+grp command) when working in a file tree shared between several users of
+the same dedicated group.The sticky bit(symbolized by the letter “t”) is
+a permission that is only useful in directories. It is especially used
+for temporary directories where everybody has write access
+(such as/tmp/): it restricts deletion of files so that only their owner
+or the owner of the parent directory can delete them. Lacking this,
+everyone could delete other users’ files in/tmp/.&lt;/p>
+&lt;/blockquote>
+&lt;p>Three commands control the permissions associated with a file:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>chownuser filechanges the owner of the file&lt;/p>
+&lt;blockquote>
+&lt;p>Frequently you want to change the group of a file at the same time that you change the owner. The chown command has a special syntax for that: chown user:group file&lt;/p>
+&lt;/blockquote>
+&lt;/li>
+&lt;li>
+&lt;p>chgrp group file alters the owner group&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>chmod rights file changes the permissions for the file&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>There are two ways of representing rights. Among them, the symbolic representation is probably the easiest to understand and remember. It involves the letter symbols mentioned above. You can define rights for each category of users (u/g/o), by setting them explicitly (with=), by adding (+), or subtracting (-). Thus the u=rwx, g+rw, o-r formula gives the owner read, write, and execute rights, adds read and write rights for the owner group, and removes read rights for other users.Rights not altered by the addition or subtraction in such a command remain unmodified. The letter a, for all, covers all three categories of users, so that a=rx grants all three categories the same rights (read and execute, but not write).The (octal) numeric representation associates each right with a value: 4 for read, 2 for write, and1 for execute. We associate each combination of rights with the sum of the three figures, and a value is assigned to each category of users, in the usual order (owner, group, others).For instance, the chmod 754filecommand will set the following rights: read, write and execute for the owner (since 7 = 4 + 2 + 1); read and execute for the group (since 5 = 4 + 1); read-only for others. The0means no rights; thus chmod 600 file allows for read and write permissions for the owner, and no rights for anyone else. The most frequent right combinations are755for executable files and directories, and644for data files.To represent special rights, you can prefix a fourth digit to this number according to the same principle, where these tuid, setgid, and sticky bits are 4, 2, and 1, respectively. The command chmod 4754will associate these tuidbit with the previously described rights.Note that the use of octal notation only allows you to set all the rights at once on a file; you cannot use it to add a new right, such as read access for the group owner, since you must take into account the existing rights and compute the new corresponding numerical value.The octal representation is also used with the umask command, which is used to restrict permissions on newly created files. When an application creates a file, it assigns indicative permissions,knowing that the system automatically removes the rights defined with umask. Enter umask in a shell; you will see a mask such as0022. This is simply an octal representation of the rights to be systematically removed (in this case, the write rights for the group and other users).If you give it a new octal value, the umask command modifies the mask. Used in a shell initialization file (for example,~/.bash_profile), it will effectively change the default mask for your work sessions.&lt;/p>
+&lt;blockquote>
+&lt;p>Sometimes we have to change rights for an entire file tree. All the commands above have a-R option to operate recursively in sub-directories.The distinction between directories and files sometimes causes problems with recursive operations. That is why the “X” letter has been introduced in the symbolic representation of rights. It represents a right to execute which applies only to directories(and not to files lacking this right). Thus,chmod -R a+X directory will only add execute rights for all categories of users (a) for all of the sub-directories and files for which at least one category of user (even if their sole owner) already has execute rights.&lt;/p>
+&lt;/blockquote></description><author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author><guid>/2020/10/21/useful-commands/</guid><pubDate>Wed, 21 Oct 2020 00:00:00 +0000</pubDate></item><item><title>Books and Magazines</title><link>/2020/10/18/books-and-mags/</link><description>&lt;h2 id="magazines">Magazines &lt;a href="#magazines" class="hash">#&lt;/a>&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="https://swarm-gateways.net/bzz:/804e299e76a29b5bfb4b4cfc9586b6ebb41c67f37de79beb49cbf56cd7fcf5bf/Hacker%20Journal%20N.229%20%20Febbraio%202019.pdf">Hackers journal 2.2019&lt;/a>&lt;/li>
 &lt;/ul>
