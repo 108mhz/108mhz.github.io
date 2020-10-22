@@ -1,4 +1,140 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>108Mhz</title><description/><link>/</link><language>en</language><copyright>Copyright 2020, Ronalds Vilcins</copyright><lastBuildDate>Thu, 22 Oct 2020 00:00:00 +0000</lastBuildDate><generator>Hugo - gohugo.io</generator><docs>http://cyber.harvard.edu/rss/rss.html</docs><atom:link href="https://ronaldsvilcins.com/atom.xml" rel="self" type="application/atom+xml"/><item><title>Nano's shortcuts</title><link>/2020/10/22/nano-shortcuts/</link><description>&lt;p>&lt;strong>File handling&lt;/strong>&lt;/p>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>108Mhz</title><description/><link>/</link><language>en</language><copyright>Copyright 2020, Ronalds Vilcins</copyright><lastBuildDate>Thu, 22 Oct 2020 00:00:00 +0000</lastBuildDate><generator>Hugo - gohugo.io</generator><docs>http://cyber.harvard.edu/rss/rss.html</docs><atom:link href="https://ronaldsvilcins.com/atom.xml" rel="self" type="application/atom+xml"/><item><title>How to Use the wget Linux Command to Download Web Pages and Files</title><link>/2020/10/22/wget-command/</link><description>&lt;p>The wget utility downloads web pages, files, and images from the web using the Linux command line. You can use a single wget command to download from a site or set up an input file to download multiple files across multiple sites. According to the manual page, wget can be used even when the user has logged out of the system. To do this, use the nohup command.&lt;/p>
+&lt;h2 id="features-of-the-wget-command">Features of the wget Command &lt;a href="#features-of-the-wget-command" class="hash">#&lt;/a>&lt;/h2>
+&lt;p>You can download entire websites using wget, and convert the links to point to local sources so that you can view a website offline. The wget utility also retries a download when the connection drops and resumes from where it left off, if possible, when the connection returns.&lt;/p>
+&lt;h2 id="how-to-download-a-website-using-wget">How to Download a Website Using wget &lt;a href="#how-to-download-a-website-using-wget" class="hash">#&lt;/a>&lt;/h2>
+&lt;p>For this guide, you will learn how to download &lt;a href="http://www.everydaylinuxuser.com/">this Linux blog&lt;/a>:&lt;/p>
+&lt;blockquote>
+&lt;p>wget www.ever&lt;/p>
+&lt;/blockquote>
+&lt;p>Before you begin, create a folder on your machine using the &lt;strong>mkdir&lt;/strong> command, and then move into the folder using the &lt;strong>cd&lt;/strong> command&lt;/p>
+&lt;p>For example:&lt;/p>
+&lt;blockquote>
+&lt;p>mkdir everydaylinuxuser&lt;br>
+cd everydaylinuxuser&lt;br>
+wget www.ever&lt;/p>
+&lt;/blockquote>
+&lt;p>The result is a single index.html file that contains the content pulled from Google. The images and stylesheets are held on Google.&lt;/p>
+&lt;p>To download the full site and all the pages, use the following command:&lt;/p>
+&lt;blockquote>
+&lt;p>wget -r www.ever&lt;/p>
+&lt;/blockquote>
+&lt;p>This downloads the pages recursively up to a maximum of 5 levels deep. Five levels deep might not be enough to get everything from the site. Use the &lt;strong>-l&lt;/strong> switch to set the number of levels you wish to go to, as follows:&lt;/p>
+&lt;blockquote>
+&lt;p>wget -r -l10 www.ever&lt;/p>
+&lt;/blockquote>
+&lt;p>If you want infinite recursion, use the following:&lt;/p>
+&lt;blockquote>
+&lt;p>wget -r -l inf www.ever&lt;/p>
+&lt;/blockquote>
+&lt;p>You can also replace the &lt;strong>inf&lt;/strong> with &lt;strong>0&lt;/strong>, which means the same thing.&lt;/p>
+&lt;p>There is one more problem. You might get all the pages locally, but the links in the pages point to the original place. It isn&amp;rsquo;t possible to click locally between the links on the pages.&lt;/p>
+&lt;p>To get around this problem, use the &lt;strong>-k&lt;/strong> switch to convert the links on the pages to point to the locally downloaded equivalent, as follows:&lt;/p>
+&lt;blockquote>
+&lt;p>wget -r -k www.ever&lt;/p>
+&lt;/blockquote>
+&lt;p>If you want to get a complete mirror of a website, use the following switch, which takes away the necessity for using the &lt;strong>-r&lt;/strong>, &lt;strong>-k&lt;/strong>, and &lt;strong>-l&lt;/strong> switches.&lt;/p>
+&lt;blockquote>
+&lt;p>wget -m www.ever&lt;/p>
+&lt;/blockquote>
+&lt;p>If you have a website, you can make a complete backup using this one simple command.&lt;/p>
+&lt;h2 id="run-wget-as-a-background-command">Run wget as a Background Command &lt;a href="#run-wget-as-a-background-command" class="hash">#&lt;/a>&lt;/h2>
+&lt;p>You can get wget to run as a background command leaving you able to get on with your work in the terminal window while the files download. Use the following command:&lt;/p>
+&lt;blockquote>
+&lt;p>wget -b www.ever&lt;/p>
+&lt;/blockquote>
+&lt;p>You can combine switches. To run the wget command in the background while mirroring the site, use the following command:&lt;/p>
+&lt;blockquote>
+&lt;p>wget -b -m www.ever&lt;/p>
+&lt;/blockquote>
+&lt;p>You can simplify this further, as follows:&lt;/p>
+&lt;blockquote>
+&lt;p>wget -bm www.ever&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="logging">Logging &lt;a href="#logging" class="hash">#&lt;/a>&lt;/h2>
+&lt;p>If you run the wget command in the background, you don&amp;rsquo;t see any of the normal messages that it sends to the screen. To send those messages to a log file so that you can check on progress at any time, use the &lt;a href="https://www.lifewire.com/view-end-of-line-tail-command-4028901">tail command&lt;/a>.&lt;/p>
+&lt;p>To output information from the wget command to a log file, use the following command:&lt;/p>
+&lt;blockquote>
+&lt;p>wget -o /path/to/mylogfile www.ever&lt;/p>
+&lt;/blockquote>
+&lt;p>The reverse is to require no logging at all and no output to the screen. To omit all output, use the following command:&lt;/p>
+&lt;blockquote>
+&lt;p>wget -q www.ever&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="download-from-multiple-sites">Download From Multiple Sites &lt;a href="#download-from-multiple-sites" class="hash">#&lt;/a>&lt;/h2>
+&lt;p>You can set up an input file to download from many different sites. Open a file using &lt;a href="https://www.lifewire.com/beginners-guide-to-nano-editor-3859002">your favorite editor&lt;/a> or the &lt;a href="https://www.lifewire.com/uses-of-linux-cat-command-4011235">cat command&lt;/a> and list the sites or links to download from on each line of the file. Save the file, and then run the following wget command:&lt;/p>
+&lt;blockquote>
+&lt;p>wget -i /&lt;/p>
+&lt;/blockquote>
+&lt;p>Apart from backing up your website or finding something to download to read offline, it is unlikely that you will want to download an entire website. You are more likely to download a single URL with images or download files such as zip files, &lt;a href="https://www.lifewire.com/iso-file-2625923">ISO files&lt;/a>, or image files.&lt;/p>
+&lt;p>With that in mind, you don&amp;rsquo;t have to type the following into the input file as it is time consuming:&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="http://www.myfileserver.com/file1.zip">http://www.myfileserver.com/file1.zip&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://www.myfileserver.com/file2.zip">http://www.myfileserver.com/file2.zip&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://www.myfileserver.com/file3.zip">http://www.myfileserver.com/file3.zip&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>If you know the base URL is the same, specify the following in the input file:&lt;/p>
+&lt;ul>
+&lt;li>file1.zip&lt;/li>
+&lt;li>file2.zip&lt;/li>
+&lt;li>file3.zip&lt;/li>
+&lt;/ul>
+&lt;p>You can then provide the base URL as part of the wget command, as follows:&lt;/p>
+&lt;blockquote>
+&lt;p>wget -B &lt;a href="http://www.myfileserver.com">http://www.myfileserver.com&lt;/a> -i /&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="retry-options">Retry Options &lt;a href="#retry-options" class="hash">#&lt;/a>&lt;/h2>
+&lt;p>If you set up a queue of files to download in an input file and you leave your computer running to download the files, the input file may become stuck while you&amp;rsquo;re away and retry to download the content. You can specify the number of retries using the following switch:&lt;/p>
+&lt;blockquote>
+&lt;p>wget -t 10 -i /&lt;/p>
+&lt;/blockquote>
+&lt;p>Use the above command in conjunction with the &lt;strong>-T&lt;/strong> switch to specify a timeout in seconds, as follows:&lt;/p>
+&lt;blockquote>
+&lt;p>wget -t 10 -T 10 -i /&lt;/p>
+&lt;/blockquote>
+&lt;p>The above command will retry 10 times and will connect for 10 seconds for each link in the file.&lt;/p>
+&lt;p>It is also inconvenient when you download 75% of a 4-gigabyte file on a slow &lt;a href="https://www.lifewire.com/broadband-internet-speeds-explained-437202">broadband connection&lt;/a> only for the connection to drop. To use wget to retry from where it stopped downloading, use the following command:&lt;/p>
+&lt;blockquote>
+&lt;p>wget -c www.myfileser&lt;/p>
+&lt;/blockquote>
+&lt;p>If you hammer a server, the host might not like it and might block or kill your requests. You can specify a wait period to specify how long to wait between each retrieval, as follows:&lt;/p>
+&lt;blockquote>
+&lt;p>wget -w 60 -i /&lt;/p>
+&lt;/blockquote>
+&lt;p>The above command waits 60 seconds between each download. This is useful if you download many files from a single source.&lt;/p>
+&lt;p>Some web hosts might spot the frequency and block you. You can make the wait period random to make it look like you aren&amp;rsquo;t using a program, as follows:&lt;/p>
+&lt;blockquote>
+&lt;p>wget &amp;ndash;random-wait -i /&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="protect-download-limits">Protect Download Limits &lt;a href="#protect-download-limits" class="hash">#&lt;/a>&lt;/h2>
+&lt;p>Many internet service providers apply download limits for broadband usage, especially for those who live outside of a city. You may want to add a quota so that you don&amp;rsquo;t go over your download limit. You can do that in the following way:&lt;/p>
+&lt;blockquote>
+&lt;p>wget -q 100m -i /&lt;/p>
+&lt;/blockquote>
+&lt;p>The &lt;strong>-q&lt;/strong> command won&amp;rsquo;t work with a single file. If you download a file that is 2 gigabytes in size, using &lt;strong>-q&lt;/strong> &lt;strong>1000m&lt;/strong> doesn&amp;rsquo;t stop the file from downloading.&lt;/p>
+&lt;p>The quota is only applied when recursively downloading from a site or when using an input file.&lt;/p>
+&lt;h2 id="get-through-security">Get Through Security &lt;a href="#get-through-security" class="hash">#&lt;/a>&lt;/h2>
+&lt;p>Some sites require you to log in to access the content you wish to download. Use the following switches to specify the username and password.&lt;/p>
+&lt;blockquote>
+&lt;p>wget &amp;ndash;user=yourusername &amp;ndash;password&lt;/p>
+&lt;/blockquote>
+&lt;p>On a multi-user system, when someone runs the &lt;strong>ps&lt;/strong> command, they can see your username and password.&lt;/p>
+&lt;h2 id="other-download-options">Other Download Options &lt;a href="#other-download-options" class="hash">#&lt;/a>&lt;/h2>
+&lt;p>By default, the &lt;strong>-r&lt;/strong> switch recursively downloads the content and creates directories as it goes. To get all the files to download to a single folder, use the following switch:&lt;/p>
+&lt;p>The opposite of this is to force the creation of directories which can be achieved using the following command:&lt;/p>
+&lt;h2 id="how-to-download-certain-file-types">How to Download Certain File Types &lt;a href="#how-to-download-certain-file-types" class="hash">#&lt;/a>&lt;/h2>
+&lt;p>If you want to download recursively from a site, but you only want to download a specific file type such as an MP3 or an image such as a PNG, use the following syntax:&lt;/p>
+&lt;blockquote>
+&lt;p>wget -A &amp;amp;&lt;/p>
+&lt;/blockquote>
+&lt;p>The reverse of this is to ignore certain files. Perhaps you don&amp;rsquo;t want to download executables. In this case, use the following syntax:&lt;/p>
+&lt;blockquote>
+&lt;p>wget -R &amp;amp;&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="summary">Summary &lt;a href="#summary" class="hash">#&lt;/a>&lt;/h2>
+&lt;p>The wget command has a number of options and switches. To read the &lt;a href="https://www.gnu.org/software/wget/manual/wget.pdf">manual page&lt;/a> for wget, type the following in a terminal window:&lt;/p>
+&lt;blockquote>
+&lt;p>man wget&lt;/p>
+&lt;/blockquote></description><author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author><guid>/2020/10/22/wget-command/</guid><pubDate>Thu, 22 Oct 2020 00:00:00 +0000</pubDate></item><item><title>Nano's shortcuts</title><link>/2020/10/22/nano-shortcuts/</link><description>&lt;p>&lt;strong>File handling&lt;/strong>&lt;/p>
 &lt;p>Ctrl+S | Save current file&lt;/p>
 &lt;p>Ctrl+O | Offer to write file (&amp;ldquo;Save as&amp;rdquo;)&lt;/p>
 &lt;p>Ctrl+R | Insert a file into current one&lt;/p>
