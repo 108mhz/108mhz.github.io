@@ -1,4 +1,666 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>108Mhz</title><description/><link>/</link><language>en</language><copyright>Copyright 2020, Ronalds Vilcins</copyright><lastBuildDate>Wed, 21 Oct 2020 00:00:00 +0000</lastBuildDate><generator>Hugo - gohugo.io</generator><docs>http://cyber.harvard.edu/rss/rss.html</docs><atom:link href="https://ronaldsvilcins.com/atom.xml" rel="self" type="application/atom+xml"/><item><title>The Filesystem Hierarchy Standard</title><link>/2020/10/21/fhs/</link><description>&lt;p>As with other Linux distributions, Kali Linux is organized to be consistent with the Filesystem Hierarchy Standard (FHS), allowing users of other Linux distributions to easily find their way around Kali. The FHS defines the purpose of each directory. The top-level directories are described as follows:&lt;/p>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>108Mhz</title><description/><link>/</link><language>en</language><copyright>Copyright 2020, Ronalds Vilcins</copyright><lastBuildDate>Thu, 22 Oct 2020 00:00:00 +0000</lastBuildDate><generator>Hugo - gohugo.io</generator><docs>http://cyber.harvard.edu/rss/rss.html</docs><atom:link href="https://ronaldsvilcins.com/atom.xml" rel="self" type="application/atom+xml"/><item><title>Nano's shortcuts</title><link>/2020/10/22/nano-shortcuts/</link><description>&lt;p>&lt;strong>File handling&lt;/strong>&lt;/p>
+&lt;p>Ctrl+S | Save current file&lt;/p>
+&lt;p>Ctrl+O | Offer to write file (&amp;ldquo;Save as&amp;rdquo;)&lt;/p>
+&lt;p>Ctrl+R | Insert a file into current one&lt;/p>
+&lt;p>Ctrl+X | Close buffer, exit from nano&lt;/p>
+&lt;p>&lt;strong>Editing&lt;/strong>&lt;/p>
+&lt;p>Ctrl+K | Cut current line into cutbuffer&lt;/p>
+&lt;p>Alt+6 | Copy current line into cutbuffer&lt;/p>
+&lt;p>Ctrl+U | Paste contents of cutbuffer&lt;/p>
+&lt;p>Alt+T | Cut until end of buffer&lt;/p>
+&lt;p>Ctrl+] | Complete current word&lt;/p>
+&lt;p>Alt+3 | Comment/uncomment line/region&lt;/p>
+&lt;p>Alt+U | Undo last action&lt;/p>
+&lt;p>Alt+E | Redo last undone action&lt;/p>
+&lt;p>&lt;strong>Search and replace&lt;/strong>&lt;/p>
+&lt;p>Ctrl+Q | Start backward search&lt;/p>
+&lt;p>Ctrl+W | Start forward search&lt;/p>
+&lt;p>Alt+Q | Find next occurrence backward&lt;/p>
+&lt;p>Alt+W | Find next occurrence forward&lt;/p>
+&lt;p>Alt+R | Start a replacing session&lt;/p>
+&lt;p>&lt;strong>Deletion&lt;/strong>&lt;/p>
+&lt;p>Ctrl+H | Delete character before cursor&lt;/p>
+&lt;p>Ctrl+D | Delete character under cursor&lt;/p>
+&lt;p>Alt+Bsp | Delete word to the left&lt;/p>
+&lt;p>Ctrl+Del | Delete word to the right&lt;/p>
+&lt;p>Alt+Del | Delete current line&lt;/p>
+&lt;p>&lt;strong>Operations&lt;/strong>&lt;/p>
+&lt;p>Ctrl+T | Execute some command&lt;/p>
+&lt;p>Ctrl+J | Justify paragraph or region&lt;/p>
+&lt;p>Alt+J | Justify entire buffer&lt;/p>
+&lt;p>Alt+B | Run a syntax check&lt;/p>
+&lt;p>Alt+F | Run a formatter/fixer/arranger&lt;/p>
+&lt;p>Alt+: | Start/stop recording of macro&lt;/p>
+&lt;p>Alt+; | Replay macro&lt;/p>
+&lt;p>&lt;strong>Moving around&lt;/strong>&lt;/p>
+&lt;p>Ctrl+B | One character backward&lt;/p>
+&lt;p>Ctrl+F | One character forward&lt;/p>
+&lt;p>Ctrl+&lt;strong>←&lt;/strong> | One word backward&lt;/p>
+&lt;p>Ctrl+&lt;strong>→&lt;/strong> | One word forward&lt;/p>
+&lt;p>Ctrl+A | To start of line&lt;/p>
+&lt;p>Ctrl+E | To end of line&lt;/p>
+&lt;p>Ctrl+P | One line up&lt;/p>
+&lt;p>Ctrl+N | One line down&lt;/p>
+&lt;p>Ctrl+&lt;strong>↑&lt;/strong> | To previous block&lt;/p>
+&lt;p>Ctrl+&lt;strong>↓&lt;/strong> | To next block&lt;/p>
+&lt;p>Ctrl+Y | One page up&lt;/p>
+&lt;p>Ctrl+V | One page down&lt;/p>
+&lt;p>Alt+\ | To top of buffer&lt;/p>
+&lt;p>Alt+/ | To end of buffer&lt;/p>
+&lt;p>&lt;strong>Special movement&lt;/strong>&lt;/p>
+&lt;p>Alt+G | Go to specified line&lt;/p>
+&lt;p>Alt+] | Go to complementary bracket&lt;/p>
+&lt;p>Alt+&lt;strong>↑&lt;/strong> | Scroll viewport up&lt;/p>
+&lt;p>Alt+&lt;strong>↓&lt;/strong> | Scroll viewport down&lt;/p>
+&lt;p>Alt+&amp;lt; | Switch to preceding buffer&lt;/p>
+&lt;p>Alt+&amp;gt; | Switch to succeeding buffer&lt;/p>
+&lt;p>&lt;strong>Information&lt;/strong>&lt;/p>
+&lt;p>Ctrl+C | Report cursor position&lt;/p>
+&lt;p>Alt+D | Report word/line/char count&lt;/p>
+&lt;p>Ctrl+G | Display help text&lt;/p>
+&lt;p>&lt;strong>Various&lt;/strong>&lt;/p>
+&lt;p>Alt+A | Turn the mark on/off&lt;/p>
+&lt;p>Tab | Indent marked region&lt;/p>
+&lt;p>Shift+Tab | Unindent marked region&lt;/p>
+&lt;p>Alt+N | Turn line numbers on/off&lt;/p>
+&lt;p>Alt+P | Turn visible whitespace on/off&lt;/p>
+&lt;p>Alt+V | Enter next keystroke verbatim&lt;/p>
+&lt;p>Ctrl+L | Refresh the screen&lt;/p>
+&lt;p>Ctrl+Z | Suspend nano&lt;/p></description><author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author><guid>/2020/10/22/nano-shortcuts/</guid><pubDate>Thu, 22 Oct 2020 00:00:00 +0000</pubDate></item><item><title>Permessi Linux</title><link>/2020/10/22/permessi-linux/</link><description>&lt;p>Tutti i sistemi Unix/Linux hanno una gestione standard dei permessi sui file, che rispecchia la natura di sistema operativo multiutente.&lt;br>
+I permessi possono essere di &lt;strong>lettura&lt;/strong>, &lt;strong>scrittura&lt;/strong> e &lt;strong>esecuzione&lt;/strong> e vengono differenziati sulla base della natura dell&amp;rsquo;utente rispetto al file o directory:&lt;/p>
+&lt;ul>
+&lt;li>utente proprietario &lt;strong>owner&lt;/strong> del file&lt;/li>
+&lt;li>gruppo proprietario &lt;strong>owner group&lt;/strong> del file&lt;/li>
+&lt;li>gli altri utenti &lt;strong>others&lt;/strong>, che sono l&amp;rsquo;owner e non appartegono all&amp;rsquo;owner group.&lt;br>
+Il permesso di esecuzione è necessario per poter accedere a delle directory e, ovviamente, permette l&amp;rsquo;esecuzione di file (script shell, perl, php, cgi; programmi binari compilati).&lt;/li>
+&lt;/ul>
+&lt;p>Per visualizzare i permessi di un file basta usare il comando &lt;code>ls -l&lt;/code> che per ogni file da un output simile a:&lt;br>
+-rwxr-xr&amp;ndash; 1 mark admins 77266 Dec 13 17:18 /bin/command.sh&lt;br>
+La prima colonna, composta da 10 caratteri, descrive i permessi sul file /bin/command.sh.&lt;br>
+Il primo carattere (nell&amp;rsquo;esempio: &lt;strong>-&lt;/strong>) identifica il tipo di file (directory, pipe, block o char device, symlink&amp;hellip;);&lt;br>
+I successivi 3 caratteri identificano i permessi in lettura/scrittura/esecuzione dell&amp;rsquo;owner di /bin/command.sh (in questo caso l&amp;rsquo;owner mark ha tutti i permessi sul file: &lt;strong>rwx&lt;/strong> );&lt;br>
+I successivi 3 identificano i permessi del gruppo owner di /bin/command.sh (in questo caso il gruppo admins ha permesso di lettura ed esecuzione sul file: &lt;strong>r-x&lt;/strong> );&lt;br>
+I successivi 3 identificano i permessi di tutti gli altri utenti del sistema (in questo caso hanno solo il permesso di lettura: &lt;strong>r&amp;ndash;&lt;/strong> ).&lt;br>
+Le successive colonne nell&amp;rsquo;output di ls -l indicano l&amp;rsquo;owner, il gruppo, la dimensione in byte, la data di ultima modifica e il nome del file.&lt;/p>
+&lt;p>Per modificare i permessi dei file si usa il comando &lt;strong>chmod&lt;/strong> che usa una duplice sintassi per indicare i permessi:&lt;br>
+&lt;strong>read - lettura&lt;/strong>: Flag &lt;strong>r&lt;/strong> in &lt;em>symbolic mode&lt;/em>; Valore &lt;strong>4&lt;/strong> in &lt;em>octal mode&lt;/em>&lt;br>
+&lt;strong>write - scrittuta&lt;/strong>: Flag &lt;strong>w&lt;/strong> in &lt;em>symbolic mode&lt;/em>; Valore &lt;strong>2&lt;/strong> in &lt;em>octal mode&lt;/em>&lt;br>
+&lt;strong>execute - esecuzione&lt;/strong>: Flag &lt;strong>x&lt;/strong> in &lt;em>symbolic mode&lt;/em>; Valore &lt;strong>1&lt;/strong> in &lt;em>octal mode&lt;/em>&lt;/p>
+&lt;h4 id="troubleshooting-di-programmi-e-permessi-sui-file">&lt;strong>Troubleshooting di programmi e permessi sui file&lt;/strong> &lt;a href="#troubleshooting-di-programmi-e-permessi-sui-file" class="hash">#&lt;/a>&lt;/h4>
+&lt;p>Tutti i programmi su un sistema Unix/Linux hanno i permessi di lettura e scrittura sul file system corrispondenti a quelli dell&amp;rsquo;utente di sistema, così come indicato in &lt;code>/etc/passwd&lt;/code>, con cui vengono eseguiti.&lt;br>
+Può capitare, provando a installare e lanciare programmi diversi, che questi non riescano ad essere eseguiti o non funzionino correttamente.&lt;br>
+Come sempre, in caso di problemi, un controllo dei log è la prima operazione da compiere.&lt;br>
+Relativamente spesso la causa è proprio la mancanza di permessi per poter leggere o scrivere file (configurazione, log, dati, librerie condivise ecc.).&lt;br>
+A volte il programma cerca determinati file in posizioni dove non si trovano (in questi casi un link può rapidamente, e in modo un po' &amp;ldquo;sporco&amp;rdquo; risolvere il problema), a volte non ha i permessi di lettura su file di configurazione o di dati, o sulle directory che li contengono, in altri casi può cercare di scrivere (tipicamente log e dati) su directory o file dove l&amp;rsquo;utente che ha lanciato il programma (può essere anche un utente di sistema, che lo esegue automaticamente al boot) non ha permessi di scrittura.&lt;br>
+Un esempio ricorrente è la configurazione di Apache per gestire siti web, aggiornati via ftp da diverse persone.&lt;br>
+In questo caso l&amp;rsquo;utente con cui gira Apache (di solito &lt;strong>nobody&lt;/strong> o &lt;strong>apache&lt;/strong>) deve poter avere permessi di lettura sui file che compongono il sito web (e di esecuzione sulle relative directory).&lt;br>
+Contemporaneamente gli utenti che si collegano via ftp, devono poter scrivere sulle loro home directory, che sono anche le home dei relativi server web.&lt;br>
+Spesso, su Linus e su altri Unix, le home directory degli utenti sono in /home e sono leggibili solo dai rispettivi owner:&lt;br>
+&lt;code>ls -l /home/ | grep bacco&lt;/code>&lt;br>
+drwx&amp;mdash;&amp;mdash; 2 bacco bacco 18384 Aug 24 04:02 bacco&lt;br>
+Se Apache fosse configurato per avere il dominio &lt;a href="http://www.bacco.it">www.bacco.it&lt;/a> con le proprie pagine in /home/bacco, non riuscirebbe a visualizzare il sito Web per mancanza di permessi.&lt;br>
+Questi andrebbero allargati all&amp;rsquo;utente con cui viene eseguito da Apache:&lt;br>
+&lt;code>chmod -R 750 /home/bacco chgrp -R apache /home/bacco&lt;/code>&lt;br>
+Ottenendo un funzionale:&lt;br>
+drwxr-x&amp;mdash; 2 bacco apache 18384 Aug 24 04:02 bacco&lt;br>
+A volte, in preda a pigrizia o vittime dell&amp;rsquo;inconsapevolezza, si può avere la tentazione di allargare al massimo i permessi sui file che servono al programma che vogliamo far funzionare a tutti i costi:&lt;br>
+&lt;code>chmod -R 777 /home/bacco&lt;/code>&lt;br>
+Ottiene un funzionale ma poco sicuro:&lt;br>
+drwxrwxrwx 2 bacco bacco 18384 Aug 24 04:02 bacco&lt;br>
+In questo modo Apache potrebbe tranquillamente visualizzare il sito di bacco, ma avrebbe anche permessi di scrittura non necessari, condivisi anche con tutti gli altri utenti del sistema, che avrebbero l&amp;rsquo;indebita possibilità di modificare le pagine di sito in /home/bacco.&lt;/p>
+&lt;h4 id="comando-chmod">&lt;strong>comando &amp;lsquo;chmod&amp;rsquo;&lt;/strong> &lt;a href="#comando-chmod" class="hash">#&lt;/a>&lt;/h4>
+&lt;p>Modifica gli attributi di accesso su uno o più file. Solo il proprietario del file, o l&amp;rsquo;utente root, può modificarne gli attributi. E' un comando comune in tutti gli Unix e Linux.&lt;br>
+&lt;code>chmod [opzioni] modo file&lt;/code>&lt;br>
+&lt;code>-c&lt;/code> (&amp;ndash;changes) Visualizza informazioni sui file che vengono modificati&lt;br>
+&lt;code>-R&lt;/code> (&amp;ndash;recursive) Applica le modifiche alla directory indicata e a tutte le sue sottodirectory&lt;br>
+&lt;code>--reference=file_origine&lt;/code> Applica al file specificato nella riga di comando gli stessi permessi che ha file_origine&lt;br>
+&lt;code>-f&lt;/code> (&amp;ndash;silent) Non stampa messaggi di errore sui file che non possono essere modificati&lt;/p>
+&lt;p>Esistono due diversi modi per definire i permessi su un file:&lt;/p>
+&lt;p>&lt;strong>SYMBOLIC MODE&lt;/strong>&lt;br>
+I permessi vengono definiti nella forma: chi-opcode-permesso.&lt;br>
+CHI può essere:&lt;br>
+&lt;strong>u&lt;/strong> USER - Utente proprietario del file&lt;br>
+&lt;strong>g&lt;/strong> GROUP - Gruppo proprietario del file&lt;br>
+&lt;strong>o&lt;/strong> OTHER - Altri utenti&lt;br>
+&lt;strong>a&lt;/strong> ALL - Tutti gli utenti del sistema (default)&lt;br>
+OPCODE può essere:&lt;br>
+&lt;strong>+&lt;/strong> Aggiunge un permesso&lt;br>
+&lt;strong>-&lt;/strong> Rimuove un permesso&lt;br>
+&lt;strong>=&lt;/strong> Assegna un permesso (e rimuove tutti quelli non specificati)&lt;br>
+PERMESSO può essere:&lt;br>
+&lt;strong>r&lt;/strong> READ - Lettura sul file&lt;br>
+&lt;strong>w&lt;/strong> WRITE - Scrittura sul file&lt;br>
+&lt;strong>x&lt;/strong> EXECUTE - Esecuzione del file (o apertura della directory)&lt;br>
+&lt;strong>s&lt;/strong> SET USER ID - Il file (comando) viene eseguito con i permessi dell&amp;rsquo;owner sul file system, anche quando viene eseguito da altri utenti. Questo attributo è a volte necessario in alcuni comandi lanciati da utenti normali che hanno accesso sul sistema con i permessi di root (es: traceroute).&lt;br>
+&lt;strong>t&lt;/strong> STICKY BIT - Normalmente un utente può cancellare tutti i file contenuti in una directory su cui ha permesso di scrittua, anche se non ha permessi di scrittura sul file stesso. Con lo Sticky bit impostato, ciò non è possibile: l&amp;rsquo;utente può cancellare il relativo file solo se ha permessi di scrittura sul file stesso&lt;br>
+&lt;strong>u&lt;/strong> Lascia i permessi correnti dell&amp;rsquo;utente owner&lt;br>
+&lt;strong>g&lt;/strong> Lascia i permessi correnti del gruppo owner&lt;br>
+&lt;strong>o&lt;/strong> Lascia i permessi correnti per gli altri utenti&lt;/p>
+&lt;p>&lt;strong>OCTAL MODE&lt;/strong>&lt;br>
+E' un metodo alternativo che permette di definire i permessi con un numero ottale composta da tre cifre:&lt;br>
+la prima indica i permessi per l&amp;rsquo;utente owner, la seconda per il gruppo, la terza per gli altri.&lt;br>
+I permessi vengono calcolati sommando i seguenti valori ottali:&lt;br>
+4 - Lettura&lt;br>
+2 - Scrittura&lt;br>
+1 - Esecuzione.&lt;br>
+In questo modo il permesso di lettura+scrittura+esecuzione si indica con il numero 7 (4+2+1), il permesso di lettura, esecuzione con 5 (4+1) e così via.&lt;br>
+E' inoltre possibile indicare una quarta cifra (da far precedere alle 3 usuali) per permettere l&amp;rsquo;assegnamento dei seguenti permessi spciali:&lt;br>
+4 - Imposta lo UserId per l&amp;rsquo;esecuzione&lt;br>
+2 - Imposta il GroupID&lt;br>
+1 - Imposta lo sticky bit.&lt;/p>
+&lt;p>&lt;strong>Esempi&lt;/strong>&lt;br>
+Per impostare i permessi totali all&amp;rsquo;owner, e solo in lettura a tutti gli altri si hanno le seguenti possibilità:&lt;br>
+&lt;code>chmod 744 /home/file chmod u=rwx,go=r /home/file&lt;/code>&lt;/p>
+&lt;p>Per impostare permessi di sola lettura per l&amp;rsquo;owner e il group e nessun permesso per gli altri:&lt;br>
+&lt;code>chmod 440 /home/file chmod ug=r,o-rwx /home/file&lt;/code>&lt;/p>
+&lt;p>Per impostare totali permessi per tutti gli utenti su un file:&lt;br>
+&lt;code>chmod 777 /home/file chmod ugo=rwx /home/file&lt;/code>&lt;/p>
+&lt;p>Per impostare lo sticky bit su un file e permessi totali solo per l&amp;rsquo;owner e di sola lettura per il group:&lt;br>
+&lt;code>chmod 1740 /home/file chmod u=srwx,g=r,o-rwx&lt;/code>&lt;/p>
+&lt;h4 id="comando-chown">&lt;strong>comando &amp;lsquo;chown&amp;rsquo;&lt;/strong> &lt;a href="#comando-chown" class="hash">#&lt;/a>&lt;/h4>
+&lt;p>Modifica il proprietario di uno più file. Può essere fatto solo da root o dal proprietario corrente del file.&lt;br>
+E' un comando comune in tutti gli Unix e Linux.&lt;br>
+&lt;code>chown [opzioni] nuovo_proprietario file chown [opzioni] nuovo_proprietario:nuovo_gruppo file&lt;/code>&lt;br>
+&lt;code>-c&lt;/code> (&amp;ndash;changes) Visualizza informazioni sui file che vengono modificati&lt;br>
+&lt;code>-R&lt;/code> (&amp;ndash;recursive) Applica le modifiche alla directory indicata e a tutte le sue sottodirectory&lt;br>
+&lt;code>--reference=file_origine&lt;/code> Applica al file specificato nella riga di comando lo stesso proprietario che ha file_origine&lt;br>
+&lt;code>-f&lt;/code> (&amp;ndash;silent) Non stampa messaggi di errore sui file che non possono essere modificati&lt;br>
+&lt;code>-v&lt;/code> (&amp;ndash;verbose) Visualizza dettagliate informazioni su ogni file che chown tenta di modificare.&lt;/p>
+&lt;p>&lt;strong>Esempi&lt;/strong>&lt;br>
+&lt;code>chown al /var/tmp/alien&lt;/code> Imposta al come propietario del file /var/tmp/alien&lt;br>
+&lt;code>chown beppe:beppe /home/file&lt;/code> Imposta owner beppe e group owner beppe al file /home/file.&lt;/p>
+&lt;h4 id="comando-chgrp">&lt;strong>comando &amp;lsquo;chgrp&amp;rsquo;&lt;/strong> &lt;a href="#comando-chgrp" class="hash">#&lt;/a>&lt;/h4>
+&lt;p>Cambia l&amp;rsquo;owner group di un file o directory. Comando comune in tutti gli Unix.&lt;code>chgrp [opzioni] nuovo_gruppo file&lt;/code>&lt;br>
+&lt;code>-c&lt;/code> (&amp;ndash;changes) Visualizza informazioni sui file che vengono modificati&lt;br>
+&lt;code>-R&lt;/code> (&amp;ndash;recursive) Applica le modifiche alla directory indicata e a tutte le sue sottodirectory&lt;br>
+&lt;code>--reference=file_origine&lt;/code> Applica al file specificato nella riga di comando lo stesso gruppo proprietario che ha file_origine&lt;br>
+&lt;code>-f&lt;/code> (&amp;ndash;silent) Non stampa messaggi di errore sui file che non possono essere modificati&lt;br>
+&lt;code>-v&lt;/code> (&amp;ndash;verbose) Visualizza dettagliate informazioni su ogni file che chown tenta di modificare.&lt;/p>
+&lt;p>&lt;strong>Esempi&lt;/strong>&lt;br>
+&lt;code>chgrp users /tmp/data&lt;/code> Imposta users come owner group del file /tmp/data&lt;br>
+&lt;code>chgrp -R wheel /tmp/datadir&lt;/code> Imposta wheel come wonder group della directory /tmp/datadir e di tutti i file e le sottodirectory che contiene.&lt;/p>
+&lt;h4 id="comando-lsattr">&lt;strong>comando &amp;lsquo;lsattr&amp;rsquo;&lt;/strong> &lt;a href="#comando-lsattr" class="hash">#&lt;/a>&lt;/h4>
+&lt;p>Visualizza gli attributi di un file su file system ext2/ext3.&lt;code>lsattr [opzioni] [nomefile]&lt;/code>&lt;br>
+&lt;code>-R&lt;/code> visualizza ricorsivamente gli attributi dei file all&amp;rsquo;interno delle directory;&lt;br>
+&lt;code>-V&lt;/code> visualizza la versione del programma;&lt;br>
+&lt;code>-a&lt;/code> visalizza tutti i tipi di file, anche quelli nascosti;&lt;br>
+&lt;code>-d&lt;/code> visualizza le directory allo stesso modo degli altri file anzichè visualizzarne il contenuto;&lt;br>
+&lt;code>-v&lt;/code> visualizza la versione del file;&lt;/p>
+&lt;p>Esempio:&lt;br>
+[azitti@pluto zabbix]$ &lt;code>lsattr zabbix.tar&lt;/code>&lt;br>
+s-S-i-dAc&amp;ndash;t- zabbix.tar&lt;br>
+E' possibile notare gli attributi particolari che sono settabili con il comando chattr&lt;/p>
+&lt;h4 id="comando-chattr">&lt;strong>comando &amp;lsquo;chattr&amp;rsquo;&lt;/strong> &lt;a href="#comando-chattr" class="hash">#&lt;/a>&lt;/h4>
+&lt;p>&amp;lsquo;chattr&amp;rsquo; imposta gli attributi di un file su un file system linux di tipo ext2/ext3.&lt;br>
+Andando a lavorare su particolari attributi peculiari di questi file system chattr non è un comando unix standard.&lt;br>
+&lt;code>chattr [-RV] [-v versione ] [+/-= attrib] file ...&lt;/code>&lt;br>
+&lt;code>-R&lt;/code> Ricorsivo&lt;br>
+&lt;code>-V&lt;/code> Stampa gli attributi modificati&lt;br>
+&lt;code>-v versione&lt;/code> Imposta la versione di un file.&lt;/p>
+&lt;p>&lt;strong>Attributi&lt;/strong>&lt;br>
+&lt;code>a&lt;/code> il file può essere aperto solo in append mode.&lt;br>
+&lt;code>c&lt;/code> il file è compresso/decompresso dal kernel su disco&lt;br>
+&lt;code>d&lt;/code> Non verrà eseguito il backup su di esso dall' utility dump.&lt;br>
+&lt;code>i&lt;/code> Il file non può essere modificato in alcun modo.&lt;br>
+&lt;code>s&lt;/code> Il file è cancellato e i suoi blocchi sono azzerati e scritti su disco.&lt;br>
+&lt;code>S&lt;/code> I cambiamenti sono scritti in modo sincrono su disco&lt;br>
+&lt;code>u&lt;/code> Il file è cancellato e il suo contenuto è salvato per un eventuale ripristino.&lt;/p>
+&lt;p>&lt;strong>NB: gli attributi &amp;lsquo;c&amp;rsquo; ed &amp;lsquo;u&amp;rsquo; non sono attualmente implementati.&lt;/strong>&lt;br>
+Grazie al comando &lt;code>chattr&lt;/code> è possibile fare in modo che un file non sia modificabile nemmeno da &lt;strong>root&lt;/strong>, senza prima disabilitare il flag &lt;code>-i&lt;/code> che permette di apportarvi dei cambiamenti.&lt;br>
+Esempio:&lt;br>
+[azitti@pluto azitti]$ &lt;code>chattr -i [nomefile]&lt;/code>&lt;br>
+Settando questo attributo, creare un link al file, rinominarlo, sovrascriverlo cancellarlo o aggiornarlo non sarà più possibile&lt;br>
+Questa opzione risulta utile per aumentare la sicurezza del proprio sistema, rendendo non accidentalmente modificabili, per esempio, alcuni file di configurazione.&lt;/p>
+&lt;h4 id="comando-grpck">&lt;strong>comando &amp;lsquo;grpck&amp;rsquo;&lt;/strong> &lt;a href="#comando-grpck" class="hash">#&lt;/a>&lt;/h4>
+&lt;p>Verifica l&amp;rsquo;integrità del file contenente i gruppi di sistema. Viene verificato che ogni entry nel file &lt;code>/etc/group&lt;/code> oppure in &lt;code>/etc/gshadow&lt;/code> abbia il corretto formato e i dati contenuti siano validi in caso contrario viene visualizzato un prompt che richede la cancellazione dell&amp;rsquo;intera linea contente errori. L&amp;rsquo;utility è in grado di verificare:&lt;/p>
+&lt;ul>
+&lt;li>la correttezza del numero di campi;&lt;/li>
+&lt;li>l&amp;rsquo;unicità dei nomi di gruppo;&lt;/li>
+&lt;li>la validità dell&amp;rsquo;elenco utenti e amministratori;&lt;/li>
+&lt;/ul>
+&lt;p>La sintassi è la seguente:&lt;br>
+&lt;code>grpck [opzioni] [target]&lt;/code>&lt;br>
+&lt;code>-r&lt;/code>: modalità read only;&lt;/p>
+&lt;p>Esempio:&lt;br>
+root@Joker:~# &lt;code>grpck /etc/group&lt;/code>&lt;br>
+invalid group file entry&lt;br>
+delete line &lt;code>pippo'? &lt;/code>y`&lt;br>
+grpck: the files have been updated&lt;br>
+In questo esempio è stata riscontrata una linea non valida&lt;/p>
+&lt;p>Qualora il check abbia dato esito positivo non viene visualizzato alcun messaggio.&lt;/p>
+&lt;h4 id="come-usare-chmod-per-creare-un-eseguibile-da-shell">&lt;strong>come usare CHMOD per creare un eseguibile da shell&lt;/strong> &lt;a href="#come-usare-chmod-per-creare-un-eseguibile-da-shell" class="hash">#&lt;/a>&lt;/h4>
+&lt;p>Spesso occorre ripetere da shell una serie di comandi più volte, comportando così un inutile quanto fastidioso spreco di tempo nel dover riscrivere ogni volta le stesse linee di comando. Un trucco per automatizzare questa procedura è il seguente: si costruisce un file eseguibile da shell che riscrive ed esegue delle linee di comando nella sequenza da noi impostata, semplicemente lanciandolo da riga di comando.&lt;br>
+Per semplicità creeremo un file che esegue una sola istruzione, ma supponete di avere molti comandi da eseguire spesso e capirete il vantaggio che si ottiene con questo metodo.&lt;br>
+Il file che creeremo si chiama prova.sh:&lt;br>
+&lt;strong># vi prova.sh&lt;/strong>&lt;br>
+Adesso siete nell’editor di testo vi. Scriviamo ora una riga di comando che permette di elencare i file presenti nella posizione dalla quale eseguiamo il file prova.sh:&lt;br>
+ls&lt;br>
+Quindi premete INVIO, ESC, :wq&lt;br>
+Adesso digitate da shell:&lt;br>
+&lt;strong># chmod a+x prova.sh&lt;/strong>&lt;br>
+Questo comando abilita tutti (a=all) all’esecuzione (x=eXecute) del file prova.sh&lt;br>
+Se non lo digitate, provando ad eseguire il file prova.sh avreste in risposta una frase di permesso negato.&lt;br>
+Ora non resta che eseguire il comando:&lt;br>
+&lt;strong># ./prova.sh&lt;/strong>&lt;br>
+Vi comparirà un listato dei file e delle directory situate nella posizione da cui lo avete eseguito.&lt;br>
+Come sempre per saperne di più sull&amp;rsquo;uso di una comando, potete consultare l&amp;rsquo;help (# chmod &amp;ndash;help) o il manuale (# man chmod).&lt;/p></description><author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author><guid>/2020/10/22/permessi-linux/</guid><pubDate>Thu, 22 Oct 2020 00:00:00 +0000</pubDate></item><item><title>The Essential Toolkit for the Terminal</title><link>/2020/10/22/linux-commands/</link><description>&lt;p>Linux includes a large number of commands, but we’ve chosen 37 of the most important ones to present here. Learn these commands, and you’ll be much more at home at the Linux command prompt.&lt;/p>
+&lt;p>The below list is presented in alphabetical order. A command’s position in the list is not representative of its usefulness or simplicity. For the final word on a command’s usage, refer to its man pages. The &lt;code>man&lt;/code> command is in our list, of course—it’s short for “manual.”&lt;/p>
+&lt;h2 id="1-alias">1. alias &lt;a href="#1-alias" class="hash">#&lt;/a>&lt;/h2>
+&lt;p>The alias command lets you give your own name to a command or sequence of commands. You can then type your short name, and the shell will execute the command or sequence of commands for you.&lt;/p>
+&lt;p>alias cls=clear&lt;/p>
+&lt;p>This sets up an alias called &lt;code>cls&lt;/code> . It will be another name for &lt;code>clear&lt;/code> . When you type &lt;code>cls&lt;/code>, it will clear the screen just as though you had typed &lt;code>clear&lt;/code> . Your alias saves a few keystrokes, sure. But, if you frequently move between Windows and Linux command line, you can find yourself typing the Windows &lt;code>cls&lt;/code> command on a Linux machine that doesn’t know what you mean. Now it will know.&lt;/p>
+&lt;p>Aliases can be much more intricate than that simple example. Here’s an alias called &lt;code>pf&lt;/code> (for process find) that is just a little more complex. Note the use of quotation marks around the command sequence. This is required if the command sequence has spaces in it. This alias uses the &lt;code>ps&lt;/code> command to list the running processes and then &lt;a href="https://www.howtogeek.com/110150/become-a-linux-terminal-power-user-with-these-8-tricks/">pipes&lt;/a> them through the &lt;code>grep&lt;/code> command. The &lt;code>grep&lt;/code> command looks for entries in the output from &lt;code>ps&lt;/code> that match the command line parameter &lt;code>$1&lt;/code> .&lt;/p>
+&lt;p>alias pf=&amp;ldquo;ps -e | grep $1&amp;rdquo;&lt;/p>
+&lt;p>If you wanted to discover the process ID (PID) of the &lt;code>shutter&lt;/code> process—or to find out if &lt;code>shutter&lt;/code> was even running—you could use the alias like this. Type &lt;code>pf&lt;/code>, a space, and the name of the process you are interested in:&lt;/p>
+&lt;p>pf shutter&lt;/p>
+&lt;p>&lt;img src="https://www.howtogeek.com/wp-content/uploads/2019/04/xtop_commands_01.png.pagespeed.gp&amp;#43;jp&amp;#43;jw&amp;#43;pj&amp;#43;ws&amp;#43;js&amp;#43;rj&amp;#43;rp&amp;#43;rw&amp;#43;ri&amp;#43;cp&amp;#43;md.ic.3XnTfPOsYB.png" alt="alias command in terminal window" loading="lazy" />
+&lt;/p>
+&lt;p>Aliases defined on the command line will die with the terminal window. When you close it, they are gone. To make your aliases always be available to you, add them to the&lt;code>.bash_aliases&lt;/code> file in your home directory.&lt;/p>
+&lt;h2 id="2-cat">2. cat &lt;a href="#2-cat" class="hash">#&lt;/a>&lt;/h2>
+&lt;p>The &lt;code>cat&lt;/code> command (short for “concatenate”) lists the contents of files to the terminal window. This is faster than opening the file in an editor, and there’s no chance you can accidentally alter the file. To read the contents of your &lt;code>.bash_log_out&lt;/code> file, type the following command while the home directory is your current working directory, as it is by default:&lt;/p>
+&lt;p>cat .bash_logout&lt;/p>
+&lt;p>&lt;img src="https://www.howtogeek.com/wp-content/uploads/2019/04/xtop_commands_02.png.pagespeed.gp&amp;#43;jp&amp;#43;jw&amp;#43;pj&amp;#43;ws&amp;#43;js&amp;#43;rj&amp;#43;rp&amp;#43;rw&amp;#43;ri&amp;#43;cp&amp;#43;md.ic.UlUnq90100.png" alt="cat .bash_logout command in a terminal window" loading="lazy" />
+&lt;/p>
+&lt;p>With files longer than the number of lines in your terminal window, the text will whip past too fast for you to read. You can pipe the output from &lt;code>cat&lt;/code> through &lt;code>less&lt;/code> to make the process more manageable. With &lt;code>less&lt;/code> you can scroll forward and backward through the file using the Up and Down Arrow keys, the PgUp and PgDn keys, and the Home and End keys. Type &lt;code>q&lt;/code> to quit from less.&lt;/p>
+&lt;p>cat .bashrc | less&lt;/p>
+&lt;p>&lt;img src="https://www.howtogeek.com/wp-content/uploads/2019/04/xtop_commands_03.png.pagespeed.gp&amp;#43;jp&amp;#43;jw&amp;#43;pj&amp;#43;ws&amp;#43;js&amp;#43;rj&amp;#43;rp&amp;#43;rw&amp;#43;ri&amp;#43;cp&amp;#43;md.ic.TidnlFkK6A.png" alt="cat .bashrc | Less in a terminal window" loading="lazy" />
+&lt;/p>
+&lt;h2 id="3-cd">3. cd &lt;a href="#3-cd" class="hash">#&lt;/a>&lt;/h2>
+&lt;p>The &lt;code>cd&lt;/code> command changes your current directory. In other words, it moves you to a new place in the filesystem.&lt;/p>
+&lt;p>If you are changing to a directory that is within your current directory, you can simply type &lt;code>cd&lt;/code> and the name of the other directory.&lt;/p>
+&lt;p>cd work&lt;/p>
+&lt;p>If you are changing to a directory elsewhere within the filesystem directory tree, provide the path to the directory with a leading /.&lt;/p>
+&lt;p>cd /usr/local/bin&lt;/p>
+&lt;p>To quickly return to your home directory, use the &lt;code>~&lt;/code> (tilde) character as the directory name.&lt;/p>
+&lt;p>cd ~&lt;/p>
+&lt;p>&lt;img src="https://www.howtogeek.com/wp-content/uploads/2019/04/xtop_commands_04.png.pagespeed.gp&amp;#43;jp&amp;#43;jw&amp;#43;pj&amp;#43;ws&amp;#43;js&amp;#43;rj&amp;#43;rp&amp;#43;rw&amp;#43;ri&amp;#43;cp&amp;#43;md.ic.y6W_b1UDqz.png" alt="cd command in a terminal window" loading="lazy" />
+&lt;/p>
+&lt;p>Here’s another trick: You can use the double dot symbol &lt;code>..&lt;/code> to represent the parent of the current directory. You can type the following command to go up a directory:&lt;/p>
+&lt;p>cd ..&lt;/p>
+&lt;p>Imagine you are in a directory. The parent directory has other directories in it, as well as the directory you’re currently in. To change into one of those other directories, you can use the &lt;code>..&lt;/code> symbol to shorten what you have to type.&lt;/p>
+&lt;p>cd ../games&lt;/p>
+&lt;p>&lt;img src="https://www.howtogeek.com/wp-content/uploads/2019/04/xtop_commands_05.png.pagespeed.gp&amp;#43;jp&amp;#43;jw&amp;#43;pj&amp;#43;ws&amp;#43;js&amp;#43;rj&amp;#43;rp&amp;#43;rw&amp;#43;ri&amp;#43;cp&amp;#43;md.ic.WefL35o97f.png" alt="cd command with .. in a terminal window" loading="lazy" />
+&lt;/p>
+&lt;h2 id="4-chmod">4. chmod &lt;a href="#4-chmod" class="hash">#&lt;/a>&lt;/h2>
+&lt;p>The &lt;code>chmod&lt;/code> command &lt;a href="https://www.howtogeek.com/67987/htg-explains-how-do-linux-file-permissions-work/">sets the file permissions flags&lt;/a> on a file or folder. The flags define who can read, write to or execute the file. When you list files with the &lt;code>-l&lt;/code> (long format) option you’ll see a string of characters that look like&lt;/p>
+&lt;p>-rwxrwxrwx&lt;/p>
+&lt;p>If the first character is a &lt;code>-&lt;/code> the item is a file, if it is a &lt;code>d&lt;/code> the item is a directory. The rest of the string is three sets of three characters. From the left, the first three represent the file permissions of the &lt;em>owner&lt;/em>, the middle three represent the file permissions of the &lt;em>group&lt;/em> and the rightmost three characters represent the permissions for &lt;em>others&lt;/em>. In each set, an &lt;code>r&lt;/code> stands for read, a &lt;code>w&lt;/code> stands for write, and an &lt;code>x&lt;/code> stands for execute.&lt;/p>
+&lt;p>If the &lt;code>r&lt;/code>, &lt;code>w&lt;/code>, or &lt;code>x&lt;/code> character is present that file permission is granted. If the letter is not present and a &lt;code>-&lt;/code> appears instead, that file permission is not granted.&lt;/p>
+&lt;p>One way to use &lt;code>chmod&lt;/code> is to provide the permissions you wish to give to the owner, group, and others as a 3 digit number. The leftmost digit represents the owner. The middle digit represents the group. The rightmost digit represents the others. The digits you can use and what they represent are listed here:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>0:&lt;/strong> No permission&lt;/li>
+&lt;li>&lt;strong>1:&lt;/strong> Execute permission&lt;/li>
+&lt;li>&lt;strong>2:&lt;/strong> Write permission&lt;/li>
+&lt;li>&lt;strong>3:&lt;/strong> Write and execute permissions&lt;/li>
+&lt;li>&lt;strong>4:&lt;/strong> Read permission&lt;/li>
+&lt;li>&lt;strong>5:&lt;/strong> Read and execute permissions&lt;/li>
+&lt;li>&lt;strong>6:&lt;/strong> Read and write permissions&lt;/li>
+&lt;li>&lt;strong>7:&lt;/strong> Read, write and execute permissions&lt;/li>
+&lt;/ul>
+&lt;p>Looking at our example.txt file, we can see that all three sets of characters are &lt;code>rwx&lt;/code>. That means everyone has read, write and execute rights with the file.&lt;/p>
+&lt;p>To set the permission to be read, write, and execute (7 from our list) for the &lt;em>owner;&lt;/em> read and write (6 from our list) for the &lt;em>group;&lt;/em> and read and execute (5 from our list) for the &lt;em>others&lt;/em> we’d need to use the digits 765 with the &lt;code>chmod&lt;/code> command:&lt;/p>
+&lt;p>chmod -R 765 example.txt&lt;/p>
+&lt;p>&lt;img src="https://www.howtogeek.com/wp-content/uploads/2019/04/xtop_commands_50.png.pagespeed.gp&amp;#43;jp&amp;#43;jw&amp;#43;pj&amp;#43;ws&amp;#43;js&amp;#43;rj&amp;#43;rp&amp;#43;rw&amp;#43;ri&amp;#43;cp&amp;#43;md.ic.oI5EwiOVhY.png" alt="chmod command in a terminal window" loading="lazy" />
+&lt;/p>
+&lt;p>To set the permission to be read, write and execute (7 from our list) for the &lt;em>owner&lt;/em>, and read and write (6 from our list) for the &lt;em>group&lt;/em> and for the &lt;em>others&lt;/em> we’d need to use the digits 766 with the &lt;code>chmod&lt;/code> command:&lt;/p>
+&lt;p>chmod 766 example.txt&lt;/p>
+&lt;h2 id="5-chown">5. chown &lt;a href="#5-chown" class="hash">#&lt;/a>&lt;/h2>
+&lt;p>The &lt;code>chown&lt;/code> command allows you to change the owner and group owner of a file. Listing our example.txt file with &lt;code>ls -l&lt;/code> we can see &lt;code>dave dave&lt;/code> in the file description. The first of these indicates the name of the file owner, which in this case is the user &lt;code>dave&lt;/code>. The second entry shows that the name of the group owner is also &lt;code>dave&lt;/code>. Each user has a default group created when the user is created. That user is the only member of that group. This shows that the file is not shared with any other groups of users.&lt;/p>
+&lt;p>You can use &lt;code>chown&lt;/code> to change the owner or group, or both of a file. You must provide the name of the owner and the group, separated by a &lt;code>:&lt;/code> character. You will need to use &lt;code>sudo&lt;/code>. To retain dave as the owner of the file but to set mary as the group owner, use this command:&lt;/p>
+&lt;p>sudo chown dave:mary example.txt&lt;/p>
+&lt;p>&lt;img src="https://www.howtogeek.com/wp-content/uploads/2019/04/xtop_commands_07.png.pagespeed.gp&amp;#43;jp&amp;#43;jw&amp;#43;pj&amp;#43;ws&amp;#43;js&amp;#43;rj&amp;#43;rp&amp;#43;rw&amp;#43;ri&amp;#43;cp&amp;#43;md.ic.vr0E4sBjwi.png" alt="chown command in a terminal window" loading="lazy" />
+&lt;/p>
+&lt;p>To change both the owner and the group owner to mary, you would use the following command;&lt;/p>
+&lt;p>sudo chown mary:mary example.txt&lt;/p>
+&lt;p>To change the file so that dave is once more the file owner and the group owner, use this command:&lt;/p>
+&lt;p>sudo chown dave:dave example.txt&lt;/p>
+&lt;h2 id="6-curl">6. curl &lt;a href="#6-curl" class="hash">#&lt;/a>&lt;/h2>
+&lt;p>The &lt;code>curl&lt;/code> command is a tool to retrieve information and files from Uniform Resource Locators (URLs) or internet addresses.&lt;/p>
+&lt;p>The &lt;code>curl&lt;/code> command may not be provided as a standard part of your Linux distribution. Use &lt;code>apt-get&lt;/code> to install this package onto your system if you’re using Ubuntu or another Debian-based distribution. On other Linux distributions, use your Linux distribution’s package management tool instead.&lt;/p>
+&lt;p>sudo apt-get install curl&lt;/p>
+&lt;p>Suppose you want to retrieve a single file from a GitHub repository. There is no officially supported way to this. You’re forced to clone the entire repository. With &lt;code>curl&lt;/code> however, we can retrieve the file we want on its own.&lt;/p>
+&lt;p>This command retrieves the file for us. Note that you need to specify the name of the file to save it in, using the &lt;code>-o&lt;/code> (output) option. If you do not do this, the contents of the file are scrolled rapidly in the terminal window but not saved to your computer.&lt;/p>
+&lt;p>curl &lt;a href="https://raw.githubusercontent.com/torvalds/linux/master/kernel/events/core.c">https://raw.githubusercontent.com/torvalds/linux/master/kernel/events/core.c&lt;/a> -o core.c&lt;/p>
+&lt;p>&lt;img src="https://www.howtogeek.com/wp-content/uploads/2019/04/top_commands_09.png" alt="" loading="lazy" />
+&lt;/p>
+&lt;p>If you don’t want to see the download progress information use the &lt;code>-s&lt;/code> (silent) option.&lt;/p>
+&lt;p>curl -s &lt;a href="https://raw.githubusercontent.com/torvalds/linux/master/kernel/events/core.c">https://raw.githubusercontent.com/torvalds/linux/master/kernel/events/core.c&lt;/a> -o core.c&lt;/p>
+&lt;p>&lt;img src="https://www.howtogeek.com/wp-content/uploads/2019/04/xtop_commands_10.png.pagespeed.gp&amp;#43;jp&amp;#43;jw&amp;#43;pj&amp;#43;ws&amp;#43;js&amp;#43;rj&amp;#43;rp&amp;#43;rw&amp;#43;ri&amp;#43;cp&amp;#43;md.ic.unASepkn0j.png" alt="curl in a terminal window" loading="lazy" />
+&lt;/p>
+&lt;h2 id="7-df">7. df &lt;a href="#7-df" class="hash">#&lt;/a>&lt;/h2>
+&lt;p>The &lt;code>df&lt;/code> command &lt;a href="https://www.howtogeek.com/409611/how-to-view-free-disk-space-and-disk-usage-from-the-linux-terminal">shows the size, used space, and available space&lt;/a> on the mounted filesystems of your computer.&lt;/p>
+&lt;p>Two of the most useful options are the &lt;code>-h&lt;/code> (human readable) and &lt;code>-x&lt;/code> (exclude) options. The human-readable option displays the sizes in Mb or Gb instead of in bytes. The exclude option allows you to tell &lt;code>df&lt;/code> to discount filesystems you are not interested in. For example, the &lt;code>squashfs&lt;/code> pseudo-filesystems that are created when you install an application with the &lt;code>snap&lt;/code> command.&lt;/p>
+&lt;p>df -h -x squashfs&lt;/p>
+&lt;p>&lt;img src="https://www.howtogeek.com/wp-content/uploads/2019/04/xtop_commands_11.png.pagespeed.gp&amp;#43;jp&amp;#43;jw&amp;#43;pj&amp;#43;ws&amp;#43;js&amp;#43;rj&amp;#43;rp&amp;#43;rw&amp;#43;ri&amp;#43;cp&amp;#43;md.ic.m0Hb3m9_VU.png" alt="df command in a terminal window" loading="lazy" />
+&lt;/p>
+&lt;p>&lt;strong>RELATED:** &lt;/strong>&lt;em>How to View Free Disk Space and Disk Usage From the Linux Terminal&lt;/em>**&lt;a href="https://www.howtogeek.com/409611/how-to-view-free-disk-space-and-disk-usage-from-the-linux-terminal/">&lt;/a>&lt;/p>
+&lt;h2 id="8-diff">8. diff &lt;a href="#8-diff" class="hash">#&lt;/a>&lt;/h2>
+&lt;p>The &lt;code>diff&lt;/code> command &lt;a href="https://www.howtogeek.com/410532/how-to-compare-two-text-files-in-the-linux-terminal/">compares two text files&lt;/a> and shows the differences between them. There are many options to tailor the display to your requirements.&lt;/p>
+&lt;p>The &lt;code>-y&lt;/code> (side by side) option shows the line differences side by side. The &lt;code>-w&lt;/code> (width) option lets you specify the maximum line width to use to avoid wraparound lines. The two files are called alpha1.txt and alpha2.txt in this example. The &lt;code>--suppress-common-lines&lt;/code> prevents &lt;code>diff&lt;/code> from listing the matching lines, letting you focus on the lines which have differences.&lt;/p>
+&lt;p>diff -y -W 70 alpha1.txt alpha2.txt &amp;ndash;suppress-common-lines&lt;/p>
+&lt;p>&lt;img src="https://www.howtogeek.com/wp-content/uploads/2019/04/xtop_commands_12.png.pagespeed.gp&amp;#43;jp&amp;#43;jw&amp;#43;pj&amp;#43;ws&amp;#43;js&amp;#43;rj&amp;#43;rp&amp;#43;rw&amp;#43;ri&amp;#43;cp&amp;#43;md.ic.K8BLgxzN0g.png" alt="diff command in a terminal window" loading="lazy" />
+&lt;/p>
+&lt;p>&lt;strong>RELATED:** &lt;/strong>&lt;em>How to Compare Two Text Files in the Linux Terminal&lt;/em>**&lt;a href="https://www.howtogeek.com/410532/how-to-compare-two-text-files-in-the-linux-terminal/">&lt;/a>&lt;/p>
+&lt;h2 id="9-echo">9. echo &lt;a href="#9-echo" class="hash">#&lt;/a>&lt;/h2>
+&lt;p>The &lt;code>echo&lt;/code> command prints (echoes) a string of text to the terminal window.&lt;/p>
+&lt;p>The command below will print the words “A string of text” on the terminal window.&lt;/p>
+&lt;p>echo A string of text&lt;/p>
+&lt;p>The &lt;code>echo&lt;/code> command can show the value of environment variables, for example, the &lt;code>$USER&lt;/code>, &lt;code>$HOME&lt;/code>, and &lt;code>$PATH&lt;/code> environment variables. These hold the values of the name of the user, the user’s home directory, and the path searched for matching commands when the user types something on the command line.&lt;/p>
+&lt;p>echo $USER&lt;/p>
+&lt;p>echo $HOME&lt;/p>
+&lt;p>echo $PATH&lt;/p>
+&lt;p>&lt;img src="https://www.howtogeek.com/wp-content/uploads/2019/04/xtop_commands_13.png.pagespeed.gp&amp;#43;jp&amp;#43;jw&amp;#43;pj&amp;#43;ws&amp;#43;js&amp;#43;rj&amp;#43;rp&amp;#43;rw&amp;#43;ri&amp;#43;cp&amp;#43;md.ic.uLf97X_fWk.png" alt="echo command in a terminal window" loading="lazy" />
+&lt;/p>
+&lt;p>The following command will cause a bleep to be issued. The &lt;code>-e&lt;/code> (escape code) option interprets the escaped a character as &lt;a href="https://en.wikipedia.org/wiki/Bell_character">a ‘bell’ character&lt;/a>.&lt;/p>
+&lt;p>echo -e &amp;ldquo;\a&amp;rdquo;&lt;/p>
+&lt;p>The &lt;code>echo&lt;/code> command is also invaluable in shell scripts. A script can use this command to generate visible output to indicate the progress or results of the script as it is executed.&lt;/p>
+&lt;h2 id="10-exit">10. exit &lt;a href="#10-exit" class="hash">#&lt;/a>&lt;/h2>
+&lt;p>The exit command will close a terminal window, end the execution of a shell script, or log you out of an SSH remote access session.&lt;/p>
+&lt;p>exit&lt;/p>
+&lt;p>&lt;img src="https://www.howtogeek.com/wp-content/uploads/2019/04/xtop_commands_14.png.pagespeed.gp&amp;#43;jp&amp;#43;jw&amp;#43;pj&amp;#43;ws&amp;#43;js&amp;#43;rj&amp;#43;rp&amp;#43;rw&amp;#43;ri&amp;#43;cp&amp;#43;md.ic.mJQj-iP0r3.png" alt="exit command in a terminal window" loading="lazy" />
+&lt;/p>
+&lt;h2 id="11-find">11. find &lt;a href="#11-find" class="hash">#&lt;/a>&lt;/h2>
+&lt;p>Use the &lt;code>find&lt;/code> command to track down files that you know exist if you can’t remember where you put them. You must tell &lt;code>find&lt;/code> where to start searching from and what it is looking for. In this example, the &lt;code>.&lt;/code> matches the current folder and the &lt;code>-name&lt;/code> option tells &lt;code>find&lt;/code> to look for files with a name that matches the search pattern.&lt;/p>
+&lt;p>You can use wildcards, where &lt;code>*&lt;/code> represents any sequence of characters and &lt;code>?&lt;/code> represents any single character. We’re using &lt;code>*ones*&lt;/code> to match any file name containing the sequence “ones.” This would match words like bones, stones, and lonesome.&lt;/p>
+&lt;p>find . -name &lt;em>ones&lt;/em>&lt;/p>
+&lt;p>&lt;img src="https://www.howtogeek.com/wp-content/uploads/2019/04/xtop_commands_15.png.pagespeed.gp&amp;#43;jp&amp;#43;jw&amp;#43;pj&amp;#43;ws&amp;#43;js&amp;#43;rj&amp;#43;rp&amp;#43;rw&amp;#43;ri&amp;#43;cp&amp;#43;md.ic.IWnTTTpgnz.png" alt="find command in a terminal window" loading="lazy" />
+&lt;/p>
+&lt;p>As we can see, &lt;code>find&lt;/code> has returned a list of matches. One of them is a directory called Ramones. We can tell &lt;code>find&lt;/code> to restrict the search to files only. We do this using the &lt;code>-type&lt;/code> option with the &lt;code>f&lt;/code> parameter. The &lt;code>f&lt;/code> parameter stands for files.&lt;/p>
+&lt;p>find . -type f -name &lt;em>ones&lt;/em>&lt;/p>
+&lt;p>If you want the search to be case insensitive use the &lt;code>-iname&lt;/code> (insensitive name) option.&lt;/p>
+&lt;p>find . -iname &lt;em>wild&lt;/em>&lt;/p>
+&lt;h2 id="12-finger">12. finger &lt;a href="#12-finger" class="hash">#&lt;/a>&lt;/h2>
+&lt;p>The &lt;code>finger&lt;/code> command gives you a short dump of information about a user, including the time of the user’s last login, the user’s home directory, and the user account’s full name.&lt;/p>
+&lt;p>&lt;img src="https://www.howtogeek.com/wp-content/uploads/2019/04/xtop_commands_51.png.pagespeed.gp&amp;#43;jp&amp;#43;jw&amp;#43;pj&amp;#43;ws&amp;#43;js&amp;#43;rj&amp;#43;rp&amp;#43;rw&amp;#43;ri&amp;#43;cp&amp;#43;md.ic.HY0UaaSc8H.png" alt="finger command in a terminal window" loading="lazy" />
+&lt;/p>
+&lt;h2 id="13-free">13. free &lt;a href="#13-free" class="hash">#&lt;/a>&lt;/h2>
+&lt;p>The &lt;code>free&lt;/code> command gives you a summary of the memory usage with your computer. It does this for both the main Random Access Memory (RAM) and swap memory. The &lt;code>-h&lt;/code> (human) option is used to provide human-friendly numbers and units. Without this option, the figures are presented in bytes.&lt;/p>
+&lt;p>free -h&lt;/p>
+&lt;p>&lt;img src="https://www.howtogeek.com/wp-content/uploads/2019/04/xtop_commands_17.png.pagespeed.gp&amp;#43;jp&amp;#43;jw&amp;#43;pj&amp;#43;ws&amp;#43;js&amp;#43;rj&amp;#43;rp&amp;#43;rw&amp;#43;ri&amp;#43;cp&amp;#43;md.ic._4bdl9-mxP.png" alt="free command in a terminal window" loading="lazy" />
+&lt;/p>
+&lt;h2 id="14-grep">14. grep &lt;a href="#14-grep" class="hash">#&lt;/a>&lt;/h2>
+&lt;p>The &lt;code>grep&lt;/code> utility searches for lines which contain a search pattern. When we looked at the alias command, we used &lt;code>grep&lt;/code> to search through the output of another program, &lt;code>ps&lt;/code> . The &lt;code>grep&lt;/code> command can also search the contents of files. Here we’re searching for the word “train” in all text files in the current directory.&lt;/p>
+&lt;p>grep train *.txt&lt;/p>
+&lt;p>The output lists the name of the file and shows the lines that match. The matching text is highlighted.&lt;/p>
+&lt;p>&lt;img src="https://www.howtogeek.com/wp-content/uploads/2019/04/xtop_commands_18.png.pagespeed.gp&amp;#43;jp&amp;#43;jw&amp;#43;pj&amp;#43;ws&amp;#43;js&amp;#43;rj&amp;#43;rp&amp;#43;rw&amp;#43;ri&amp;#43;cp&amp;#43;md.ic._HdPKfBa3B.png" alt="grep command in a terminal window" loading="lazy" />
+&lt;/p>
+&lt;p>The functionality and sheer usefulness of &lt;code>grep&lt;/code> definitely warrants you checking out &lt;a href="http://man7.org/linux/man-pages/man1/grep.1.html">its man page&lt;/a>.&lt;/p>
+&lt;h2 id="15-groups">15. groups &lt;a href="#15-groups" class="hash">#&lt;/a>&lt;/h2>
+&lt;p>The &lt;code>groups&lt;/code> command tells you which groups a user is a member of.&lt;/p>
+&lt;p>groups dave&lt;/p>
+&lt;p>groups mary&lt;/p>
+&lt;p>&lt;img src="https://www.howtogeek.com/wp-content/uploads/2019/04/xtop_commands_20.png.pagespeed.gp&amp;#43;jp&amp;#43;jw&amp;#43;pj&amp;#43;ws&amp;#43;js&amp;#43;rj&amp;#43;rp&amp;#43;rw&amp;#43;ri&amp;#43;cp&amp;#43;md.ic.IacobU8PLk.png" alt="groups command in a terminal window" loading="lazy" />
+&lt;/p>
+&lt;h2 id="16-gzip">16. gzip &lt;a href="#16-gzip" class="hash">#&lt;/a>&lt;/h2>
+&lt;p>The &lt;code>gzip&lt;/code> command compresses files. By default, it removes the original file and leaves you with the compressed version. To retain both the original and the compressed version, use the &lt;code>-k&lt;/code> (keep) option.&lt;/p>
+&lt;p>gzip -k core.c&lt;/p>
+&lt;p>&lt;img src="https://www.howtogeek.com/wp-content/uploads/2019/04/xtop_commands_21.png.pagespeed.gp&amp;#43;jp&amp;#43;jw&amp;#43;pj&amp;#43;ws&amp;#43;js&amp;#43;rj&amp;#43;rp&amp;#43;rw&amp;#43;ri&amp;#43;cp&amp;#43;md.ic.Z3UFkiz_oU.png" alt="gzip command in a terminal window" loading="lazy" />
+&lt;/p>
+&lt;h2 id="17-head">17. head &lt;a href="#17-head" class="hash">#&lt;/a>&lt;/h2>
+&lt;p>The &lt;code>head&lt;/code> command gives you a listing of the first 10 lines of a file. If you want to see fewer or more lines, use the &lt;code>-n&lt;/code> (number) option. In this example, we use &lt;code>head&lt;/code> with its default of 10 lines. We then repeat the command asking for only five lines.&lt;/p>
+&lt;p>head -core.c&lt;/p>
+&lt;p>head -n 5 core.c&lt;/p>
+&lt;p>&lt;img src="https://www.howtogeek.com/wp-content/uploads/2019/04/xtop_commands_22.png.pagespeed.gp&amp;#43;jp&amp;#43;jw&amp;#43;pj&amp;#43;ws&amp;#43;js&amp;#43;rj&amp;#43;rp&amp;#43;rw&amp;#43;ri&amp;#43;cp&amp;#43;md.ic.QTRTgSr1KW.png" alt="head command in a terminal window" loading="lazy" />
+&lt;/p>
+&lt;h2 id="18-history">18. history &lt;a href="#18-history" class="hash">#&lt;/a>&lt;/h2>
+&lt;p>The history command lists the commands you have previously issued on the command line. You can repeat any of the commands from your history by typing an exclamation point &lt;code>!&lt;/code> and the number of the command from the history list.&lt;/p>
+&lt;p>!188&lt;/p>
+&lt;p>&lt;img src="https://www.howtogeek.com/wp-content/uploads/2019/04/xtop_commands_24.png.pagespeed.gp&amp;#43;jp&amp;#43;jw&amp;#43;pj&amp;#43;ws&amp;#43;js&amp;#43;rj&amp;#43;rp&amp;#43;rw&amp;#43;ri&amp;#43;cp&amp;#43;md.ic.UxP-MrmQ7Y.png" alt="history command in a terminal window" loading="lazy" />
+&lt;/p>
+&lt;p>Typing two exclamation points repeats your previous command.&lt;/p>
+&lt;p>!!&lt;/p>
+&lt;h2 id="19-kill">19. kill &lt;a href="#19-kill" class="hash">#&lt;/a>&lt;/h2>
+&lt;p>The &lt;code>kill&lt;/code> command allows you to terminate a process from the command line. You do this by providing the process ID (PID) of the process to &lt;code>kill&lt;/code>. Don’t kill processes willy-nilly. You need to have a good reason to do so. In this example, we’ll pretend the &lt;code>shutter&lt;/code> program has locked up.&lt;/p>
+&lt;p>To find the PID of &lt;code>shutter&lt;/code> we’ll use our &lt;code>ps&lt;/code> and &lt;code>grep&lt;/code> trick from the section about the &lt;code>alias&lt;/code> command, above. We can search for the &lt;code>shutter&lt;/code> process and obtain its PID as follows:&lt;/p>
+&lt;p>ps -e | grep shutter.&lt;/p>
+&lt;p>Once we have determined the PID—1692 in this case—we can kill it as follows:&lt;/p>
+&lt;p>kill 1692&lt;/p>
+&lt;p>&lt;img src="https://www.howtogeek.com/wp-content/uploads/2019/04/xtop_commands_27.png.pagespeed.gp&amp;#43;jp&amp;#43;jw&amp;#43;pj&amp;#43;ws&amp;#43;js&amp;#43;rj&amp;#43;rp&amp;#43;rw&amp;#43;ri&amp;#43;cp&amp;#43;md.ic.Js57JRm1G0.png" alt="kill command in a terminal window" loading="lazy" />
+&lt;/p>
+&lt;h2 id="20-less">20. less &lt;a href="#20-less" class="hash">#&lt;/a>&lt;/h2>
+&lt;p>The &lt;code>less&lt;/code> command allows you to view files without opening an editor. It’s faster to use, and there’s no chance of you inadvertently modifying the file. With &lt;code>less&lt;/code> you can scroll forward and backward through the file using the Up and Down Arrow keys, the PgUp and PgDn keys and the Home and End keys. Press the Q key to &lt;code>quit&lt;/code> from &lt;code>less&lt;/code>.&lt;/p>
+&lt;p>To view a file provide its name to &lt;code>less&lt;/code> as follows:&lt;/p>
+&lt;p>less core.c&lt;/p>
+&lt;p>&lt;img src="https://www.howtogeek.com/wp-content/uploads/2019/04/xtop_commands_28.png.pagespeed.gp&amp;#43;jp&amp;#43;jw&amp;#43;pj&amp;#43;ws&amp;#43;js&amp;#43;rj&amp;#43;rp&amp;#43;rw&amp;#43;ri&amp;#43;cp&amp;#43;md.ic.7dIdJuOvDy.png" alt="less command in a terminal window" loading="lazy" />
+&lt;/p>
+&lt;p>You can also pipe the output from other commands into &lt;code>less&lt;/code>. To see the output from &lt;code>ls&lt;/code> for a listing of your entire hard drive, use the following command:&lt;/p>
+&lt;p>ls -R / | less&lt;/p>
+&lt;p>&lt;img src="https://www.howtogeek.com/wp-content/uploads/2019/04/xtop_commands_29.png.pagespeed.gp&amp;#43;jp&amp;#43;jw&amp;#43;pj&amp;#43;ws&amp;#43;js&amp;#43;rj&amp;#43;rp&amp;#43;rw&amp;#43;ri&amp;#43;cp&amp;#43;md.ic.3txab9muQB.png" alt="less command in a terminal window" loading="lazy" />
+&lt;/p>
+&lt;p>Use &lt;code>/&lt;/code> to search forward in the file and use &lt;code>?&lt;/code> to search backward.&lt;/p>
+&lt;h2 id="21-ls">21. ls &lt;a href="#21-ls" class="hash">#&lt;/a>&lt;/h2>
+&lt;p>This might be the first command the majority of Linux users meet. It lists the files and folders in the directory you specify. By default, &lt;code>ls&lt;/code> looks in the current directory. There are a great many options you can use with &lt;code>ls&lt;/code> , and we strongly advise reviewing its &lt;a href="http://man7.org/linux/man-pages/man1/ls.1.html">the man page&lt;/a>. Some common examples are presented here.&lt;/p>
+&lt;p>To list the files and folders in the current directory:&lt;/p>
+&lt;p>ls&lt;/p>
+&lt;p>To list the files and folders in the current directory with a detailed listing use the &lt;code>-l&lt;/code> (long) option:&lt;/p>
+&lt;p>ls -l&lt;/p>
+&lt;p>To use human-friendly file sizes include the &lt;code>-h&lt;/code> (human) option:&lt;/p>
+&lt;p>ls -lh&lt;/p>
+&lt;p>To include hidden files use the &lt;code>-a&lt;/code> (all files) option:&lt;/p>
+&lt;p>ls -lha&lt;/p>
+&lt;p>&lt;img src="https://www.howtogeek.com/wp-content/uploads/2019/04/xtop_commands_30.png.pagespeed.gp&amp;#43;jp&amp;#43;jw&amp;#43;pj&amp;#43;ws&amp;#43;js&amp;#43;rj&amp;#43;rp&amp;#43;rw&amp;#43;ri&amp;#43;cp&amp;#43;md.ic.KHdziJ2xDR.png" alt="ls command in a terminal window" loading="lazy" />
+&lt;/p>
+&lt;h2 id="22-man">22. man &lt;a href="#22-man" class="hash">#&lt;/a>&lt;/h2>
+&lt;p>The man command displays the “man pages” for a command in &lt;code>less&lt;/code> . The man pages are the user manual for that command. Because &lt;code>man&lt;/code> uses &lt;code>less&lt;/code> to display the man pages, you can use the search capabilities of &lt;code>less&lt;/code>.&lt;/p>
+&lt;p>For example, to see the man pages for &lt;code>chown&lt;/code>, use the following command:&lt;/p>
+&lt;p>man chown&lt;/p>
+&lt;p>Use the Up and Down arrow or PgUp and PgDn keys to scroll through the document. Press &lt;code>q&lt;/code> to quit the man page or press&lt;code>h&lt;/code> for help.&lt;/p>
+&lt;p>&lt;img src="https://www.howtogeek.com/wp-content/uploads/2019/04/xtop_commands_31.png.pagespeed.gp&amp;#43;jp&amp;#43;jw&amp;#43;pj&amp;#43;ws&amp;#43;js&amp;#43;rj&amp;#43;rp&amp;#43;rw&amp;#43;ri&amp;#43;cp&amp;#43;md.ic.WOoJUv3_Pc.png" alt="man command in a terminal window" loading="lazy" />
+&lt;/p>
+&lt;h2 id="23-mkdir">23. mkdir &lt;a href="#23-mkdir" class="hash">#&lt;/a>&lt;/h2>
+&lt;p>The &lt;code>mkdir&lt;/code> command allows you to create new directories in the filesystem. You must provide the name of the new directory to &lt;code>mkdir&lt;/code>. If the new directory is not going to be within the current directory, you must provide the path to the new directory.&lt;/p>
+&lt;p>To create two new directories in the current directory called “invoices” and “quotes,” use these two commands:&lt;/p>
+&lt;p>mkdir invoices&lt;/p>
+&lt;p>mkdir quotes&lt;/p>
+&lt;p>&lt;img src="https://www.howtogeek.com/wp-content/uploads/2019/04/xtop_commands_32.png.pagespeed.gp&amp;#43;jp&amp;#43;jw&amp;#43;pj&amp;#43;ws&amp;#43;js&amp;#43;rj&amp;#43;rp&amp;#43;rw&amp;#43;ri&amp;#43;cp&amp;#43;md.ic.ItncAPlxAP.png" alt="mkdir command in a terminal window" loading="lazy" />
+&lt;/p>
+&lt;p>To create a new directory called “2019” inside the “invoices” directory, use this command:&lt;/p>
+&lt;p>mkdir invoices/2109&lt;/p>
+&lt;p>If you are going to create a directory, but its parent directory does not exist, you can use the &lt;code>-p&lt;/code> (parents) option to have &lt;code>mkdir&lt;/code> create all of the required parent directories too. In the following command, we are creating the “2019” directory inside the “yearly” directory inside the “quotes” directory. The “yearly” directory does not exist, but we can have &lt;code>mkdir&lt;/code> create all the specified directories at once:&lt;/p>
+&lt;p>mkdir -p quotes/yearly/2019&lt;/p>
+&lt;p>The “yearly” directory is also created.&lt;/p>
+&lt;h2 id="24-mv">24. mv &lt;a href="#24-mv" class="hash">#&lt;/a>&lt;/h2>
+&lt;p>The &lt;code>mv&lt;/code> command allows you to move files and directories from directory to directory. It also allows you to rename files.&lt;/p>
+&lt;p>To move a file you must tell &lt;code>mv&lt;/code> where the file is and where you want it to be moved to. In this example, we’re moving a file called &lt;code>apache.pdf&lt;/code> from the “~/Document/Ukulele” directory and placing it in the current directory, represented by the single &lt;code>.&lt;/code> character.&lt;/p>
+&lt;p>mv ~/Documents/Ukulele/Apache.pdf .&lt;/p>
+&lt;h2 id="mv-command-in-a-terminal-windowhttpswwwhowtogeekcomwp-contentuploads201904xtop_commands_33pngpagespeedgpjpjwpjwsjsrjrprwricpmdicb54c0vjfo2png">&lt;img src="https://www.howtogeek.com/wp-content/uploads/2019/04/xtop_commands_33.png.pagespeed.gp&amp;#43;jp&amp;#43;jw&amp;#43;pj&amp;#43;ws&amp;#43;js&amp;#43;rj&amp;#43;rp&amp;#43;rw&amp;#43;ri&amp;#43;cp&amp;#43;md.ic.B54c0VJfo2.png" alt="mv command in a terminal window" loading="lazy" />
+&lt;a href="#mv-command-in-a-terminal-windowhttpswwwhowtogeekcomwp-contentuploads201904xtop_commands_33pngpagespeedgpjpjwpjwsjsrjrprwricpmdicb54c0vjfo2png" class="hash">#&lt;/a>&lt;/h2>
+&lt;p>To rename the file, you “move” it into a new file with the new name.&lt;/p>
+&lt;p>mv Apache.pdf The_Shadows_Apache.pdf&lt;/p>
+&lt;p>The file move and rename action could have been achieved in one step:&lt;/p>
+&lt;p>mv ~/Documents/Ukulele/Apache.pdf ./The_Shadows_Apache.pdf&lt;/p>
+&lt;h2 id="25-passwd">25. passwd &lt;a href="#25-passwd" class="hash">#&lt;/a>&lt;/h2>
+&lt;p>The &lt;code>passwd&lt;/code> command lets you change the password for a user. Just type &lt;code>passwd&lt;/code> to change your own password.&lt;/p>
+&lt;p>You can also change the password of another user account, but you must use &lt;code>sudo&lt;/code>. You will be asked to enter the new password twice.&lt;/p>
+&lt;p>sudo passwd mary&lt;/p>
+&lt;p>&lt;img src="https://www.howtogeek.com/wp-content/uploads/2019/04/xtop_commands_34.png.pagespeed.gp&amp;#43;jp&amp;#43;jw&amp;#43;pj&amp;#43;ws&amp;#43;js&amp;#43;rj&amp;#43;rp&amp;#43;rw&amp;#43;ri&amp;#43;cp&amp;#43;md.ic.-BEfcMJDsn.png" alt="passwd command in a terminal window" loading="lazy" />
+&lt;/p>
+&lt;h2 id="26-ping">26. ping &lt;a href="#26-ping" class="hash">#&lt;/a>&lt;/h2>
+&lt;p>The &lt;code>ping&lt;/code> command lets you verify that you have network connectivity with another network device. It is commonly used to help troubleshoot networking issues. To use &lt;code>ping&lt;/code>, provide the IP address or machine name of the other device.&lt;/p>
+&lt;p>ping 192.168.4.18&lt;/p>
+&lt;p>The &lt;code>ping&lt;/code> command will run until you stop it with Ctrl+C.&lt;/p>
+&lt;p>&lt;img src="https://www.howtogeek.com/wp-content/uploads/2019/04/xtop_commands_35.png.pagespeed.gp&amp;#43;jp&amp;#43;jw&amp;#43;pj&amp;#43;ws&amp;#43;js&amp;#43;rj&amp;#43;rp&amp;#43;rw&amp;#43;ri&amp;#43;cp&amp;#43;md.ic.bpZDh2WI3B.png" alt="ping in a terminal window" loading="lazy" />
+&lt;/p>
+&lt;p>Here’s what’s going on here:&lt;/p>
+&lt;ul>
+&lt;li>The device at IP address 192.168.4.18 is responding to our ping requests and is sending back packets of 64 bytes.&lt;/li>
+&lt;li>The &lt;a href="https://en.wikipedia.org/wiki/Internet_Control_Message_Protocol">Internet Control Messaging Protocol&lt;/a> (ICMP) sequence numbering allows us to check for missed responses (dropped packets).&lt;/li>
+&lt;li>The TTL figure is the “time to live” for a packet. Each time the packet goes through a router, it is (supposed to be) decremented by one. If it reaches zero the packet is thrown away. The aim of this is to prevent network loopback problems from flooding the network.&lt;/li>
+&lt;li>The time value is the duration of the round trip from your computer to the device and back. Simply put, the lower this time, the better.&lt;/li>
+&lt;/ul>
+&lt;p>To ask &lt;code>ping&lt;/code> to run for a specific number of ping attempts, use the &lt;code>-c&lt;/code> (count) option.&lt;/p>
+&lt;p>ping -c 5 192.168.4.18&lt;/p>
+&lt;p>To hear a ping, use the &lt;code>-a&lt;/code> (audible) option.&lt;/p>
+&lt;p>ping -a 192.168.4.18&lt;/p>
+&lt;h2 id="27-ps">27. ps &lt;a href="#27-ps" class="hash">#&lt;/a>&lt;/h2>
+&lt;p>The &lt;code>ps&lt;/code> command lists running processes. Using &lt;code>ps&lt;/code> without any options causes it to list the processes running in the current shell.&lt;/p>
+&lt;p>ps&lt;/p>
+&lt;p>&lt;img src="https://www.howtogeek.com/wp-content/uploads/2019/04/xtop_commands_36.png.pagespeed.gp&amp;#43;jp&amp;#43;jw&amp;#43;pj&amp;#43;ws&amp;#43;js&amp;#43;rj&amp;#43;rp&amp;#43;rw&amp;#43;ri&amp;#43;cp&amp;#43;md.ic.QqxpicqYU_.png" alt="ps command in a terminal window" loading="lazy" />
+&lt;/p>
+&lt;p>To see all the processes related to a particular user, use the &lt;code>-u&lt;/code> (user) option. This is likely to be a long list, so for convenience pipe it through &lt;code>less&lt;/code>.&lt;/p>
+&lt;p>ps -u dave | less&lt;/p>
+&lt;p>&lt;img src="https://www.howtogeek.com/wp-content/uploads/2019/04/xtop_commands_37.png.pagespeed.gp&amp;#43;jp&amp;#43;jw&amp;#43;pj&amp;#43;ws&amp;#43;js&amp;#43;rj&amp;#43;rp&amp;#43;rw&amp;#43;ri&amp;#43;cp&amp;#43;md.ic.rbiN4RDreP.png" alt="ps command in a terminal window" loading="lazy" />
+&lt;/p>
+&lt;p>To see every process that is running, use the &lt;code>-e&lt;/code> (every process) option:&lt;/p>
+&lt;p>ps -e | less&lt;/p>
+&lt;h2 id="28-pwd">28. pwd &lt;a href="#28-pwd" class="hash">#&lt;/a>&lt;/h2>
+&lt;p>Nice and simple, the &lt;code>pwd&lt;/code> command prints the working directory (the current directory) from the root / directory.&lt;/p>
+&lt;p>pwd&lt;/p>
+&lt;p>&lt;img src="https://www.howtogeek.com/wp-content/uploads/2019/04/xtop_commands_38.png.pagespeed.gp&amp;#43;jp&amp;#43;jw&amp;#43;pj&amp;#43;ws&amp;#43;js&amp;#43;rj&amp;#43;rp&amp;#43;rw&amp;#43;ri&amp;#43;cp&amp;#43;md.ic.5vx_VxFEhf.png" alt="pwd command in a terminal window" loading="lazy" />
+&lt;/p>
+&lt;h2 id="29-shutdown">29. shutdown &lt;a href="#29-shutdown" class="hash">#&lt;/a>&lt;/h2>
+&lt;p>Using &lt;code>shutdown&lt;/code> with no parameters will shut down your computer in one minute.&lt;/p>
+&lt;p>shutdown&lt;/p>
+&lt;p>&lt;img src="https://www.howtogeek.com/wp-content/uploads/2019/04/xtop_commands_39.png.pagespeed.gp&amp;#43;jp&amp;#43;jw&amp;#43;pj&amp;#43;ws&amp;#43;js&amp;#43;rj&amp;#43;rp&amp;#43;rw&amp;#43;ri&amp;#43;cp&amp;#43;md.ic.8eJPbYWkRm.png" alt="shutdown command in a terminal window" loading="lazy" />
+&lt;/p>
+&lt;p>To shut down immediately, use the &lt;code>now&lt;/code> parameter.&lt;/p>
+&lt;p>shutdown now&lt;/p>
+&lt;p>&lt;img src="https://www.howtogeek.com/wp-content/uploads/2019/04/shutdown_002.png" alt="shutdown now" loading="lazy" />
+&lt;/p>
+&lt;p>You can also schedule a shutdown and inform any logged in users of the pending shutdown. To let the &lt;code>shutdown&lt;/code> command know when you want it to shut down, you provide it with a time. This can be a set number of minutes from now, such as &lt;code>+90&lt;/code> or a precise time, like &lt;code>23:00&lt;/code>. Any text message you provide is broadcast to logged in users.&lt;/p>
+&lt;p>shutdown 23:00 Shutdown tonight at 23:00, save your work and log out before then!&lt;/p>
+&lt;p>&lt;img src="https://www.howtogeek.com/wp-content/uploads/2019/04/xshutdown_001.png.pagespeed.gp&amp;#43;jp&amp;#43;jw&amp;#43;pj&amp;#43;ws&amp;#43;js&amp;#43;rj&amp;#43;rp&amp;#43;rw&amp;#43;ri&amp;#43;cp&amp;#43;md.ic.HYrdFZXe7z.png" alt="shutdown 23:00 with message" loading="lazy" />
+&lt;/p>
+&lt;p>To cancel a shutdown, use the &lt;code>-c&lt;/code> (cancel) option. Here we have scheduled a shutdown for fifteen minutes time from now—and then changed our minds.&lt;/p>
+&lt;p>shutdown +15 Shutting down in 15 minutes!&lt;/p>
+&lt;p>shutdown -c&lt;/p>
+&lt;p>&lt;img src="https://www.howtogeek.com/wp-content/uploads/2019/04/x4.png.pagespeed.gp&amp;#43;jp&amp;#43;jw&amp;#43;pj&amp;#43;ws&amp;#43;js&amp;#43;rj&amp;#43;rp&amp;#43;rw&amp;#43;ri&amp;#43;cp&amp;#43;md.ic.Q0KIj8QbKl.png" alt="Shutdown -c cancel command" loading="lazy" />
+&lt;/p>
+&lt;p>&lt;strong>RELATED:** &lt;/strong>&lt;em>How to Reboot or Shut Down Linux Using the Command Line&lt;/em>**&lt;a href="https://www.howtogeek.com/411925/how-to-reboot-or-shut-down-linux-using-the-command-line/">&lt;/a>&lt;/p>
+&lt;h2 id="30-ssh">30. SSH &lt;a href="#30-ssh" class="hash">#&lt;/a>&lt;/h2>
+&lt;p>Use the ssh command to make a connection to a remote Linux computer and log into your account. To make a connection, you must provide your user name and the IP address or domain name of the remote computer. In this example, the user mary is logging into the computer at 192.168.4.23. Once the connection is established, she is asked for her password.&lt;/p>
+&lt;p>ssh &lt;a href="mailto:mary@192.168.4.23">mary@192.168.4.23&lt;/a>&lt;/p>
+&lt;p>&lt;img src="https://www.howtogeek.com/wp-content/uploads/2019/04/xtop_commands_46.png.pagespeed.gp&amp;#43;jp&amp;#43;jw&amp;#43;pj&amp;#43;ws&amp;#43;js&amp;#43;rj&amp;#43;rp&amp;#43;rw&amp;#43;ri&amp;#43;cp&amp;#43;md.ic.t-6Z7ZHr82.png" alt="ssh command in a terminal window" loading="lazy" />
+&lt;/p>
+&lt;p>Her user name and password are verified and accepted, and she is logged in. Notice that her prompt has changed from “Nostromo” to “howtogeek.”&lt;/p>
+&lt;p>Mary issues the &lt;code>w&lt;/code> command to list the current users on “howtogeek” system. She is listed as being connected from pts/1, which is a pseudo-terminal slave. That is, it is not a terminal directly connected to the computer.&lt;/p>
+&lt;p>To close the session, mary types &lt;code>exit&lt;/code> and is returned to the shell on the “Nostromo” computer.&lt;/p>
+&lt;p>w&lt;/p>
+&lt;p>exit&lt;/p>
+&lt;p>&lt;img src="https://www.howtogeek.com/wp-content/uploads/2019/04/xtop_commands_48.png.pagespeed.gp&amp;#43;jp&amp;#43;jw&amp;#43;pj&amp;#43;ws&amp;#43;js&amp;#43;rj&amp;#43;rp&amp;#43;rw&amp;#43;ri&amp;#43;cp&amp;#43;md.ic.0Y54gI1FuD.png" alt="w and exit commands in a terminal window" loading="lazy" />
+&lt;/p>
+&lt;h2 id="31-sudo">31. sudo &lt;a href="#31-sudo" class="hash">#&lt;/a>&lt;/h2>
+&lt;p>The &lt;code>sudo&lt;/code> command is required when performing actions that require root or superuser permissions, such as changing the password for another user.&lt;/p>
+&lt;p>sudo passwd mary&lt;/p>
+&lt;p>&lt;img src="https://www.howtogeek.com/wp-content/uploads/2019/04/xtop_commands_34.png.pagespeed.gp&amp;#43;jp&amp;#43;jw&amp;#43;pj&amp;#43;ws&amp;#43;js&amp;#43;rj&amp;#43;rp&amp;#43;rw&amp;#43;ri&amp;#43;cp&amp;#43;md.ic.-BEfcMJDsn.png" alt="passwd command in a terminal window" loading="lazy" />
+&lt;/p>
+&lt;h2 id="32-tail">32. tail &lt;a href="#32-tail" class="hash">#&lt;/a>&lt;/h2>
+&lt;p>The &lt;code>tail&lt;/code> command gives you a listing of the last 10 lines of a file. If you want to see fewer or more lines, use the &lt;code>-n&lt;/code> (number) option. In this example, we use &lt;code>tail&lt;/code> with its default of 10 lines. We then repeat the command asking for only five lines.&lt;/p>
+&lt;p>tail core.c&lt;/p>
+&lt;p>tail -n 5 core.c&lt;/p>
+&lt;p>&lt;img src="https://www.howtogeek.com/wp-content/uploads/2019/04/xtop_commands_40.png.pagespeed.gp&amp;#43;jp&amp;#43;jw&amp;#43;pj&amp;#43;ws&amp;#43;js&amp;#43;rj&amp;#43;rp&amp;#43;rw&amp;#43;ri&amp;#43;cp&amp;#43;md.ic.8NnpXOP5sN.png" alt="tail command in a terminal window" loading="lazy" />
+&lt;/p>
+&lt;h2 id="33-tar">33. tar &lt;a href="#33-tar" class="hash">#&lt;/a>&lt;/h2>
+&lt;p>With the &lt;code>tar&lt;/code> command, you can create an archive file (also called a tarball) that can contain many other files. This makes it much more convenient to distribute a collection of files. You can also use &lt;code>tar&lt;/code> to extract the files from an archive file. It is common to ask &lt;code>tar&lt;/code> to compress the archive. If you do not ask for compression, the archive file is created uncompressed.&lt;/p>
+&lt;p>To create an archive file, you need to tell &lt;code>tar&lt;/code> which files to include in the archive file, and the name you wish the archive file to have.&lt;/p>
+&lt;p>In this example, the user is going to archive all of the files in the Ukulele directory, which is in the current directory.&lt;/p>
+&lt;p>&lt;img src="https://www.howtogeek.com/wp-content/uploads/2019/04/xtop_tar_01.png.pagespeed.gp&amp;#43;jp&amp;#43;jw&amp;#43;pj&amp;#43;ws&amp;#43;js&amp;#43;rj&amp;#43;rp&amp;#43;rw&amp;#43;ri&amp;#43;cp&amp;#43;md.ic.hxik2Z7LF5.png" alt="ls command in the terminal window" loading="lazy" />
+&lt;/p>
+&lt;p>They have used the &lt;code>-c&lt;/code> (create) option and the &lt;code>-v&lt;/code> (verbose) option. The verbose option gives some visual feedback by listing the files to the terminal window as they are added to the archive. The &lt;code>-f&lt;/code> (filename) option is followed by the desired name of the archive. In this case, it is &lt;code>songs.tar&lt;/code>.&lt;/p>
+&lt;p>tar -cvf songs.tar Ukulele/&lt;/p>
+&lt;p>&lt;img src="https://www.howtogeek.com/wp-content/uploads/2019/04/xtop_tar_02.png.pagespeed.gp&amp;#43;jp&amp;#43;jw&amp;#43;pj&amp;#43;ws&amp;#43;js&amp;#43;rj&amp;#43;rp&amp;#43;rw&amp;#43;ri&amp;#43;cp&amp;#43;md.ic.wmOtPkMt0r.png" alt="tar -cvf command in a terminal window" loading="lazy" />
+&lt;/p>
+&lt;p>The files are listed to the terminal window as they are added to the archive file.&lt;/p>
+&lt;p>There are two ways to tell &lt;code>tar&lt;/code> that you want the archive file to be compressed. The first is with the &lt;code>-z&lt;/code> (gzip) option. This tells tar to use the &lt;code>gzip&lt;/code> utility to compress the archive once it has been created.&lt;/p>
+&lt;p>It is usual to add “.gz” as suffix to this type of archive. That allows anyone who is extracting files from it to know which commands to pass to &lt;code>tar&lt;/code> to correctly retrieve the files.&lt;/p>
+&lt;p>tar -cvzf songs.tar.gz Ukulele/&lt;/p>
+&lt;p>&lt;img src="https://www.howtogeek.com/wp-content/uploads/2019/04/xtop_tar_03.png.pagespeed.gp&amp;#43;jp&amp;#43;jw&amp;#43;pj&amp;#43;ws&amp;#43;js&amp;#43;rj&amp;#43;rp&amp;#43;rw&amp;#43;ri&amp;#43;cp&amp;#43;md.ic.sPTyfJkVcJ.png" alt="tar -cvzf command in a terminal window" loading="lazy" />
+&lt;/p>
+&lt;p>The files are listed to the terminal window as they are added to the archive file as before, but the creation of the archive will take a little longer because of the time required for the compression.&lt;/p>
+&lt;p>To create an archive file that is compressed using a superior compression algorithm giving a smaller archive file use the &lt;code>-j&lt;/code> (bzip2) option.&lt;/p>
+&lt;p>tar -cvjf songs.tar.bz2 Ukulele/&lt;/p>
+&lt;p>&lt;img src="https://www.howtogeek.com/wp-content/uploads/2019/04/xtop_tar_04.png.pagespeed.gp&amp;#43;jp&amp;#43;jw&amp;#43;pj&amp;#43;ws&amp;#43;js&amp;#43;rj&amp;#43;rp&amp;#43;rw&amp;#43;ri&amp;#43;cp&amp;#43;md.ic.89CK243sBW.png" alt="tar -cvjf command in a terminal window" loading="lazy" />
+&lt;/p>
+&lt;p>Once again, the files are listed as the archive is created. The &lt;code>-j&lt;/code> option is noticeably slower than the &lt;code>-z&lt;/code> option.&lt;/p>
+&lt;p>If you are archiving a great many files, you must choose between the &lt;code>-z&lt;/code> option for decent compression and reasonable speed, or the &lt;code>-j&lt;/code> option for better compression and slower speed.&lt;/p>
+&lt;p>As can be seen in the screenshot below, the “.tar” file is the largest, the “.tar.gz” is smaller, and the “.tar.bz2” is the smallest of the archives.&lt;/p>
+&lt;p>&lt;img src="https://www.howtogeek.com/wp-content/uploads/2019/04/xtop_tar_05.png.pagespeed.gp&amp;#43;jp&amp;#43;jw&amp;#43;pj&amp;#43;ws&amp;#43;js&amp;#43;rj&amp;#43;rp&amp;#43;rw&amp;#43;ri&amp;#43;cp&amp;#43;md.ic.QqgtRpmEni.png" alt="ls command in a terminal window" loading="lazy" />
+&lt;/p>
+&lt;p>To extract files from an archive file use the &lt;code>-x&lt;/code> (extract) option. The &lt;code>-v&lt;/code> (verbose) and &lt;code>-f&lt;/code> (filename) options behave as they do when creating archives. Use &lt;code>ls&lt;/code> to confirm which type of archive you are going to extract the files from, then issue the following command.&lt;/p>
+&lt;p>ls&lt;/p>
+&lt;p>tar -xvf songs.tar&lt;/p>
+&lt;p>&lt;img src="https://www.howtogeek.com/wp-content/uploads/2019/04/xtop_tar_06.png.pagespeed.gp&amp;#43;jp&amp;#43;jw&amp;#43;pj&amp;#43;ws&amp;#43;js&amp;#43;rj&amp;#43;rp&amp;#43;rw&amp;#43;ri&amp;#43;cp&amp;#43;md.ic.LLAqtpsl9P.png" alt="ls and tar -xvf commands in a terminal window" loading="lazy" />
+&lt;/p>
+&lt;p>The files are listed as they are extracted. Note that the Ukulele directory is also recreated for you.&lt;/p>
+&lt;p>To extract files from a “.tar.gz” archive, use the &lt;code>-z&lt;/code> (gzip) option.&lt;/p>
+&lt;p>tar -xvzf songs.tar.gz&lt;/p>
+&lt;p>&lt;img src="https://www.howtogeek.com/wp-content/uploads/2019/04/xtop_tar_07.png.pagespeed.gp&amp;#43;jp&amp;#43;jw&amp;#43;pj&amp;#43;ws&amp;#43;js&amp;#43;rj&amp;#43;rp&amp;#43;rw&amp;#43;ri&amp;#43;cp&amp;#43;md.ic.FKF8vMq-O-.png" alt="tar -xvzf command in a terminal window" loading="lazy" />
+&lt;/p>
+&lt;p>Finally, to extract files from a “.tar.bz2” archive use the &lt;code>-j&lt;/code> option instead of the &lt;code>-z&lt;/code> (gzip) option.&lt;/p>
+&lt;p>tar -xvjf songs.tar.bz2&lt;/p>
+&lt;p>&lt;img src="https://www.howtogeek.com/wp-content/uploads/2019/04/xtop_tar_08.png.pagespeed.gp&amp;#43;jp&amp;#43;jw&amp;#43;pj&amp;#43;ws&amp;#43;js&amp;#43;rj&amp;#43;rp&amp;#43;rw&amp;#43;ri&amp;#43;cp&amp;#43;md.ic.dWNZJ2bbZ7.png" alt="tar -xvjf command in a terminal window" loading="lazy" />
+&lt;/p>
+&lt;p>&lt;strong>RELATED:** &lt;/strong>&lt;em>How to Extract Files From a .tar.gz or .tar.bz2 File on Linux&lt;/em>**&lt;a href="https://www.howtogeek.com/409742/how-to-extract-files-from-a-.tar.gz-or-.tar.bz2-file-on-linux/">&lt;/a>&lt;/p>
+&lt;h2 id="34-top">34. top &lt;a href="#34-top" class="hash">#&lt;/a>&lt;/h2>
+&lt;p>The &lt;code>top&lt;/code> command shows you a real-time display of the data relating to your Linux machine. The top of the screen is a status summary.&lt;/p>
+&lt;p>The first line shows you the time and how long your computer has been running for, how many users are logged into it, and what the load average has been over the past one, five, and fifteen minutes.&lt;/p>
+&lt;p>The second line shows the number of tasks and their states: running, stopped, sleeping and zombie.&lt;/p>
+&lt;p>The third line shows CPU information. Here’s what the fields mean:&lt;/p>
+&lt;ul>
+&lt;li>us: value is the CPU time the CPU spends executing processes for users, in “user space”&lt;/li>
+&lt;li>sy: value is the CPU time spent on running system “kernel space” processes&lt;/li>
+&lt;li>ni: value is the CPU time spent on executing processes with a manually set nice value&lt;/li>
+&lt;li>id: is the amount of CPU idle time&lt;/li>
+&lt;li>wa: value is the time the CPU spends waiting for I/O to complete&lt;/li>
+&lt;li>hi: The CPU time spent servicing hardware interrupts&lt;/li>
+&lt;li>si: The CPU time spent servicing software interrupts&lt;/li>
+&lt;li>st: The CPU time lost due to running virtual machines (“steal time”)&lt;/li>
+&lt;/ul>
+&lt;p>The fourth line shows the total amount of physical memory, and how much is free, used and buffered or cached.&lt;/p>
+&lt;p>The fifth line shows the total amount of swap memory, and how much is free, used and available (taking into account memory that is expected to be recoverable from caches).&lt;/p>
+&lt;p>&lt;img src="https://www.howtogeek.com/wp-content/uploads/2019/04/xtop_commands_43.png.pagespeed.gp&amp;#43;jp&amp;#43;jw&amp;#43;pj&amp;#43;ws&amp;#43;js&amp;#43;rj&amp;#43;rp&amp;#43;rw&amp;#43;ri&amp;#43;cp&amp;#43;md.ic.t2O3g9cB4b.png" alt="top command in a terminal window" loading="lazy" />
+&lt;/p>
+&lt;p>The user has pressed the E key to change the display into more humanly digestible figures instead of long integers representing bytes.&lt;/p>
+&lt;p>The columns in the main display are made up of:&lt;/p>
+&lt;ul>
+&lt;li>PID: Process ID&lt;/li>
+&lt;li>USER: Name of the owner of the process&lt;/li>
+&lt;li>PR: &lt;a href="https://www.howtogeek.com/411979/how-to-set-process-priorities-with-the-nice-and-renice-commands-in-linux/">Process priority&lt;/a>&lt;/li>
+&lt;li>NI: The nice value of the process&lt;/li>
+&lt;li>VIRT: Virtual memory used by the process&lt;/li>
+&lt;li>RES: Resident memory used by the process&lt;/li>
+&lt;li>SHR: Shared memory used by the process&lt;/li>
+&lt;li>S: Status of the process. See the list below of the values this field can take&lt;/li>
+&lt;li>%CPU: the share of CPU time used by the process since last update&lt;/li>
+&lt;li>%MEM: share of physical memory used&lt;/li>
+&lt;li>TIME+: total CPU time used by the task in hundredths of a second&lt;/li>
+&lt;li>COMMAND: command name or command line (name + options)&lt;/li>
+&lt;/ul>
+&lt;p>(The command column didn’t fit into the screenshot.)&lt;/p>
+&lt;p>The status of the process can be one of:&lt;/p>
+&lt;ul>
+&lt;li>D: Uninterruptible sleep&lt;/li>
+&lt;li>R: Running&lt;/li>
+&lt;li>S: Sleeping&lt;/li>
+&lt;li>T: Traced (stopped)&lt;/li>
+&lt;li>Z: Zombie&lt;/li>
+&lt;/ul>
+&lt;p>Press the Q key to exit from &lt;code>top&lt;/code>.&lt;/p>
+&lt;p>&lt;strong>RELATED:** &lt;/strong>&lt;em>How to Set Process Priorities With nice and renice on Linux&lt;/em>**&lt;a href="https://www.howtogeek.com/411979/how-to-set-process-priorities-with-the-nice-and-renice-commands-in-linux/">&lt;/a>&lt;/p>
+&lt;h2 id="35-uname">35. uname &lt;a href="#35-uname" class="hash">#&lt;/a>&lt;/h2>
+&lt;p>You can obtain some system information regarding the Linux computer you’re working on with the &lt;code>uname&lt;/code> command.&lt;/p>
+&lt;ul>
+&lt;li>Use the &lt;code>-a&lt;/code> (all) option to see everything.&lt;/li>
+&lt;li>Use the &lt;code>-s&lt;/code> (kernel name) option to see the type of kernel.&lt;/li>
+&lt;li>Use the &lt;code>-r&lt;/code> (kernel release) option to see the kernel release.&lt;/li>
+&lt;li>Use the &lt;code>-v&lt;/code> (kernel version) option to see the kernel version.&lt;/li>
+&lt;/ul>
+&lt;p>uname -a&lt;/p>
+&lt;p>uname -s&lt;/p>
+&lt;p>uname -r&lt;/p>
+&lt;p>uname -v&lt;/p>
+&lt;p>&lt;img src="https://www.howtogeek.com/wp-content/uploads/2019/04/xtop_commands_49.png.pagespeed.gp&amp;#43;jp&amp;#43;jw&amp;#43;pj&amp;#43;ws&amp;#43;js&amp;#43;rj&amp;#43;rp&amp;#43;rw&amp;#43;ri&amp;#43;cp&amp;#43;md.ic.yNxmUf2bA0.png" alt="uname command in a terminal window" loading="lazy" />
+&lt;/p>
+&lt;h2 id="36-w">36. w &lt;a href="#36-w" class="hash">#&lt;/a>&lt;/h2>
+&lt;p>The &lt;code>w&lt;/code> command lists the currently logged in users.&lt;/p>
+&lt;p>w&lt;/p>
+&lt;p>&lt;img src="https://www.howtogeek.com/wp-content/uploads/2019/04/xtop_commands_45.png.pagespeed.gp&amp;#43;jp&amp;#43;jw&amp;#43;pj&amp;#43;ws&amp;#43;js&amp;#43;rj&amp;#43;rp&amp;#43;rw&amp;#43;ri&amp;#43;cp&amp;#43;md.ic._1TcS75rSI.png" alt="w command in a terminal window" loading="lazy" />
+&lt;/p>
+&lt;h2 id="37-whoami">37. whoami &lt;a href="#37-whoami" class="hash">#&lt;/a>&lt;/h2>
+&lt;p>Use &lt;code>whoami&lt;/code> to find out who you are logged in as or who is logged into an unmanned Linux terminal.&lt;/p>
+&lt;p>whoami&lt;/p>
+&lt;p>&lt;img src="https://www.howtogeek.com/wp-content/uploads/2019/04/xtop_commands_44.png.pagespeed.gp&amp;#43;jp&amp;#43;jw&amp;#43;pj&amp;#43;ws&amp;#43;js&amp;#43;rj&amp;#43;rp&amp;#43;rw&amp;#43;ri&amp;#43;cp&amp;#43;md.ic.cUgzfIgC89.png" alt="whoami command in a terminal window" loading="lazy" />
+&lt;/p></description><author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author><guid>/2020/10/22/linux-commands/</guid><pubDate>Thu, 22 Oct 2020 00:00:00 +0000</pubDate></item><item><title>The Filesystem Hierarchy Standard</title><link>/2020/10/21/fhs/</link><description>&lt;p>As with other Linux distributions, Kali Linux is organized to be consistent with the Filesystem Hierarchy Standard (FHS), allowing users of other Linux distributions to easily find their way around Kali. The FHS defines the purpose of each directory. The top-level directories are described as follows:&lt;/p>
 &lt;ul>
 &lt;li>/bin/: basic programs&lt;/li>
 &lt;li>/boot/: Kali Linux kernel and other files required for its early boot process&lt;/li>
@@ -100,7 +762,7 @@ everyone could delete other users’ files in/tmp/.&lt;/p>
 &lt;p>chmod rights file changes the permissions for the file&lt;/p>
 &lt;/li>
 &lt;/ul>
-&lt;p>There are two ways of representing rights. Among them, the symbolic representation is probably the easiest to understand and remember. It involves the letter symbols mentioned above. You can define rights for each category of users (u/g/o), by setting them explicitly (with=), by adding (+), or subtracting (-). Thus the u=rwx, g+rw, o-r formula gives the owner read, write, and execute rights, adds read and write rights for the owner group, and removes read rights for other users.Rights not altered by the addition or subtraction in such a command remain unmodified. The letter a, for all, covers all three categories of users, so that a=rx grants all three categories the same rights (read and execute, but not write).The (octal) numeric representation associates each right with a value: 4 for read, 2 for write, and1 for execute. We associate each combination of rights with the sum of the three figures, and a value is assigned to each category of users, in the usual order (owner, group, others).For instance, the chmod 754filecommand will set the following rights: read, write and execute for the owner (since 7 = 4 + 2 + 1); read and execute for the group (since 5 = 4 + 1); read-only for others. The0means no rights; thus chmod 600 file allows for read and write permissions for the owner, and no rights for anyone else. The most frequent right combinations are755for executable files and directories, and644for data files.To represent special rights, you can prefix a fourth digit to this number according to the same principle, where these tuid, setgid, and sticky bits are 4, 2, and 1, respectively. The command chmod 4754will associate these tuidbit with the previously described rights.Note that the use of octal notation only allows you to set all the rights at once on a file; you cannot use it to add a new right, such as read access for the group owner, since you must take into account the existing rights and compute the new corresponding numerical value.The octal representation is also used with the umask command, which is used to restrict permissions on newly created files. When an application creates a file, it assigns indicative permissions,knowing that the system automatically removes the rights defined with umask. Enter umask in a shell; you will see a mask such as0022. This is simply an octal representation of the rights to be systematically removed (in this case, the write rights for the group and other users).If you give it a new octal value, the umask command modifies the mask. Used in a shell initialization file (for example,~/.bash_profile), it will effectively change the default mask for your work sessions.&lt;/p>
+&lt;p>There are two ways of representing rights. Among them, the symbolic representation is probably the easiest to understand and remember. It involves the letter symbols mentioned above. You can define rights for each category of users (u/g/o), by setting them explicitly (with=), by adding (+), or subtracting (-). Thus the u=rwx, g+rw, o-r formula gives the owner read, write, and execute rights, adds read and write rights for the owner group, and removes read rights for other users.Rights not altered by the addition or subtraction in such a command remain unmodified. The letter a, for all, covers all three categories of users, so that a=rx grants all three categories the same rights (read and execute, but not write).The (octal) numeric representation associates each right with a value: 4 for read, 2 for write, and1 for execute. We associate each combination of rights with the sum of the three figures, and a value is assigned to each category of users, in the usual order (owner, group, others). For instance, the chmod 754 filecommand will set the following rights: read, write and execute for the owner (since 7 = 4 + 2 + 1); read and execute for the group (since 5 = 4 + 1); read-only for others. The 0 means no rights; thus chmod 600 file allows for read and write permissions for the owner, and no rights for anyone else. The most frequent right combinations are 755 for executable files and directories, and 644 for data files.To represent special rights, you can prefix a fourth digit to this number according to the same principle, where these tuid, setgid, and sticky bits are 4, 2, and 1, respectively. The command chmod 4754 will associate these tuidbit with the previously described rights. Note that the use of octal notation only allows you to set all the rights at once on a file; you cannot use it to add a new right, such as read access for the group owner, since you must take into account the existing rights and compute the new corresponding numerical value.The octal representation is also used with the umask command, which is used to restrict permissions on newly created files. When an application creates a file, it assigns indicative permissions,knowing that the system automatically removes the rights defined with umask. Enter umask in a shell; you will see a mask such as0022. This is simply an octal representation of the rights to be systematically removed (in this case, the write rights for the group and other users).If you give it a new octal value, the umask command modifies the mask. Used in a shell initialization file (for example,~/.bash_profile), it will effectively change the default mask for your work sessions.&lt;/p>
 &lt;blockquote>
 &lt;p>Sometimes we have to change rights for an entire file tree. All the commands above have a-R option to operate recursively in sub-directories.The distinction between directories and files sometimes causes problems with recursive operations. That is why the “X” letter has been introduced in the symbolic representation of rights. It represents a right to execute which applies only to directories(and not to files lacking this right). Thus,chmod -R a+X directory will only add execute rights for all categories of users (a) for all of the sub-directories and files for which at least one category of user (even if their sole owner) already has execute rights.&lt;/p>
 &lt;/blockquote>
