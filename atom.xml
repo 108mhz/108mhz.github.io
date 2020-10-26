@@ -1997,31 +1997,7 @@ $ ls&lt;/p>
 &lt;p>&lt;strong>Step #3 Run the executable with website name with domain or also subdomain&lt;/strong> of which website you want to find google dorks of.&lt;/p>
 &lt;p>$ ./FGDS.sh ethicalhackx.com&lt;/p>
 &lt;p>&lt;strong>Optional Step:&lt;/strong> If you want to save the google dorks report into a text file then run with the following command.&lt;/p>
-&lt;p>$ ./FGDS.sh ethicalhackx.com &amp;gt; ethicalhackx_report.txt&lt;/p></description><author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author><guid>/2020/05/08/google-dorks/</guid><pubDate>Fri, 08 May 2020 00:00:00 +0000</pubDate></item><item><title>Change Your LUKS Encryption</title><link>/2020/03/22/change-luks-encryption/</link><description>&lt;p>&lt;strong>Changing the Passphrase:&lt;/strong>&lt;/p>
-&lt;blockquote>
-&lt;p>sudo cryptsetup luksChangeKey /dev/sdX&lt;/p>
-&lt;/blockquote>
-&lt;p>&lt;strong>LUKs Drives With Multiple Passphrases:&lt;/strong>&lt;/p>
-&lt;p>LUKS Drives can actually have multiple passphrases or key files associated with them, up to eight. To start, take a look at your drive and see how many keys it has. Chances are, you’ll only see key slot 0 occupied. That’s the first one.&lt;/p>
-&lt;blockquote>
-&lt;p>sudo cryptsetup luksDump /dev/sdX | grep -i key&lt;/p>
-&lt;/blockquote>
-&lt;p>If you have free slots open, you can always add another passphrase to your drive. Run the following command, and a new key will be appended in the first free slot.&lt;/p>
-&lt;blockquote>
-&lt;p>sudo cryptsetup luksAddKey /dev/sdX&lt;/p>
-&lt;/blockquote>
-&lt;p>When you’re managing multiple keys on the same drive, you’re going to need the ability to target specific ones. Once again, you can do that pretty simply with the &lt;!-- raw HTML omitted -->-S&lt;!-- raw HTML omitted --> flag. Just add the slot number after to pick a key to alter.&lt;/p>
-&lt;blockquote>
-&lt;p>sudo cryptsetup luksChangeKey /dev/sdX -S 2&lt;/p>
-&lt;/blockquote>
-&lt;p>&lt;strong>Removing a Passphrase&lt;/strong>&lt;/p>
-&lt;blockquote>
-&lt;p>sudo cryptsetup luksRemoveKey /dev/sdX&lt;/p>
-&lt;/blockquote>
-&lt;p>In case you’d prefer to specify it yourself, you can use the &lt;!-- raw HTML omitted -->KillSlot&lt;!-- raw HTML omitted --> command to remove the key in a certain slot. Just include the slot number after the drive, and that’s the one that’ll be removed.&lt;/p>
-&lt;blockquote>
-&lt;p>sudo cryptsetup luksKillSlot /dev/sdX 2&lt;/p>
-&lt;/blockquote></description><author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author><guid>/2020/03/22/change-luks-encryption/</guid><pubDate>Sun, 22 Mar 2020 00:00:00 +0000</pubDate></item><item><title>How To Copy a Folder using Terminal</title><link>/2020/03/18/copy-folder/</link><description>&lt;p>&lt;strong>Linux cp command examples&lt;/strong>&lt;/p>
+&lt;p>$ ./FGDS.sh ethicalhackx.com &amp;gt; ethicalhackx_report.txt&lt;/p></description><author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author><guid>/2020/05/08/google-dorks/</guid><pubDate>Fri, 08 May 2020 00:00:00 +0000</pubDate></item><item><title>How To Copy a Folder using Terminal</title><link>/2020/03/18/copy-folder/</link><description>&lt;p>&lt;strong>Linux cp command examples&lt;/strong>&lt;/p>
 &lt;p>In this example copy /home/vivek/letters/ folder and all its files to /usb/backup/ directory:&lt;/p>
 &lt;blockquote>
 &lt;p>cp -avr /home/vivek/letters /usb/backup&lt;/p>
@@ -2268,27 +2244,7 @@ port_in_redirect off;
 &lt;p>In case you&amp;rsquo;d prefer to specify it yourself, you can use the KillSlot command to remove the key in a certain slot. Just include the slot number after the drive, and that&amp;rsquo;s the one that&amp;rsquo;ll be removed.&lt;/p>
 &lt;blockquote>
 &lt;p>sudo cryptsetup luksKillSlot /dev/sdX 2&lt;/p>
-&lt;/blockquote></description><author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author><guid>/2020/02/08/luks-encryption/</guid><pubDate>Sat, 08 Feb 2020 00:00:00 +0000</pubDate></item><item><title>Scheduling a shutdown</title><link>/2020/02/06/shutdown/</link><description>&lt;h2 id="scheduling-a-shutdown">Scheduling a shutdown &lt;a href="#scheduling-a-shutdown" class="hash">#&lt;/a>&lt;/h2>
-&lt;p>To shutdown run the command:&lt;/p>
-&lt;blockquote>
-&lt;p>sudo shutdown -P +60&lt;/p>
-&lt;/blockquote>
-&lt;p>That will wait 60 mins before starting the shutdown sequence.&lt;/p>
-&lt;p>You could do:&lt;/p>
-&lt;blockquote>
-&lt;p>sudo shutdown -P 1:00&lt;/p>
-&lt;/blockquote>
-&lt;p>to shutdown at 1 AM and&lt;/p>
-&lt;blockquote>
-&lt;p>sudo shutdown -P now&lt;/p>
-&lt;/blockquote>
-&lt;p>to shutdown now.&lt;/p>
-&lt;p>A message is broadcast to all terminals to warn about the shutdown.&lt;/p>
-&lt;p>Cancel a pending shutdown
-After, starting a shutdown, if the time argument is not &amp;ldquo;+0&amp;rdquo; or &amp;ldquo;now&amp;rdquo;, you can use:&lt;/p>
-&lt;blockquote>
-&lt;p>sudo shutdown -c&lt;/p>
-&lt;/blockquote></description><author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author><guid>/2020/02/06/shutdown/</guid><pubDate>Thu, 06 Feb 2020 00:00:00 +0000</pubDate></item><item><title>Vimium shortcuts</title><link>/2020/02/06/vimium/</link><description>&lt;p>Vimium is a Chrome extension that provides keyboard-based navigation and control of the web in the spirit of the Vim editor.&lt;/p>
+&lt;/blockquote></description><author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author><guid>/2020/02/08/luks-encryption/</guid><pubDate>Sat, 08 Feb 2020 00:00:00 +0000</pubDate></item><item><title>Vimium shortcuts</title><link>/2020/02/06/vimium/</link><description>&lt;p>Vimium is a Chrome extension that provides keyboard-based navigation and control of the web in the spirit of the Vim editor.&lt;/p>
 &lt;h2 id="keyboard-bindings">Keyboard Bindings &lt;a href="#keyboard-bindings" class="hash">#&lt;/a>&lt;/h2>
 &lt;p>Modifier keys are specified as &lt;!-- raw HTML omitted -->c-x&lt;!-- raw HTML omitted -->, &lt;!-- raw HTML omitted -->m-x&lt;!-- raw HTML omitted -->, and &lt;!-- raw HTML omitted -->a-x&lt;!-- raw HTML omitted --> for ctrl+x, meta+x, and alt+x respectively. See the next section for how to customize these bindings.&lt;/p>
 &lt;p>Once you have Vimium installed, you can see this list of key bindings at any time by typing &lt;!-- raw HTML omitted -->?&lt;!-- raw HTML omitted -->.&lt;/p>
@@ -4208,7 +4164,7 @@ Uncomment out the “dynamic_chains” line, it will enable dynamic chaining.&lt
 &lt;p>Simply run the command&lt;/p>
 &lt;blockquote>
 &lt;p>proxychains firefox &lt;a href="http://www.google.com">www.google.com&lt;/a>&lt;/p>
-&lt;/blockquote></description><author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author><guid>/2020/01/27/proxychains/</guid><pubDate>Mon, 27 Jan 2020 00:00:00 +0000</pubDate></item><item><title>Wiewing file with more and less</title><link>/2020/01/27/more-and-less/</link><description>&lt;h2 id="wiewing-file-with-more-and-less">Wiewing file with more and less &lt;a href="#wiewing-file-with-more-and-less" class="hash">#&lt;/a>&lt;/h2>
+&lt;/blockquote></description><author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author><guid>/2020/01/27/proxychains/</guid><pubDate>Mon, 27 Jan 2020 00:00:00 +0000</pubDate></item><item><title>Viewing file with more and less</title><link>/2020/01/27/more-and-less/</link><description>&lt;h2 id="wiewing-file-with-more-and-less">Wiewing file with more and less &lt;a href="#wiewing-file-with-more-and-less" class="hash">#&lt;/a>&lt;/h2>
 &lt;p>Although &lt;strong>cat&lt;/strong> is a good utility for displaying files and creating small files, it certainly has its
 limitations when displaying large files. When you use cat with snort.conf, the file scrolls
 through every page until it comes to the end, which is not very practical if you want to glean
