@@ -1,4 +1,75 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>108Mhz</title><description/><link>/</link><language>en</language><copyright>Copyright 2020, Ronalds Vilcins</copyright><lastBuildDate>Thu, 22 Oct 2020 00:00:00 +0000</lastBuildDate><generator>Hugo - gohugo.io</generator><docs>http://cyber.harvard.edu/rss/rss.html</docs><atom:link href="https://ronaldsvilcins.com/atom.xml" rel="self" type="application/atom+xml"/><item><title>How to Use the wget Linux Command to Download Web Pages and Files</title><link>/2020/10/22/wget-command/</link><description>&lt;p>The wget utility downloads web pages, files, and images from the web using the Linux command line. You can use a single wget command to download from a site or set up an input file to download multiple files across multiple sites. According to the manual page, wget can be used even when the user has logged out of the system. To do this, use the nohup command.&lt;/p>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>108Mhz</title><description/><link>/</link><language>en</language><copyright>Copyright 2020, Ronalds Vilcins</copyright><lastBuildDate>Mon, 26 Oct 2020 00:00:00 +0000</lastBuildDate><generator>Hugo - gohugo.io</generator><docs>http://cyber.harvard.edu/rss/rss.html</docs><atom:link href="https://ronaldsvilcins.com/atom.xml" rel="self" type="application/atom+xml"/><item><title>Privacy by Obfuscation</title><link>/2020/10/26/privacy-obfuscation/</link><description>&lt;p>In an interesting article on &lt;strong>The MIT Press Reader&lt;/strong>: &lt;a href="https://thereader.mitpress.mit.edu/the-fantasy-of-opting-out/">The Fantasy of Opting Out&lt;/a>, &lt;a href="https://finnb.net/">Finn Brunton&lt;/a> &amp;amp; &lt;a href="https://twitter.com/HNissenbaum">Helen Nissenbaum&lt;/a> discuss how opting out of surveillance is practically useless, and suggests to use data obfuscation as a better alternative.&lt;/p>
+&lt;p>I suggest to read the whole article, that’s really interesting, but I’d also like to share some highlights:&lt;/p>
+&lt;blockquote>
+&lt;p>We are surrounded by examples of obfuscation that we do not yet think of under that name. Lawyers engage in overdisclosure, sending mountains of vaguely related client documents in hopes of burying a pertinent detail. Teenagers on social media — surveilled by their parents — will conceal a meaningful communication to a friend in a throwaway line or a song title surrounded by banal chatter. Literature and history provide many instances of “collective names,” where a population took a single identifier to make attributing any action or identity to a particular person impossible, from the fictional “I am Spartacus” to the real “Poor Conrad” and “Captain Swing” in prior centuries — and “Anonymous,” of course, in ours.&lt;/p>
+&lt;p>We can apply obfuscation in our own lives by using practices and technologies that make use of it, including:&lt;/p>
+&lt;/blockquote>
+&lt;ul>
+&lt;li>The secure browser &lt;a href="https://www.torproject.org/">Tor&lt;/a>, which (among other anti-surveillance technologies) muddles our Internet activity with that of other Tor users, concealing our trail in that of many others.&lt;/li>
+&lt;li>The browser plugins &lt;a href="http://trackmenot.io/">TrackMeNot&lt;/a>
+and &lt;a href="https://adnauseam.io/">AdNauseam&lt;/a>, which explore obfuscation techniques by issuing many fake search requests and loading and clicking every ad, respectively.&lt;/li>
+&lt;li>The browser extension &lt;a href="https://bengrosser.com/projects/go-rando/">Go Rando | benjamin grosser&lt;/a>, which randomly chooses your emotional “reactions” on Facebook, interfering with their emotional profiling and analysis.&lt;/li>
+&lt;li>Playful experiments like Adam Harvey’s &lt;a href="https://ahprojects.com/hyperface/">Adam Harvey – Hyperface&lt;/a>, finding patterns on textiles that fool facial recognition systems – not by hiding your face, but by creating the illusion of many faces.&lt;/li>
+&lt;/ul></description><author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author><guid>/2020/10/26/privacy-obfuscation/</guid><pubDate>Mon, 26 Oct 2020 00:00:00 +0000</pubDate></item><item><title>The secret life of SIM cards</title><link>/2020/10/26/secret-life-of-sim-cartd/</link><description>&lt;p>Are you a privacy obsessed?&lt;br>
+You can do everything in your power to avoid being tracked through your phone, such as change &lt;strong>OS&lt;/strong>, avoid &lt;strong>Google&lt;/strong>‘s services, only use open-source apps from &lt;strong>F-Droid&lt;/strong>, turn off &lt;strong>WiFi&lt;/strong> and location services but…there is one thing that is majorly overlooked.&lt;/p>
+&lt;h3 id="your-sim-cards-has-ability-to-track-you">Your SIM card’s has ability to track you &lt;a href="#your-sim-cards-has-ability-to-track-you" class="hash">#&lt;/a>&lt;/h3>
+&lt;p>It has a unique &lt;strong>ID&lt;/strong> that is likely tied to your identity.&lt;br>
+It authenticates you to cell towers wherever you go: this means that your provider has access to your location at all times through triangulation:&lt;/p>
+&lt;p>&lt;img src="https://swarm-gateways.net/bzz:/7a097df65e97a34bf6d20d3f28490ad2346ffef456fc11dcff35eaec135cfc30/image-40.png" alt="" loading="lazy" />
+&lt;/p>
+&lt;p>And it doesn’t matter if you switch off mobile data, it will still connect to be able to receive phone calls and messages.&lt;/p>
+&lt;h3 id="some-goodies-from-defcon21">Some goodies from Defcon21 &lt;a href="#some-goodies-from-defcon21" class="hash">#&lt;/a>&lt;/h3>
+&lt;p>Furthermore, &lt;strong>SIM&lt;/strong> cards also have the ability to accept remote commands, download apps on request by your provider, interface with hardware components by going underneath the &lt;strong>OS&lt;/strong> and more, according with this talk by &lt;strong>&lt;a href="https://twitter.com/supersat">Karl Koscher&lt;/a>&lt;/strong> &amp;amp; &lt;strong>&lt;a href="https://twitter.com/codebutler">Eric Butler&lt;/a>&lt;/strong>, presented during &lt;strong>DefCon21&lt;/strong>:&lt;/p>
+&lt;blockquote>
+&lt;p>SIM cards can do more than just authenticate your phone with your carrier. Small apps can be installed and run directly on the SIM separate from and without knowledge of the phone OS. Although SIM Applications are common in many parts of the world, they are mostly unknown in the U.S. and the closed nature of the ecosystem makes it difficult for hobbyists to find information and experiment.&lt;/p>
+&lt;p>This talk, based on our experience building SIM apps for the Toorcamp GSM network, explains what (U)SIM Toolkit Applications are, how they work, and how to develop them. We will explain the various pieces of technology involved, including the Java Card standard, which lets you write smart card applications using a subset of Java, and the GlobalPlatform standard, which is used to load and manage applications on a card. We will also talk about how these applications can be silently loaded, updated, and interacted with remotely over-the-air.&lt;/p>
+&lt;p>&lt;a href="https://simhacks.github.io/defcon-21/">https://simhacks.github.io/defcon-21/&lt;/a>&lt;/p>
+&lt;/blockquote>
+&lt;hr>
+&lt;h3 id="references">References &lt;a href="#references" class="hash">#&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://simhacks.github.io/defcon-21/">https://simhacks.github.io/defcon-21/&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.defcon.org/images/defcon-21/dc-21-presentations/Koscher-Butler/DEFCON-21-Koscher-Butler-The-Secret-Life-of-SIM-Cards-Updated.pdf">https://www.defcon.org/images/defcon-21/dc-21-presentations/Koscher-Butler/DEFCON-21-Koscher-Butler-The-Secret-Life-of-SIM-Cards-Updated.pdf&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.youtube.com/watch?v=1U7ROVno2ys">How Cell Phones Reveal Your Location&lt;/a>&lt;/li>
+&lt;/ul></description><author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author><guid>/2020/10/26/secret-life-of-sim-cartd/</guid><pubDate>Mon, 26 Oct 2020 00:00:00 +0000</pubDate></item><item><title>Vulnerable webapps and VMs for penetration testing practice</title><link>/2020/10/26/pentesting-webapps/</link><description>&lt;h1 id="vulnerable-webapps-and-vms-for-penetration-testing-practice">Vulnerable webapps and VMs for penetration testing practice &lt;a href="#vulnerable-webapps-and-vms-for-penetration-testing-practice" class="hash">#&lt;/a>&lt;/h1>
+&lt;h2 id="google-gruyerehttpsgoogle-gruyereappspotcom">&lt;a href="https://google-gruyere.appspot.com/">Google Gruyere&lt;/a> &lt;a href="#google-gruyerehttpsgoogle-gruyereappspotcom" class="hash">#&lt;/a>&lt;/h2>
+&lt;p>&lt;strong>Gruyere&lt;/strong> is a Google project to teach web application exploitation and defense. The simulation is hosted entirely online: a new, dedicated instance is created every time you visit the platform.&lt;/p>
+&lt;hr>
+&lt;h2 id="metasploitable-2httpssourceforgenetprojectsmetasploitablefilesmetasploitable2--metasploitable-3httpsgithubcomrapid7metasploitable3">&lt;a href="https://sourceforge.net/projects/metasploitable/files/Metasploitable2/">Metasploitable 2&lt;/a>, &lt;a href="https://github.com/rapid7/metasploitable3">Metasploitable 3&lt;/a> &lt;a href="#metasploitable-2httpssourceforgenetprojectsmetasploitablefilesmetasploitable2--metasploitable-3httpsgithubcomrapid7metasploitable3" class="hash">#&lt;/a>&lt;/h2>
+&lt;p>Metasploitable is a part of the &lt;strong>Metasploit Unleashed&lt;/strong>. Currently, there is metasploitable 2, hosting a huge variety of vulnerable services and applications based on Ubuntu 8.04, and there is a newer Metasploitable 3 that is Windows Server 2008, or Ubuntu 14.04 based.&lt;/p>
+&lt;hr>
+&lt;h2 id="owasp-bwahttpssourceforgenetprojectsowaspbwafiles12">&lt;a href="https://sourceforge.net/projects/owaspbwa/files/1.2/">OWASP BWA&lt;/a> &lt;a href="#owasp-bwahttpssourceforgenetprojectsowaspbwafiles12" class="hash">#&lt;/a>&lt;/h2>
+&lt;p>The &lt;strong>OWASP Broken Webapps&lt;/strong> project is a &lt;strong>VM&lt;/strong> that contains a whole host of vulnerable web applications. The link provided lands to sourceforge to download the VM. The &lt;strong>OWASP&lt;/strong> project page can be found &lt;a href="https://www.owasp.org/index.php/OWASP_Broken_Web_Applications_Project#tab=Main">here&lt;/a>.&lt;/p>
+&lt;hr>
+&lt;h2 id="owasp-vulnerable-web-applications-directory-projecthttpswwwowasporgindexphpowasp_vulnerable_web_applications_directory_project">&lt;a href="https://www.owasp.org/index.php/OWASP_Vulnerable_Web_Applications_Directory_Project">OWASP Vulnerable Web Applications Directory Project&lt;/a> &lt;a href="#owasp-vulnerable-web-applications-directory-projecthttpswwwowasporgindexphpowasp_vulnerable_web_applications_directory_project" class="hash">#&lt;/a>&lt;/h2>
+&lt;p>A list of all of the intentionally vulnerable webapps that OWASP provides and maintains.&lt;/p>
+&lt;hr>
+&lt;h2 id="over-the-wirehttpoverthewireorgwargames">&lt;a href="http://overthewire.org/wargames/">Over the Wire&lt;/a> &lt;a href="#over-the-wirehttpoverthewireorgwargames" class="hash">#&lt;/a>&lt;/h2>
+&lt;p>&lt;strong>OverTheWire&lt;/strong> is a collection of online “Wargames” where the goal is to solve a puzzle or challenge in order to gain access to the next system in the series of challenges. Access to the challenges is totally free.&lt;/p>
+&lt;hr>
+&lt;h2 id="counterhack-holiday-hack-challengehttpsholidayhackchallengecompast-challenges">&lt;a href="https://holidayhackchallenge.com/past-challenges/">Counterhack Holiday Hack Challenge &lt;/a> &lt;a href="#counterhack-holiday-hack-challengehttpsholidayhackchallengecompast-challenges" class="hash">#&lt;/a>&lt;/h2>
+&lt;p>Every year, right around the Christmas/New Years holidays, the &lt;strong>counterhack&lt;/strong> team release a yearly holiday hack challenge. They archived the challenges over the previous years and allow students to access them, as well as the answers to the challenges in the event that you get stuck.&lt;/p>
+&lt;hr>
+&lt;h2 id="vulnhubhttpswwwvulnhubcom">&lt;a href="https://www.vulnhub.com/">Vulnhub&lt;/a> &lt;a href="#vulnhubhttpswwwvulnhubcom" class="hash">#&lt;/a>&lt;/h2>
+&lt;p>&lt;strong>Vulhub&lt;/strong> is a website that contains a massive collection of vulnerable virtual machines. The end goal is to go from zero access on the system, all the way to root access. All of the VMs I have seen on vulnhub usually provide a link labeled “walkthroughs” that will link to a walkthrough on how to solve the various puzzles for that VM.&lt;/p>
+&lt;hr>
+&lt;h2 id="hack-the-boxhttpswwwhacktheboxeu">&lt;a href="https://www.hackthebox.eu/">Hack The Box&lt;/a> &lt;a href="#hack-the-boxhttpswwwhacktheboxeu" class="hash">#&lt;/a>&lt;/h2>
+&lt;p>&lt;strong>Hack the box&lt;/strong> is a website that allows you to access an online semi-persistent &lt;em>wargame environment&lt;/em>, with a variety of virtual machines that all have some sort of a theme, or methodology for hacking them.&lt;/p>
+&lt;hr>
+&lt;h2 id="malware-traffic-analysishttpswwwmalware-traffic-analysisnettraining-exerciseshtml">&lt;a href="https://www.malware-traffic-analysis.net/training-exercises.html">Malware Traffic Analysis &lt;/a> &lt;a href="#malware-traffic-analysishttpswwwmalware-traffic-analysisnettraining-exerciseshtml" class="hash">#&lt;/a>&lt;/h2>
+&lt;p>&lt;strong>Malware Traffic Analysis&lt;/strong> is, as the name of the site implies, a website dedicated to the analysis of malware and the collection of network artifacts that malware leaves behind, but also a collection of exercises with alerts, packet captures and quiz questions.&lt;/p>
+&lt;hr>
+&lt;h2 id="honeynet-challengeshttpswwwhoneynetorgchallenges">&lt;a href="https://www.honeynet.org/challenges">Honeynet Challenges&lt;/a> &lt;a href="#honeynet-challengeshttpswwwhoneynetorgchallenges" class="hash">#&lt;/a>&lt;/h2>
+&lt;p>The &lt;strong>Honeynet Project&lt;/strong> is a website dedicated to the creation of honeypot projects that can be used to collect information from attackers. The project has a collection of challenges and exercises from various Data Forensics and Incident Response (DFIR) challenges.&lt;/p>
+&lt;hr>
+&lt;h2 id="between-two-dfirns-challengeshttpsbetweentwodfirnsblogspotcom">&lt;a href="https://betweentwodfirns.blogspot.com/">Between two DFIRNS challenges&lt;/a> &lt;a href="#between-two-dfirns-challengeshttpsbetweentwodfirnsblogspotcom" class="hash">#&lt;/a>&lt;/h2>
+&lt;p>A website hosting a lot of various &lt;strong>DFIR&lt;/strong> challenges of varying complexity.&lt;/p>
+&lt;hr>
+&lt;h2 id="blue-team-training-kithttpswwwbt3no">&lt;a href="https://www.bt3.no/">Blue Team Training Kit&lt;/a> &lt;a href="#blue-team-training-kithttpswwwbt3no" class="hash">#&lt;/a>&lt;/h2>
+&lt;p>A website that contains a set of tools allowing you to simulate malware infections. The website seems to provide access to free and/or premium training materials.&lt;/p>
+&lt;hr>
+&lt;h2 id="blackroomsechttpswwwblackroomseccomupdated-hacking-challenge-site-links">&lt;a href="https://www.blackroomsec.com/updated-hacking-challenge-site-links/">BlackRoomSec&lt;/a> &lt;a href="#blackroomsechttpswwwblackroomseccomupdated-hacking-challenge-site-links" class="hash">#&lt;/a>&lt;/h2>
+&lt;p>A list of links to various hacking challenges from all over the internet&lt;/p></description><author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author><guid>/2020/10/26/pentesting-webapps/</guid><pubDate>Mon, 26 Oct 2020 00:00:00 +0000</pubDate></item><item><title>How to Use the wget Linux Command to Download Web Pages and Files</title><link>/2020/10/22/wget-command/</link><description>&lt;p>The wget utility downloads web pages, files, and images from the web using the Linux command line. You can use a single wget command to download from a site or set up an input file to download multiple files across multiple sites. According to the manual page, wget can be used even when the user has logged out of the system. To do this, use the nohup command.&lt;/p>
 &lt;h2 id="features-of-the-wget-command">Features of the wget Command &lt;a href="#features-of-the-wget-command" class="hash">#&lt;/a>&lt;/h2>
 &lt;p>You can download entire websites using wget, and convert the links to point to local sources so that you can view a website offline. The wget utility also retries a download when the connection drops and resumes from where it left off, if possible, when the connection returns.&lt;/p>
 &lt;h2 id="how-to-download-a-website-using-wget">How to Download a Website Using wget &lt;a href="#how-to-download-a-website-using-wget" class="hash">#&lt;/a>&lt;/h2>
@@ -922,7 +993,41 @@ everyone could delete other users’ files in/tmp/.&lt;/p>
 &lt;li>&lt;a href="https://swarm-gateways.net/bzz:/716242575c45b867e1115e03432f55f9e2bacb9ab128a90a71340e03b178dc87/Beginning">Beginning Ethical Hacking with Python&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://swarm-gateways.net/bzz:/0807a723a737da9349341b564279ddc290bce28920d28681d753051d1921eed9/Learn">Learn Python the Hard Way&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://swarm-gateways.net/bzz:/093223f72e0587ec70241df5023c2b3740ca6d40c5bb7736fb0c51e64c8405c8/Christopher%20Hadnagy%20-%20Human%20hacking.pdf">Human hacking&lt;/a>&lt;/li>
-&lt;/ul></description><author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author><guid>/2020/10/18/books-and-mags/</guid><pubDate>Sun, 18 Oct 2020 00:00:00 +0000</pubDate></item><item><title>Securing Kali network</title><link>/2020/10/18/securing-kali-network/</link><description>&lt;h5 id="exercise-1-chapter-07----securing-kali-networking">&lt;strong>Exercise 1, Chapter 07 &amp;ndash; Securing Kali Networking&lt;/strong> &lt;a href="#exercise-1-chapter-07----securing-kali-networking" class="hash">#&lt;/a>&lt;/h5>
+&lt;/ul></description><author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author><guid>/2020/10/18/books-and-mags/</guid><pubDate>Sun, 18 Oct 2020 00:00:00 +0000</pubDate></item><item><title>How to block Windows 10 telemetry using “hosts” file</title><link>/2020/10/18/windows-telemetry/</link><description>&lt;p>Since &lt;strong>Windows&lt;/strong> 8, &lt;strong>Microsoft&lt;/strong> has moved to a new commercial strategy: in addition with traditional selling of &lt;strong>OS&lt;/strong> licenses, started got revenues from searches, apps and games.&lt;br>
+But to do this, &lt;strong>MS&lt;/strong> has started the collection of “telemetry” data, considered by many users as privacy-relevant.&lt;/p>
+&lt;hr>
+&lt;h3 id="what-is-windows-10-telemetry">What is Windows 10 telemetry? &lt;a href="#what-is-windows-10-telemetry" class="hash">#&lt;/a>&lt;/h3>
+&lt;p>According with a &lt;strong>ZDNet&lt;/strong> article: &lt;a href="https://www.zdnet.com/article/windows-10-telemetry-secrets/">Windows 10 telemetry secrets: Where, when, and why Microsoft collects your data | ZDNet&lt;/a>:&lt;/p>
+&lt;blockquote>
+&lt;p>Microsoft defines telemetry as “system data that is uploaded by the Connected User Experience and Telemetry component,” also known as the Universal Telemetry Client, or UTC service. (More on that shortly.)&lt;br>
+Microsoft uses telemetry data from Windows 10 to identify security and reliability issues, to analyze and fix software problems, to help improve the quality of Windows and related services, and to make design decisions for future releases.&lt;br>
+Telemetry features aren’t unique to Microsoft and there’s nothing particularly secret about them. They’re part of a larger trend in the software industry to collect and analyze event data as part of a shift to data-driven decision making.&lt;/p>
+&lt;/blockquote>
+&lt;p>To the delight of privacy conscious users, there are a lot of tutorials: &lt;a href="https://websetnet.net/disable-telemetry-windows-10/">Disable Telemetry in Windows 10 – WebSetNet&lt;/a> and suggestions focused on avoid (or rather, &lt;em>reduce&lt;/em>) the gathering of informations collected from &lt;strong>Windows 10&lt;/strong>, using tools like &lt;a href="http://forums.peerblock.com/">PeerBlock&lt;/a>, personal firewalls, network devices (like a &lt;a href="https://pi-hole.net/">Pi-hole&lt;/a>).&lt;/p>
+&lt;p>In my opinion, a good trade-off may be a simple change on the “hosts” file.&lt;/p>
+&lt;hr>
+&lt;h3 id="what-is-hosts-file">What is “hosts” file? &lt;a href="#what-is-hosts-file" class="hash">#&lt;/a>&lt;/h3>
+&lt;p>The hosts file is used to map hostnames to IP addresses, and its data overrides the results of &lt;strong>DNS&lt;/strong> queries.&lt;br>
+It’s a plain text file, located in the Windows folder, at the following path:&lt;/p>
+&lt;p>C:\Windows\System32\drivers\etc&lt;/p>
+&lt;hr>
+&lt;h3 id="a-customized-hosts-file">A customized hosts file &lt;a href="#a-customized-hosts-file" class="hash">#&lt;/a>&lt;/h3>
+&lt;p>Usually i use a custom hosts file created by &lt;a href="https://encrypt-the-planet.com/windows-10-anti-spy-host-file/">ETP&lt;/a>: the file was realized analyzing with wireshark a dump of outgoing traffic of a brand-new &lt;strong>Windows 10&lt;/strong> installation.&lt;/p>
+&lt;p>Obviously, this is not a final solution.&lt;br>
+According with ETP’s notes:&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;strong>You should also be aware:&lt;/strong> this hosts file will block certain functions and services like Bing search, Cortana and One Cloud. Windows updates will still be able to download.&lt;br>
+&lt;strong>Windows 10 does communicate&lt;/strong> directly to IP addresses &lt;strong>which bypass the hosts file.&lt;/strong> You would also have to block Microsoft’s IP addresses Windows 10 communicates with.&lt;/p>
+&lt;/blockquote>
+&lt;hr>
+&lt;h3 id="how-to-install-the-custom-file">How to install the custom file? &lt;a href="#how-to-install-the-custom-file" class="hash">#&lt;/a>&lt;/h3>
+&lt;p>Just four simple steps:&lt;/p>
+&lt;ol>
+&lt;li>Open &lt;a href="https://www.encrypt-the-planet.com/downloads/hosts">this link&lt;/a>, and copy the whole text&lt;/li>
+&lt;li>Start (with administrative rights) a Notepad (but &lt;strong>&lt;em>Notepad++&lt;/em>&lt;/strong> is better) and open the hosts file in &lt;em>&lt;strong>C:\Windows\System32\drivers\etc\hosts&lt;/strong>&lt;/em>.&lt;/li>
+&lt;li>Replace the original hosts content with the text copied at step 1&lt;/li>
+&lt;li>Save the file and restart your system.&lt;/li>
+&lt;/ol></description><author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author><guid>/2020/10/18/windows-telemetry/</guid><pubDate>Sun, 18 Oct 2020 00:00:00 +0000</pubDate></item><item><title>Securing Kali network</title><link>/2020/10/18/securing-kali-network/</link><description>&lt;h5 id="exercise-1-chapter-07----securing-kali-networking">&lt;strong>Exercise 1, Chapter 07 &amp;ndash; Securing Kali Networking&lt;/strong> &lt;a href="#exercise-1-chapter-07----securing-kali-networking" class="hash">#&lt;/a>&lt;/h5>
 &lt;ol>
 &lt;li>Identify all open ports on your Kali instance.&lt;/li>
 &lt;li>Configure your Kali firewall to allow inbound TCP connections on ports 22, 80, and 443 only.&lt;/li>
