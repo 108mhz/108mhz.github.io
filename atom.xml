@@ -1,4 +1,99 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>108Mhz</title><description/><link>/</link><language>en</language><copyright>Copyright 2020, Ronalds Vilcins</copyright><lastBuildDate>Mon, 26 Oct 2020 00:00:00 +0000</lastBuildDate><generator>Hugo - gohugo.io</generator><docs>http://cyber.harvard.edu/rss/rss.html</docs><atom:link href="https://ronaldsvilcins.com/atom.xml" rel="self" type="application/atom+xml"/><item><title>Privacy by Obfuscation</title><link>/2020/10/26/privacy-obfuscation/</link><description>&lt;p>In an interesting article on &lt;strong>The MIT Press Reader&lt;/strong>: &lt;a href="https://thereader.mitpress.mit.edu/the-fantasy-of-opting-out/">The Fantasy of Opting Out&lt;/a>, &lt;a href="https://finnb.net/">Finn Brunton&lt;/a> &amp;amp; &lt;a href="https://twitter.com/HNissenbaum">Helen Nissenbaum&lt;/a> discuss how opting out of surveillance is practically useless, and suggests to use data obfuscation as a better alternative.&lt;/p>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>108Mhz</title><description/><link>/</link><language>en</language><copyright>Copyright 2020, Ronalds Vilcins</copyright><lastBuildDate>Sat, 31 Oct 2020 00:00:00 +0000</lastBuildDate><generator>Hugo - gohugo.io</generator><docs>http://cyber.harvard.edu/rss/rss.html</docs><atom:link href="https://ronaldsvilcins.com/atom.xml" rel="self" type="application/atom+xml"/><item><title>90 Linux Commands frequently used by Linux Sysadmins</title><link>/2020/10/31/90-linux-commands/</link><description>&lt;ol>
+&lt;li>ip – from Iproute2, a collection of utilities for controlling TCP/IP networking and traffic control in Linux.&lt;/li>
+&lt;li>ls – list directory contents.&lt;/li>
+&lt;li>df – display disk space usage.&lt;/li>
+&lt;li>du – estimate file space usage.&lt;/li>
+&lt;li>free – display memory usage.&lt;/li>
+&lt;li>scp – securely Copy Files Using SCP, with examples.&lt;/li>
+&lt;li>find – locates files based on some user-specified criteria.&lt;/li>
+&lt;li>ncdu – a disk utility for Unix systems.&lt;/li>
+&lt;li>pstree – display a tree of processes.&lt;/li>
+&lt;li>last – show a listing of last logged in users.&lt;/li>
+&lt;li>w – show a list of currently logged in user sessions.&lt;/li>
+&lt;li>grep – Search a file for a pattern of characters, then display all matching lines.&lt;/li>
+&lt;li>uptime – shows system uptime and load average.&lt;/li>
+&lt;li>top – shows an overall system view.&lt;/li>
+&lt;li>vmstat – shows system memory, processes, interrupts, paging, block I/O, and CPU info.&lt;/li>
+&lt;li>htop – interactive process viewer and manager.&lt;/li>
+&lt;li>dstat – view processes, memory, paging, I/O, CPU, etc., in real-time. All-in-one for vmstat, iostat, netstat, and ifstat.&lt;/li>
+&lt;li>iftop – network traffic viewer.&lt;/li>
+&lt;li>nethogs – network traffic analyzer.&lt;/li>
+&lt;li>iotop – interactive I/O viewer. Get an overview of storage r/w activity.&lt;/li>
+&lt;li>iostat – for storage I/O statistics.&lt;/li>
+&lt;li>netstat – for network statistics.&lt;/li>
+&lt;li>ss – utility to investigate sockets.&lt;/li>
+&lt;li>atop – For Linux server performance analysis.&lt;/li>
+&lt;li>Glances and nmon – htop and top Alternatives:&lt;/li>
+&lt;li>ssh – secure command-line access to remote Linux systems.&lt;/li>
+&lt;li>sudo – execute commands with administrative privilege.&lt;/li>
+&lt;li>cd – directory navigation.&lt;/li>
+&lt;li>pwd – shows your current directory location.&lt;/li>
+&lt;li>cp – copying files and folders.&lt;/li>
+&lt;li>mv – moving files and folders.&lt;/li>
+&lt;li>rm – removing files and folders.&lt;/li>
+&lt;li>mkdir – create or make new directories.&lt;/li>
+&lt;li>touch – used to update the access date and/or modification date of a computer file or directory.&lt;/li>
+&lt;li>man – for reading system reference manuals.&lt;/li>
+&lt;li>apropos – Search man page names and descriptions.&lt;/li>
+&lt;li>rsync – remote file transfers and syncing.&lt;/li>
+&lt;li>tar – an archiving utility.&lt;/li>
+&lt;li>gzip – file compression and decompression.&lt;/li>
+&lt;li>b2zip – similar to gzip. It uses a different compression algorithm.&lt;/li>
+&lt;li>zip – for packaging and compressing (to archive) files.&lt;/li>
+&lt;li>locate – search files in Linux.&lt;/li>
+&lt;li>ps – information about the currently running processes.&lt;/li>
+&lt;li>Making use of Bash scripts. Example: ./bashscript.sh&lt;/li>
+&lt;li>cron – set up scheduled tasks to run.&lt;/li>
+&lt;li>nmcli – network management.&lt;/li>
+&lt;li>ping – send ICMP ECHO_REQUEST to network hosts.&lt;/li>
+&lt;li>traceroute – check the route packets take to a specified host.&lt;/li>
+&lt;li>mtr – network diagnostic tool.&lt;/li>
+&lt;li>nslookup – query Internet name servers (NS) interactively.&lt;/li>
+&lt;li>host – perform DNS lookups in Linux.&lt;/li>
+&lt;li>dig – DNS lookup utility.&lt;/li>
+&lt;li>wget – retrieve files over HTTP, HTTPS, FTP, and FTPS.&lt;/li>
+&lt;li>curl – transferring data using various network protocols. (supports more protocols than wget)&lt;/li>
+&lt;li>dd – convert and copy files.&lt;/li>
+&lt;li>fdisk – manipulate the disk partition table.&lt;/li>
+&lt;li>parted – for creating and manipulating partition tables.&lt;/li>
+&lt;li>blkid – command-line utility to locate/print block device attributes.&lt;/li>
+&lt;li>mkfs – build a Linux file system.&lt;/li>
+&lt;li>fsck – tool for checking the consistency of a file system.&lt;/li>
+&lt;li>whois – client for the whois directory service.&lt;/li>
+&lt;li>nc – command-line networking utility. (Also, see 60 Linux Networking commands and scripts.)&lt;/li>
+&lt;li>umask – set file mode creation mask.&lt;/li>
+&lt;li>chmod – change the access permissions of file system objects.&lt;/li>
+&lt;li>chown – change file owner and group.&lt;/li>
+&lt;li>chroot – run command or interactive shell with a special root directory.&lt;/li>
+&lt;li>useradd – create a new user or update default new user information.&lt;/li>
+&lt;li>userdel – used to delete a user account and all related files.&lt;/li>
+&lt;li>usermod – used to modify or change any attributes of an existing user account.&lt;/li>
+&lt;li>vi – text editor.&lt;/li>
+&lt;li>cat – display file contents.&lt;/li>
+&lt;li>tac – output file contents, in reverse.&lt;/li>
+&lt;li>more – display file contents one screen/page at a time.&lt;/li>
+&lt;li>less – similar to the more command with additional features.&lt;/li>
+&lt;li>tail – used to display the tail end of a text file or piped data.&lt;/li>
+&lt;li>dmesg – prints the message buffer of the kernel ring.&lt;/li>
+&lt;li>journalctl – query the systemd journal.&lt;/li>
+&lt;li>kill – terminate a process.&lt;/li>
+&lt;li>killall – Sends a kill signal to all instances of a process by name.&lt;/li>
+&lt;li>sleep – suspends program execution for a specified time.&lt;/li>
+&lt;li>wait – Suspend script execution until all jobs running in the background have been terminated.&lt;/li>
+&lt;li>nohup – Run Commands in the Background.&lt;/li>
+&lt;li>screen – hold a session open on a remote server. (also a full-screen window manager)&lt;/li>
+&lt;li>tmux – a terminal multiplexer.&lt;/li>
+&lt;li>passwd – change a user’s password.&lt;/li>
+&lt;li>chpassword –&lt;/li>
+&lt;li>mount / umount – provides access to an entire filesystem in one directory.&lt;/li>
+&lt;li>systemctl – Managing Services (Daemons).&lt;/li>
+&lt;li>clear – clears the screen of the terminal.&lt;/li>
+&lt;li>env -Run a command in a modified environment.&lt;/li>
+&lt;li>cheat – allows you to create and view interactive cheatsheets on the command-line.”&lt;/li>
+&lt;li>tldr – Collaborative cheatsheets for console commands.&lt;/li>
+&lt;li>bashtop – the ‘cool’ top alternative.&lt;/li>
+&lt;li>bpytop – Python port of bashtop.&lt;/li>
+&lt;/ol></description><author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author><guid>/2020/10/31/90-linux-commands/</guid><pubDate>Sat, 31 Oct 2020 00:00:00 +0000</pubDate></item><item><title>Privacy by Obfuscation</title><link>/2020/10/26/privacy-obfuscation/</link><description>&lt;p>In an interesting article on &lt;strong>The MIT Press Reader&lt;/strong>: &lt;a href="https://thereader.mitpress.mit.edu/the-fantasy-of-opting-out/">The Fantasy of Opting Out&lt;/a>, &lt;a href="https://finnb.net/">Finn Brunton&lt;/a> &amp;amp; &lt;a href="https://twitter.com/HNissenbaum">Helen Nissenbaum&lt;/a> discuss how opting out of surveillance is practically useless, and suggests to use data obfuscation as a better alternative.&lt;/p>
 &lt;p>I suggest to read the whole article, that’s really interesting, but I’d also like to share some highlights:&lt;/p>
 &lt;blockquote>
 &lt;p>We are surrounded by examples of obfuscation that we do not yet think of under that name. Lawyers engage in overdisclosure, sending mountains of vaguely related client documents in hopes of burying a pertinent detail. Teenagers on social media — surveilled by their parents — will conceal a meaningful communication to a friend in a throwaway line or a song title surrounded by banal chatter. Literature and history provide many instances of “collective names,” where a population took a single identifier to make attributing any action or identity to a particular person impossible, from the fictional “I am Spartacus” to the real “Poor Conrad” and “Captain Swing” in prior centuries — and “Anonymous,” of course, in ours.&lt;/p>
@@ -273,184 +368,7 @@ wget www.ever&lt;/p>
 &lt;p>Alt+P | Turn visible whitespace on/off&lt;/p>
 &lt;p>Alt+V | Enter next keystroke verbatim&lt;/p>
 &lt;p>Ctrl+L | Refresh the screen&lt;/p>
-&lt;p>Ctrl+Z | Suspend nano&lt;/p></description><author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author><guid>/2020/10/22/nano-shortcuts/</guid><pubDate>Thu, 22 Oct 2020 00:00:00 +0000</pubDate></item><item><title>Permessi Linux</title><link>/2020/10/22/permessi-linux/</link><description>&lt;p>Tutti i sistemi Unix/Linux hanno una gestione standard dei permessi sui file, che rispecchia la natura di sistema operativo multiutente.&lt;br>
-I permessi possono essere di &lt;strong>lettura&lt;/strong>, &lt;strong>scrittura&lt;/strong> e &lt;strong>esecuzione&lt;/strong> e vengono differenziati sulla base della natura dell&amp;rsquo;utente rispetto al file o directory:&lt;/p>
-&lt;ul>
-&lt;li>utente proprietario &lt;strong>owner&lt;/strong> del file&lt;/li>
-&lt;li>gruppo proprietario &lt;strong>owner group&lt;/strong> del file&lt;/li>
-&lt;li>gli altri utenti &lt;strong>others&lt;/strong>, che sono l&amp;rsquo;owner e non appartegono all&amp;rsquo;owner group.&lt;br>
-Il permesso di esecuzione è necessario per poter accedere a delle directory e, ovviamente, permette l&amp;rsquo;esecuzione di file (script shell, perl, php, cgi; programmi binari compilati).&lt;/li>
-&lt;/ul>
-&lt;p>Per visualizzare i permessi di un file basta usare il comando &lt;code>ls -l&lt;/code> che per ogni file da un output simile a:&lt;br>
--rwxr-xr&amp;ndash; 1 mark admins 77266 Dec 13 17:18 /bin/command.sh&lt;br>
-La prima colonna, composta da 10 caratteri, descrive i permessi sul file /bin/command.sh.&lt;br>
-Il primo carattere (nell&amp;rsquo;esempio: &lt;strong>-&lt;/strong>) identifica il tipo di file (directory, pipe, block o char device, symlink&amp;hellip;);&lt;br>
-I successivi 3 caratteri identificano i permessi in lettura/scrittura/esecuzione dell&amp;rsquo;owner di /bin/command.sh (in questo caso l&amp;rsquo;owner mark ha tutti i permessi sul file: &lt;strong>rwx&lt;/strong> );&lt;br>
-I successivi 3 identificano i permessi del gruppo owner di /bin/command.sh (in questo caso il gruppo admins ha permesso di lettura ed esecuzione sul file: &lt;strong>r-x&lt;/strong> );&lt;br>
-I successivi 3 identificano i permessi di tutti gli altri utenti del sistema (in questo caso hanno solo il permesso di lettura: &lt;strong>r&amp;ndash;&lt;/strong> ).&lt;br>
-Le successive colonne nell&amp;rsquo;output di ls -l indicano l&amp;rsquo;owner, il gruppo, la dimensione in byte, la data di ultima modifica e il nome del file.&lt;/p>
-&lt;p>Per modificare i permessi dei file si usa il comando &lt;strong>chmod&lt;/strong> che usa una duplice sintassi per indicare i permessi:&lt;br>
-&lt;strong>read - lettura&lt;/strong>: Flag &lt;strong>r&lt;/strong> in &lt;em>symbolic mode&lt;/em>; Valore &lt;strong>4&lt;/strong> in &lt;em>octal mode&lt;/em>&lt;br>
-&lt;strong>write - scrittuta&lt;/strong>: Flag &lt;strong>w&lt;/strong> in &lt;em>symbolic mode&lt;/em>; Valore &lt;strong>2&lt;/strong> in &lt;em>octal mode&lt;/em>&lt;br>
-&lt;strong>execute - esecuzione&lt;/strong>: Flag &lt;strong>x&lt;/strong> in &lt;em>symbolic mode&lt;/em>; Valore &lt;strong>1&lt;/strong> in &lt;em>octal mode&lt;/em>&lt;/p>
-&lt;h4 id="troubleshooting-di-programmi-e-permessi-sui-file">&lt;strong>Troubleshooting di programmi e permessi sui file&lt;/strong> &lt;a href="#troubleshooting-di-programmi-e-permessi-sui-file" class="hash">#&lt;/a>&lt;/h4>
-&lt;p>Tutti i programmi su un sistema Unix/Linux hanno i permessi di lettura e scrittura sul file system corrispondenti a quelli dell&amp;rsquo;utente di sistema, così come indicato in &lt;code>/etc/passwd&lt;/code>, con cui vengono eseguiti.&lt;br>
-Può capitare, provando a installare e lanciare programmi diversi, che questi non riescano ad essere eseguiti o non funzionino correttamente.&lt;br>
-Come sempre, in caso di problemi, un controllo dei log è la prima operazione da compiere.&lt;br>
-Relativamente spesso la causa è proprio la mancanza di permessi per poter leggere o scrivere file (configurazione, log, dati, librerie condivise ecc.).&lt;br>
-A volte il programma cerca determinati file in posizioni dove non si trovano (in questi casi un link può rapidamente, e in modo un po' &amp;ldquo;sporco&amp;rdquo; risolvere il problema), a volte non ha i permessi di lettura su file di configurazione o di dati, o sulle directory che li contengono, in altri casi può cercare di scrivere (tipicamente log e dati) su directory o file dove l&amp;rsquo;utente che ha lanciato il programma (può essere anche un utente di sistema, che lo esegue automaticamente al boot) non ha permessi di scrittura.&lt;br>
-Un esempio ricorrente è la configurazione di Apache per gestire siti web, aggiornati via ftp da diverse persone.&lt;br>
-In questo caso l&amp;rsquo;utente con cui gira Apache (di solito &lt;strong>nobody&lt;/strong> o &lt;strong>apache&lt;/strong>) deve poter avere permessi di lettura sui file che compongono il sito web (e di esecuzione sulle relative directory).&lt;br>
-Contemporaneamente gli utenti che si collegano via ftp, devono poter scrivere sulle loro home directory, che sono anche le home dei relativi server web.&lt;br>
-Spesso, su Linus e su altri Unix, le home directory degli utenti sono in /home e sono leggibili solo dai rispettivi owner:&lt;br>
-&lt;code>ls -l /home/ | grep bacco&lt;/code>&lt;br>
-drwx&amp;mdash;&amp;mdash; 2 bacco bacco 18384 Aug 24 04:02 bacco&lt;br>
-Se Apache fosse configurato per avere il dominio &lt;a href="http://www.bacco.it">www.bacco.it&lt;/a> con le proprie pagine in /home/bacco, non riuscirebbe a visualizzare il sito Web per mancanza di permessi.&lt;br>
-Questi andrebbero allargati all&amp;rsquo;utente con cui viene eseguito da Apache:&lt;br>
-&lt;code>chmod -R 750 /home/bacco chgrp -R apache /home/bacco&lt;/code>&lt;br>
-Ottenendo un funzionale:&lt;br>
-drwxr-x&amp;mdash; 2 bacco apache 18384 Aug 24 04:02 bacco&lt;br>
-A volte, in preda a pigrizia o vittime dell&amp;rsquo;inconsapevolezza, si può avere la tentazione di allargare al massimo i permessi sui file che servono al programma che vogliamo far funzionare a tutti i costi:&lt;br>
-&lt;code>chmod -R 777 /home/bacco&lt;/code>&lt;br>
-Ottiene un funzionale ma poco sicuro:&lt;br>
-drwxrwxrwx 2 bacco bacco 18384 Aug 24 04:02 bacco&lt;br>
-In questo modo Apache potrebbe tranquillamente visualizzare il sito di bacco, ma avrebbe anche permessi di scrittura non necessari, condivisi anche con tutti gli altri utenti del sistema, che avrebbero l&amp;rsquo;indebita possibilità di modificare le pagine di sito in /home/bacco.&lt;/p>
-&lt;h4 id="comando-chmod">&lt;strong>comando &amp;lsquo;chmod&amp;rsquo;&lt;/strong> &lt;a href="#comando-chmod" class="hash">#&lt;/a>&lt;/h4>
-&lt;p>Modifica gli attributi di accesso su uno o più file. Solo il proprietario del file, o l&amp;rsquo;utente root, può modificarne gli attributi. E' un comando comune in tutti gli Unix e Linux.&lt;br>
-&lt;code>chmod [opzioni] modo file&lt;/code>&lt;br>
-&lt;code>-c&lt;/code> (&amp;ndash;changes) Visualizza informazioni sui file che vengono modificati&lt;br>
-&lt;code>-R&lt;/code> (&amp;ndash;recursive) Applica le modifiche alla directory indicata e a tutte le sue sottodirectory&lt;br>
-&lt;code>--reference=file_origine&lt;/code> Applica al file specificato nella riga di comando gli stessi permessi che ha file_origine&lt;br>
-&lt;code>-f&lt;/code> (&amp;ndash;silent) Non stampa messaggi di errore sui file che non possono essere modificati&lt;/p>
-&lt;p>Esistono due diversi modi per definire i permessi su un file:&lt;/p>
-&lt;p>&lt;strong>SYMBOLIC MODE&lt;/strong>&lt;br>
-I permessi vengono definiti nella forma: chi-opcode-permesso.&lt;br>
-CHI può essere:&lt;br>
-&lt;strong>u&lt;/strong> USER - Utente proprietario del file&lt;br>
-&lt;strong>g&lt;/strong> GROUP - Gruppo proprietario del file&lt;br>
-&lt;strong>o&lt;/strong> OTHER - Altri utenti&lt;br>
-&lt;strong>a&lt;/strong> ALL - Tutti gli utenti del sistema (default)&lt;br>
-OPCODE può essere:&lt;br>
-&lt;strong>+&lt;/strong> Aggiunge un permesso&lt;br>
-&lt;strong>-&lt;/strong> Rimuove un permesso&lt;br>
-&lt;strong>=&lt;/strong> Assegna un permesso (e rimuove tutti quelli non specificati)&lt;br>
-PERMESSO può essere:&lt;br>
-&lt;strong>r&lt;/strong> READ - Lettura sul file&lt;br>
-&lt;strong>w&lt;/strong> WRITE - Scrittura sul file&lt;br>
-&lt;strong>x&lt;/strong> EXECUTE - Esecuzione del file (o apertura della directory)&lt;br>
-&lt;strong>s&lt;/strong> SET USER ID - Il file (comando) viene eseguito con i permessi dell&amp;rsquo;owner sul file system, anche quando viene eseguito da altri utenti. Questo attributo è a volte necessario in alcuni comandi lanciati da utenti normali che hanno accesso sul sistema con i permessi di root (es: traceroute).&lt;br>
-&lt;strong>t&lt;/strong> STICKY BIT - Normalmente un utente può cancellare tutti i file contenuti in una directory su cui ha permesso di scrittua, anche se non ha permessi di scrittura sul file stesso. Con lo Sticky bit impostato, ciò non è possibile: l&amp;rsquo;utente può cancellare il relativo file solo se ha permessi di scrittura sul file stesso&lt;br>
-&lt;strong>u&lt;/strong> Lascia i permessi correnti dell&amp;rsquo;utente owner&lt;br>
-&lt;strong>g&lt;/strong> Lascia i permessi correnti del gruppo owner&lt;br>
-&lt;strong>o&lt;/strong> Lascia i permessi correnti per gli altri utenti&lt;/p>
-&lt;p>&lt;strong>OCTAL MODE&lt;/strong>&lt;br>
-E' un metodo alternativo che permette di definire i permessi con un numero ottale composta da tre cifre:&lt;br>
-la prima indica i permessi per l&amp;rsquo;utente owner, la seconda per il gruppo, la terza per gli altri.&lt;br>
-I permessi vengono calcolati sommando i seguenti valori ottali:&lt;br>
-4 - Lettura&lt;br>
-2 - Scrittura&lt;br>
-1 - Esecuzione.&lt;br>
-In questo modo il permesso di lettura+scrittura+esecuzione si indica con il numero 7 (4+2+1), il permesso di lettura, esecuzione con 5 (4+1) e così via.&lt;br>
-E' inoltre possibile indicare una quarta cifra (da far precedere alle 3 usuali) per permettere l&amp;rsquo;assegnamento dei seguenti permessi spciali:&lt;br>
-4 - Imposta lo UserId per l&amp;rsquo;esecuzione&lt;br>
-2 - Imposta il GroupID&lt;br>
-1 - Imposta lo sticky bit.&lt;/p>
-&lt;p>&lt;strong>Esempi&lt;/strong>&lt;br>
-Per impostare i permessi totali all&amp;rsquo;owner, e solo in lettura a tutti gli altri si hanno le seguenti possibilità:&lt;br>
-&lt;code>chmod 744 /home/file chmod u=rwx,go=r /home/file&lt;/code>&lt;/p>
-&lt;p>Per impostare permessi di sola lettura per l&amp;rsquo;owner e il group e nessun permesso per gli altri:&lt;br>
-&lt;code>chmod 440 /home/file chmod ug=r,o-rwx /home/file&lt;/code>&lt;/p>
-&lt;p>Per impostare totali permessi per tutti gli utenti su un file:&lt;br>
-&lt;code>chmod 777 /home/file chmod ugo=rwx /home/file&lt;/code>&lt;/p>
-&lt;p>Per impostare lo sticky bit su un file e permessi totali solo per l&amp;rsquo;owner e di sola lettura per il group:&lt;br>
-&lt;code>chmod 1740 /home/file chmod u=srwx,g=r,o-rwx&lt;/code>&lt;/p>
-&lt;h4 id="comando-chown">&lt;strong>comando &amp;lsquo;chown&amp;rsquo;&lt;/strong> &lt;a href="#comando-chown" class="hash">#&lt;/a>&lt;/h4>
-&lt;p>Modifica il proprietario di uno più file. Può essere fatto solo da root o dal proprietario corrente del file.&lt;br>
-E' un comando comune in tutti gli Unix e Linux.&lt;br>
-&lt;code>chown [opzioni] nuovo_proprietario file chown [opzioni] nuovo_proprietario:nuovo_gruppo file&lt;/code>&lt;br>
-&lt;code>-c&lt;/code> (&amp;ndash;changes) Visualizza informazioni sui file che vengono modificati&lt;br>
-&lt;code>-R&lt;/code> (&amp;ndash;recursive) Applica le modifiche alla directory indicata e a tutte le sue sottodirectory&lt;br>
-&lt;code>--reference=file_origine&lt;/code> Applica al file specificato nella riga di comando lo stesso proprietario che ha file_origine&lt;br>
-&lt;code>-f&lt;/code> (&amp;ndash;silent) Non stampa messaggi di errore sui file che non possono essere modificati&lt;br>
-&lt;code>-v&lt;/code> (&amp;ndash;verbose) Visualizza dettagliate informazioni su ogni file che chown tenta di modificare.&lt;/p>
-&lt;p>&lt;strong>Esempi&lt;/strong>&lt;br>
-&lt;code>chown al /var/tmp/alien&lt;/code> Imposta al come propietario del file /var/tmp/alien&lt;br>
-&lt;code>chown beppe:beppe /home/file&lt;/code> Imposta owner beppe e group owner beppe al file /home/file.&lt;/p>
-&lt;h4 id="comando-chgrp">&lt;strong>comando &amp;lsquo;chgrp&amp;rsquo;&lt;/strong> &lt;a href="#comando-chgrp" class="hash">#&lt;/a>&lt;/h4>
-&lt;p>Cambia l&amp;rsquo;owner group di un file o directory. Comando comune in tutti gli Unix.&lt;code>chgrp [opzioni] nuovo_gruppo file&lt;/code>&lt;br>
-&lt;code>-c&lt;/code> (&amp;ndash;changes) Visualizza informazioni sui file che vengono modificati&lt;br>
-&lt;code>-R&lt;/code> (&amp;ndash;recursive) Applica le modifiche alla directory indicata e a tutte le sue sottodirectory&lt;br>
-&lt;code>--reference=file_origine&lt;/code> Applica al file specificato nella riga di comando lo stesso gruppo proprietario che ha file_origine&lt;br>
-&lt;code>-f&lt;/code> (&amp;ndash;silent) Non stampa messaggi di errore sui file che non possono essere modificati&lt;br>
-&lt;code>-v&lt;/code> (&amp;ndash;verbose) Visualizza dettagliate informazioni su ogni file che chown tenta di modificare.&lt;/p>
-&lt;p>&lt;strong>Esempi&lt;/strong>&lt;br>
-&lt;code>chgrp users /tmp/data&lt;/code> Imposta users come owner group del file /tmp/data&lt;br>
-&lt;code>chgrp -R wheel /tmp/datadir&lt;/code> Imposta wheel come wonder group della directory /tmp/datadir e di tutti i file e le sottodirectory che contiene.&lt;/p>
-&lt;h4 id="comando-lsattr">&lt;strong>comando &amp;lsquo;lsattr&amp;rsquo;&lt;/strong> &lt;a href="#comando-lsattr" class="hash">#&lt;/a>&lt;/h4>
-&lt;p>Visualizza gli attributi di un file su file system ext2/ext3.&lt;code>lsattr [opzioni] [nomefile]&lt;/code>&lt;br>
-&lt;code>-R&lt;/code> visualizza ricorsivamente gli attributi dei file all&amp;rsquo;interno delle directory;&lt;br>
-&lt;code>-V&lt;/code> visualizza la versione del programma;&lt;br>
-&lt;code>-a&lt;/code> visalizza tutti i tipi di file, anche quelli nascosti;&lt;br>
-&lt;code>-d&lt;/code> visualizza le directory allo stesso modo degli altri file anzichè visualizzarne il contenuto;&lt;br>
-&lt;code>-v&lt;/code> visualizza la versione del file;&lt;/p>
-&lt;p>Esempio:&lt;br>
-[azitti@pluto zabbix]$ &lt;code>lsattr zabbix.tar&lt;/code>&lt;br>
-s-S-i-dAc&amp;ndash;t- zabbix.tar&lt;br>
-E' possibile notare gli attributi particolari che sono settabili con il comando chattr&lt;/p>
-&lt;h4 id="comando-chattr">&lt;strong>comando &amp;lsquo;chattr&amp;rsquo;&lt;/strong> &lt;a href="#comando-chattr" class="hash">#&lt;/a>&lt;/h4>
-&lt;p>&amp;lsquo;chattr&amp;rsquo; imposta gli attributi di un file su un file system linux di tipo ext2/ext3.&lt;br>
-Andando a lavorare su particolari attributi peculiari di questi file system chattr non è un comando unix standard.&lt;br>
-&lt;code>chattr [-RV] [-v versione ] [+/-= attrib] file ...&lt;/code>&lt;br>
-&lt;code>-R&lt;/code> Ricorsivo&lt;br>
-&lt;code>-V&lt;/code> Stampa gli attributi modificati&lt;br>
-&lt;code>-v versione&lt;/code> Imposta la versione di un file.&lt;/p>
-&lt;p>&lt;strong>Attributi&lt;/strong>&lt;br>
-&lt;code>a&lt;/code> il file può essere aperto solo in append mode.&lt;br>
-&lt;code>c&lt;/code> il file è compresso/decompresso dal kernel su disco&lt;br>
-&lt;code>d&lt;/code> Non verrà eseguito il backup su di esso dall' utility dump.&lt;br>
-&lt;code>i&lt;/code> Il file non può essere modificato in alcun modo.&lt;br>
-&lt;code>s&lt;/code> Il file è cancellato e i suoi blocchi sono azzerati e scritti su disco.&lt;br>
-&lt;code>S&lt;/code> I cambiamenti sono scritti in modo sincrono su disco&lt;br>
-&lt;code>u&lt;/code> Il file è cancellato e il suo contenuto è salvato per un eventuale ripristino.&lt;/p>
-&lt;p>&lt;strong>NB: gli attributi &amp;lsquo;c&amp;rsquo; ed &amp;lsquo;u&amp;rsquo; non sono attualmente implementati.&lt;/strong>&lt;br>
-Grazie al comando &lt;code>chattr&lt;/code> è possibile fare in modo che un file non sia modificabile nemmeno da &lt;strong>root&lt;/strong>, senza prima disabilitare il flag &lt;code>-i&lt;/code> che permette di apportarvi dei cambiamenti.&lt;br>
-Esempio:&lt;br>
-[azitti@pluto azitti]$ &lt;code>chattr -i [nomefile]&lt;/code>&lt;br>
-Settando questo attributo, creare un link al file, rinominarlo, sovrascriverlo cancellarlo o aggiornarlo non sarà più possibile&lt;br>
-Questa opzione risulta utile per aumentare la sicurezza del proprio sistema, rendendo non accidentalmente modificabili, per esempio, alcuni file di configurazione.&lt;/p>
-&lt;h4 id="comando-grpck">&lt;strong>comando &amp;lsquo;grpck&amp;rsquo;&lt;/strong> &lt;a href="#comando-grpck" class="hash">#&lt;/a>&lt;/h4>
-&lt;p>Verifica l&amp;rsquo;integrità del file contenente i gruppi di sistema. Viene verificato che ogni entry nel file &lt;code>/etc/group&lt;/code> oppure in &lt;code>/etc/gshadow&lt;/code> abbia il corretto formato e i dati contenuti siano validi in caso contrario viene visualizzato un prompt che richede la cancellazione dell&amp;rsquo;intera linea contente errori. L&amp;rsquo;utility è in grado di verificare:&lt;/p>
-&lt;ul>
-&lt;li>la correttezza del numero di campi;&lt;/li>
-&lt;li>l&amp;rsquo;unicità dei nomi di gruppo;&lt;/li>
-&lt;li>la validità dell&amp;rsquo;elenco utenti e amministratori;&lt;/li>
-&lt;/ul>
-&lt;p>La sintassi è la seguente:&lt;br>
-&lt;code>grpck [opzioni] [target]&lt;/code>&lt;br>
-&lt;code>-r&lt;/code>: modalità read only;&lt;/p>
-&lt;p>Esempio:&lt;br>
-root@Joker:~# &lt;code>grpck /etc/group&lt;/code>&lt;br>
-invalid group file entry&lt;br>
-delete line &lt;code>pippo'? &lt;/code>y`&lt;br>
-grpck: the files have been updated&lt;br>
-In questo esempio è stata riscontrata una linea non valida&lt;/p>
-&lt;p>Qualora il check abbia dato esito positivo non viene visualizzato alcun messaggio.&lt;/p>
-&lt;h4 id="come-usare-chmod-per-creare-un-eseguibile-da-shell">&lt;strong>come usare CHMOD per creare un eseguibile da shell&lt;/strong> &lt;a href="#come-usare-chmod-per-creare-un-eseguibile-da-shell" class="hash">#&lt;/a>&lt;/h4>
-&lt;p>Spesso occorre ripetere da shell una serie di comandi più volte, comportando così un inutile quanto fastidioso spreco di tempo nel dover riscrivere ogni volta le stesse linee di comando. Un trucco per automatizzare questa procedura è il seguente: si costruisce un file eseguibile da shell che riscrive ed esegue delle linee di comando nella sequenza da noi impostata, semplicemente lanciandolo da riga di comando.&lt;br>
-Per semplicità creeremo un file che esegue una sola istruzione, ma supponete di avere molti comandi da eseguire spesso e capirete il vantaggio che si ottiene con questo metodo.&lt;br>
-Il file che creeremo si chiama prova.sh:&lt;br>
-&lt;strong># vi prova.sh&lt;/strong>&lt;br>
-Adesso siete nell’editor di testo vi. Scriviamo ora una riga di comando che permette di elencare i file presenti nella posizione dalla quale eseguiamo il file prova.sh:&lt;br>
-ls&lt;br>
-Quindi premete INVIO, ESC, :wq&lt;br>
-Adesso digitate da shell:&lt;br>
-&lt;strong># chmod a+x prova.sh&lt;/strong>&lt;br>
-Questo comando abilita tutti (a=all) all’esecuzione (x=eXecute) del file prova.sh&lt;br>
-Se non lo digitate, provando ad eseguire il file prova.sh avreste in risposta una frase di permesso negato.&lt;br>
-Ora non resta che eseguire il comando:&lt;br>
-&lt;strong># ./prova.sh&lt;/strong>&lt;br>
-Vi comparirà un listato dei file e delle directory situate nella posizione da cui lo avete eseguito.&lt;br>
-Come sempre per saperne di più sull&amp;rsquo;uso di una comando, potete consultare l&amp;rsquo;help (# chmod &amp;ndash;help) o il manuale (# man chmod).&lt;/p></description><author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author><guid>/2020/10/22/permessi-linux/</guid><pubDate>Thu, 22 Oct 2020 00:00:00 +0000</pubDate></item><item><title>The Essential Toolkit for the Terminal</title><link>/2020/10/22/linux-commands/</link><description>&lt;p>Linux includes a large number of commands, but we’ve chosen 37 of the most important ones to present here. Learn these commands, and you’ll be much more at home at the Linux command prompt.&lt;/p>
+&lt;p>Ctrl+Z | Suspend nano&lt;/p></description><author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author><guid>/2020/10/22/nano-shortcuts/</guid><pubDate>Thu, 22 Oct 2020 00:00:00 +0000</pubDate></item><item><title>The Essential Toolkit for the Terminal</title><link>/2020/10/22/linux-commands/</link><description>&lt;p>Linux includes a large number of commands, but we’ve chosen 37 of the most important ones to present here. Learn these commands, and you’ll be much more at home at the Linux command prompt.&lt;/p>
 &lt;p>The below list is presented in alphabetical order. A command’s position in the list is not representative of its usefulness or simplicity. For the final word on a command’s usage, refer to its man pages. The &lt;code>man&lt;/code> command is in our list, of course—it’s short for “manual.”&lt;/p>
 &lt;h2 id="1-alias">1. alias &lt;a href="#1-alias" class="hash">#&lt;/a>&lt;/h2>
 &lt;p>The alias command lets you give your own name to a command or sequence of commands. You can then type your short name, and the shell will execute the command or sequence of commands for you.&lt;/p>
