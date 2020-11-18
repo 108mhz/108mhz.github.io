@@ -1,4 +1,18 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>108Mhz</title><description/><link>/</link><language>en</language><copyright>Copyright 2020, Ronalds Vilcins</copyright><lastBuildDate>Tue, 17 Nov 2020 00:00:00 +0000</lastBuildDate><generator>Hugo - gohugo.io</generator><docs>http://cyber.harvard.edu/rss/rss.html</docs><atom:link href="https://ronaldsvilcins.com/atom.xml" rel="self" type="application/atom+xml"/><item><title>Format 'docker ps' Command Output Nicely</title><link>/2020/11/17/format-docker-ps/</link><description>&lt;p>Run the following command in your terminal:&lt;/p>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>108Mhz</title><description/><link>/</link><language>en</language><copyright>Copyright 2020, Ronalds Vilcins</copyright><lastBuildDate>Wed, 18 Nov 2020 00:00:00 +0000</lastBuildDate><generator>Hugo - gohugo.io</generator><docs>http://cyber.harvard.edu/rss/rss.html</docs><atom:link href="https://ronaldsvilcins.com/atom.xml" rel="self" type="application/atom+xml"/><item><title>Run a local server to share files</title><link>/2020/11/18/run-localserver/</link><description>&lt;p>Do not run this command in your home folder.&lt;/p>
+&lt;p>mkdir -p /tmp/shared/&lt;/p>
+&lt;blockquote>
+&lt;p>cd /tmp/shared/&lt;/p>
+&lt;/blockquote>
+&lt;p>echo &amp;ldquo;Hello world&amp;rdquo; &amp;gt; WELCOME.txt&lt;/p>
+&lt;h1 id="if-using-python-2x">If using Python 2.x &lt;a href="#if-using-python-2x" class="hash">#&lt;/a>&lt;/h1>
+&lt;blockquote>
+&lt;p>python -m SimpleHTTPServer&lt;/p>
+&lt;/blockquote>
+&lt;h1 id="python-3x">Python 3.x &lt;a href="#python-3x" class="hash">#&lt;/a>&lt;/h1>
+&lt;blockquote>
+&lt;p>python3 -m http.server&lt;/p>
+&lt;/blockquote>
+&lt;p>This will listen on port 8000 by default.&lt;/p></description><author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author><guid>/2020/11/18/run-localserver/</guid><pubDate>Wed, 18 Nov 2020 00:00:00 +0000</pubDate></item><item><title>Format 'docker ps' Command Output Nicely</title><link>/2020/11/17/format-docker-ps/</link><description>&lt;p>Run the following command in your terminal:&lt;/p>
 &lt;pre>&lt;code>🚀 ~ export VERTICAL=&amp;quot;\nID\t{{.ID}}\nImage\t{{.Image}}\nCommand\t{{.Command}}\nCreated\t{{.RunningFor}}\nStatus\t{{.Status}}\nPorts\t{{.Ports}}\nNames\t{{.Names}}\n&amp;quot;
 &lt;/code>&lt;/pre>
 &lt;p>After this, you&amp;rsquo;ll be able to format your &lt;code>docker ps&lt;/code> command output vertically by doing:&lt;/p>
