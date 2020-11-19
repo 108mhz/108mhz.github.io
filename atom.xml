@@ -1,4 +1,29 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>108Mhz</title><description/><link>/</link><language>en</language><copyright>Copyright 2020, Ronalds Vilcins</copyright><lastBuildDate>Wed, 18 Nov 2020 00:00:00 +0000</lastBuildDate><generator>Hugo - gohugo.io</generator><docs>http://cyber.harvard.edu/rss/rss.html</docs><atom:link href="https://ronaldsvilcins.com/atom.xml" rel="self" type="application/atom+xml"/><item><title>Run a local server to share files</title><link>/2020/11/18/run-localserver/</link><description>&lt;p>Do not run this command in your home folder.&lt;/p>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>108Mhz</title><description/><link>/</link><language>en</language><copyright>Copyright 2020, Ronalds Vilcins</copyright><lastBuildDate>Thu, 19 Nov 2020 00:00:00 +0000</lastBuildDate><generator>Hugo - gohugo.io</generator><docs>http://cyber.harvard.edu/rss/rss.html</docs><atom:link href="https://ronaldsvilcins.com/atom.xml" rel="self" type="application/atom+xml"/><item><title>Study Less Study Smart</title><link>/2020/11/19/studyless-study-smart/</link><description>&lt;p>Marty Lobdell - Study Less Study Smart&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/IlU-zDU6aQ0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;p>In brief:&lt;/p>
+&lt;ul>
+&lt;li>30 min study sessions with 5 min breaks&lt;/li>
+&lt;li>no music except certain study music&lt;/li>
+&lt;li>special desk/ room for studying/working&lt;/li>
+&lt;li>learn concepts before facts (be able to explain things in your own words)&lt;/li>
+&lt;li>take notes&lt;/li>
+&lt;li>teach another person&lt;/li>
+&lt;li>use mnemonics&lt;/li>
+&lt;li>for textbooks:
+&amp;ndash; feel free to move to different chapters- it&amp;rsquo;s not a novel&lt;/li>
+&lt;/ul>
+&lt;p>&amp;ndash; for each chapter: see images, main points and questions&lt;/p>
+&lt;p>&amp;ndash; write down questions in the book&lt;/p>
+&lt;p>&amp;ndash; read bold words, titles, names, main ideas and marked text&lt;/p>
+&lt;p>&amp;ndash; read first and last sentence of each paragraph&lt;/p>
+&lt;p>&amp;ndash; read the whole book&lt;/p>
+&lt;p>&amp;ndash; try to answer questions&lt;/p>
+&lt;p>&amp;ndash; reread the book and answer questions you couldn&amp;rsquo;t before&lt;/p>
+&lt;p>&amp;ndash; reread with a marker and pencil&lt;/p>
+&lt;p>&amp;ndash; answer questions, come up with your own for the main topics&lt;/p>
+&lt;p>&amp;ndash; write an essay for topics that a child could understand&lt;/p></description><author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author><guid>/2020/11/19/studyless-study-smart/</guid><pubDate>Thu, 19 Nov 2020 00:00:00 +0000</pubDate></item><item><title>Run a local server to share files</title><link>/2020/11/18/run-localserver/</link><description>&lt;p>Do not run this command in your home folder.&lt;/p>
 &lt;p>mkdir -p /tmp/shared/&lt;/p>
 &lt;blockquote>
 &lt;p>cd /tmp/shared/&lt;/p>
