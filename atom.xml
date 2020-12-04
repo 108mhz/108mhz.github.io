@@ -1,4 +1,92 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>108Mhz</title><description/><link>/</link><language>en</language><copyright>Copyright 2020, Ronalds Vilcins</copyright><lastBuildDate>Thu, 19 Nov 2020 00:00:00 +0000</lastBuildDate><generator>Hugo - gohugo.io</generator><docs>http://cyber.harvard.edu/rss/rss.html</docs><atom:link href="https://ronaldsvilcins.com/atom.xml" rel="self" type="application/atom+xml"/><item><title>Study Less Study Smart</title><link>/2020/11/19/studyless-study-smart/</link><description>&lt;p>Marty Lobdell - Study Less Study Smart&lt;/p>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>108Mhz</title><description/><link>/</link><language>en</language><copyright>Copyright 2020, Ronalds Vilcins</copyright><lastBuildDate>Fri, 04 Dec 2020 00:00:00 +0000</lastBuildDate><generator>Hugo - gohugo.io</generator><docs>http://cyber.harvard.edu/rss/rss.html</docs><atom:link href="https://ronaldsvilcins.com/atom.xml" rel="self" type="application/atom+xml"/><item><title>How To Create Easy and Secure Passwords</title><link>/2020/12/04/create-secure-password/</link><description>&lt;p>The first step to making sure our passwords are their best is to leave the &amp;lsquo;password&amp;rsquo; mentality behind. We need to create &amp;lsquo;passphrases&amp;rsquo; instead. A passphrase is like a password but longer, using several words together. The longer the passphrase is, the better off we will be. But there is a point of diminishing returns in the length versus security trade-off.&lt;/p>
+&lt;p>In Edward Snowden&amp;rsquo;s original email to the journalist he said:&lt;/p>
+&lt;blockquote>
+&lt;p>Please confirm that no one has ever had a copy of your private key and that it uses a strong passphrase. Assume your adversary is capable of one trillion guesses per second.&lt;/p>
+&lt;/blockquote>
+&lt;p>That is a lot of guesses per second! Granted, that journalist most likely had a much larger target than we do on their back, but this is still a great threshold to measure how effective our passphrases are. If we only use a password that is five characters long, even if it is full of symbols, it will be guessed in minutes not days.&lt;/p>
+&lt;p>We should always assume there is an attacker with enough incentive to run a trillion guesses per second against our accounts. By doing so we raise the unlikeliness of a attack against us succeeding.&lt;/p>
+&lt;h2 id="your-password-trick-isnt-clever">Your Password Trick Isn&amp;rsquo;t Clever &lt;a href="#your-password-trick-isnt-clever" class="hash">#&lt;/a>&lt;/h2>
+&lt;p>The majority of people will choose a password from the culture around them. This is often a line from their favor book, song, or movie. Once the quote is selected they then mess around with in by adding capitalization, numbers, and symbols that are easy for them to remember. Let&amp;rsquo;s take a look at the following password from a classic Shakespearian work.&lt;/p>
+&lt;p>&lt;code>AllTh3Worlds/ASt4ge&lt;/code>&lt;/p>
+&lt;p>Even though we have more of a passphrase than a password here, there is a high provability that we were not the first to use this passphrase. By using a line from a work of art we place our accounts at more risk than we should. For all we know there is a computer program out there that takes popular phrases and mixes around variations to find a match.&lt;/p>
+&lt;p>The reason passwords and phrases like the one above are a poor choice is something called entropy. At a basic level and in relation to passwords, entropy is how random a passphrase is in its final state. Unfortunately, we humans love patterns and are extremely terrible at creating randomness.&lt;/p>
+&lt;p>What if we don&amp;rsquo;s use a line from culture but instead just pick random words? Even when we do this it is still far from being truly random. This is due to how ingrained our native language has become and all languages are predictable. Our brains love using idioms and rules of grammar, both of which kill entropy.&lt;/p>
+&lt;h2 id="secure-passphrase-with-dice">Secure Passphrase with Dice &lt;a href="#secure-passphrase-with-dice" class="hash">#&lt;/a>&lt;/h2>
+&lt;p>Yes, dice. It is the best way to allow for the randomness of nature to create a ton of entropy. First we need to grab a &lt;em>&lt;a href="https://www.eff.org/files/2016/07/18/eff_large_wordlist.txt">Diceware Word List&lt;/a>&lt;/em> off the internet. The one linked in from the Electronic Frontier Foundation and is on optimized version of previous word lists.&lt;/p>
+&lt;p>These word lists contain 7,776 words or 37 PDF pages of words for your passphrase-making pleasure. Next to each word is a five-digit number each between one and six. Now we need our dice. Real dice are always better than using a program because we can not be one hundred percent certain the program is truly random.&lt;/p>
+&lt;p>Roll the dice until you have five numbers ranging between one and six. Write down the five numbers as they appear on a piece of paper. The five-digit number that is on the paper corresponds to a word on the list linked above. Congratulations, you have you first random word! Once you are done you will end up with a passphrase that looks like the following.&lt;/p>
+&lt;p>&lt;code>acorn overstate ferris outlet mosaic laurel&lt;/code>&lt;/p>
+&lt;p>We can then add capitalization, numbers, and symbols as we wish. However, the entropy comes from how many words we generate using the dice and word list. The longer the passphrase the more entropy we gain and the harder our passphrase will be to guess.&lt;/p>
+&lt;h2 id="how-strong-are-dice-generated-passphrases">How Strong are Dice-Generated Passphrases? &lt;a href="#how-strong-are-dice-generated-passphrases" class="hash">#&lt;/a>&lt;/h2>
+&lt;p>As mentioned, the strength of any password or phrase is determined by how many words we roll. If we only choose one word from the list, an attacker will have a one in 7,776 chance for guessing our word. The attacker may guess it on the first attempt or the 7,776th attempt with the average number of guesses being 3,888.&lt;/p>
+&lt;p>So what if we roll our dice for two words? It does not simply double but there are now 77,762 possible combinations increasing the total possible phrases to 60,466,176! On average it will take 30 million tries to guess a two-word passphrase. Bump it up to five words and we get 14 quintilian tries! (That is with the attacker knowing that we used a word list and which one.)&lt;/p>
+&lt;p>But how long will it take to guess these at one trillion guesses per second as Edward Snowden says we should assume? This is also exponential. If we were to use five words it would take an average of 165 days to crack. At six words it jumps to 3,505 years and seven words puts us at 27,256 millenia!&lt;/p>
+&lt;h2 id="when-to-use-the-dice-method">When to Use the Dice Method? &lt;a href="#when-to-use-the-dice-method" class="hash">#&lt;/a>&lt;/h2>
+&lt;p>I always recommend people use a service like &lt;em>Bitwarden&lt;/em> for their online passwords. It will generate a random password for you and no two will be the same. This is very important to keep your accounts safe. There is no need to use a diceware passphrase on each site you sign up for since that would require us to memorize too many six- or seven-word strings.&lt;/p>
+&lt;p>The reason for this is because after we submit our password to a site it has to connect to a server and send back the results. It is not possible for an attacker to send a trillion requests to a web-sever without clogging its network. We are more likely to have our passwords stolen by a fake version of our favorite site. In that event, no level of entropy will help.&lt;/p>
+&lt;p>However, we must use a diceware passphrase for our &lt;em>Bitwarden&lt;/em> master password and nowhere else! Every time we use the same passphrase on a different site we increase the chance of it getting stolen. This, in turn, kills the entropy we created with our dice.&lt;/p>
+&lt;h2 id="remember">Remember &lt;a href="#remember" class="hash">#&lt;/a>&lt;/h2>
+&lt;ol>
+&lt;li>Never use the same password on more than one site.&lt;/li>
+&lt;li>Use a service like &lt;em>Bitwarden&lt;/em> to create unique passwords for websites.&lt;/li>
+&lt;li>Create other passwords using dice and the word list.&lt;/li>
+&lt;li>Use at least six words in the diceware passphrase.&lt;/li>
+&lt;li>Add capitalization, symbols, and numbers as you wish.&lt;/li>
+&lt;/ol>
+&lt;hr>
+&lt;ul>
+&lt;li>&lt;a href="https://jrswab.com">JRSwab&lt;/a>&lt;/li>
+&lt;/ul></description><author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author><guid>/2020/12/04/create-secure-password/</guid><pubDate>Fri, 04 Dec 2020 00:00:00 +0000</pubDate></item><item><title>How to use Instagram on your computer</title><link>/2020/12/04/instagram-on-computer/</link><description>&lt;p>So you want to post that dank meme an instagram but don&amp;rsquo;t want to bust out your mobile or download the app? I got you covered.&lt;/p>
+&lt;h2 id="how-to-post-to-instagram-from-a-computer">How to Post to Instagram from a Computer: &lt;a href="#how-to-post-to-instagram-from-a-computer" class="hash">#&lt;/a>&lt;/h2>
+&lt;h3 id="in-chrome-based-browsers">In Chrome based browsers: &lt;a href="#in-chrome-based-browsers" class="hash">#&lt;/a>&lt;/h3>
+&lt;ol>
+&lt;li>Open instagram in your web browser&lt;/li>
+&lt;li>Log in&lt;/li>
+&lt;li>Open developer tools&lt;/li>
+&lt;li>Click the networking tab&lt;/li>
+&lt;li>Click the three dots in the top left&lt;/li>
+&lt;li>Hover over &amp;ldquo;more tools&amp;rdquo;&lt;/li>
+&lt;li>Click &amp;ldquo;network conditions&amp;rdquo;&lt;/li>
+&lt;li>Under &amp;ldquo;User Agent&amp;rdquo; uncheck &amp;ldquo;Select Automatically&amp;rdquo;&lt;/li>
+&lt;li>Choose a mobile option from the list&lt;/li>
+&lt;li>Refresh the page!&lt;/li>
+&lt;/ol>
+&lt;h3 id="in-firefox-based-browsers">In Firefox based browsers: &lt;a href="#in-firefox-based-browsers" class="hash">#&lt;/a>&lt;/h3>
+&lt;ol>
+&lt;li>Open instagram in your web browser&lt;/li>
+&lt;li>Log in&lt;/li>
+&lt;li>Click the menu&lt;/li>
+&lt;li>Click &amp;ldquo;Web Developer&amp;rdquo;&lt;/li>
+&lt;li>Click the &amp;ldquo;Responsive Design Mode&amp;rdquo; button (ctrl+shift+M)&lt;/li>
+&lt;/ol>
+&lt;hr>
+&lt;ul>
+&lt;li>&lt;a href="https://jrswab.com">JRSwab&lt;/a>&lt;/li>
+&lt;/ul></description><author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author><guid>/2020/12/04/instagram-on-computer/</guid><pubDate>Fri, 04 Dec 2020 00:00:00 +0000</pubDate></item><item><title>YaCy: decentralized search alternative</title><link>/2020/12/04/yacy-search/</link><description>&lt;p>Today we are getting more in-depth wit YaCy and why it is important. We, as internet users, need to be mindful of who is using our data and how. Does it benefit us to give up our information and privacy?&lt;/p>
+&lt;p>Convenience is often the only benefit found for today&amp;rsquo;s mass data collection of internet users. Search engines are a part of this privacy war playing out in front of us. They collect data to sell ads tailored to our search history at a higher price than they could for random ads.&lt;/p>
+&lt;p>They can do this because there is a level of certainty when estimating clicks on an ad targeted to an individual. Even if they don&amp;rsquo;t raise the cost of the ads and still use this targeted data they win. A better targeted ad will bring more clicks. More clicks means the company who bought the ad has to pay more.&lt;/p>
+&lt;p>Without targeting the ads the number of clicks would be much lower and therefore the search engine makes less money. That is how it all started. These search engines needed money to pay for the servers they used so they sold ads. Once they saw it was profitable, they tracked search history to better target the ads.&lt;/p>
+&lt;p>The companies paying for the ads do not mind paying more each day because they get more clicks. More clicks on their ads means more people to their site. More visitors means more sales and money. There was no backlash when the tracking started because the people to notice it first had enjoyed the change. Those that did not, keep searching without a clue.&lt;/p>
+&lt;p>This is the nature of the centralized model for the sites and online tools we use every day. The providers have bills and employees to pay so money is a necessity. Asking people used to using the service for free to pay for the same would be a death wish. It is much smoother for these search giants to track, log, and use our data to make the money they need.&lt;/p>
+&lt;h2 id="what-is-yacy">What Is YaCy &lt;a href="#what-is-yacy" class="hash">#&lt;/a>&lt;/h2>
+&lt;p>YaCy is a search engine that uses the decentralized peer-to-peer model. When you become a peer, you crawl the web just like the big players. As you gather data you share it with the rest of the network to improve the speed and coverage of YaCy.&lt;/p>
+&lt;p>This search engine is free to use and there are no ads. YaCy can do this because they do not have to pay a server bill since you become one of the many servers on the network. They also do not have to pay anyone to keep the search engine running because there is no single point of failure.&lt;/p>
+&lt;p>The term for this is &amp;ldquo;distributed search engine&amp;rdquo; and there are a few others out there. Some include InfraSearch, Opencola, and FAROO. All of which started in the early 2000s with YaCy starting at the end of 2003 by Michael Christen. Each of these search engines have a similar structure to YaCy. All rely on the nodes to crawl, mine, and query information to display to the users.&lt;/p>
+&lt;h3 id="localized">Localized &lt;a href="#localized" class="hash">#&lt;/a>&lt;/h3>
+&lt;p>With YaCy there is a web interface but the difference, from the well-known search engines, is that you can&amp;rsquo;t just type in yacy.net and look up your question. There is a download for Windows, Mac, and Linux on their site. Once you have the file all you need to do is decompress the directory and run the script.&lt;/p>
+&lt;p>There is no install to use YaCy!&lt;/p>
+&lt;p>After you run the script, the YaCy search page will appear in your default web browser. From there you search as you would on Google, Bing, or Duck Duck Go. Some searches will take more time to complete than others. This all depends on how often the phrase gets a request, far as I can tell.&lt;/p>
+&lt;p>You may also run into a few searches with little or no results. This is the nature of the beast but with more users and nodes this problem will go away. However, you will only run into this if you are searching for something obscure. For over a decade YaCy has run in some form picking up more data to serve to its users.&lt;/p>
+&lt;h3 id="more-than-websites">More Than Websites &lt;a href="#more-than-websites" class="hash">#&lt;/a>&lt;/h3>
+&lt;p>This data is not information on what you are searching for but what the internet has to offer you. There are over one billion documents indexed by YaCy peers. This includes html documents (websites), PDF files, images, and any other data that can store on a web server. Upon the search results loading you may even see files that the big engines won&amp;rsquo;t show.&lt;/p>
+&lt;p>The biggest reason for many people using YaCy is that it will not censor data because it does not have to. Sites like Google, Bing, and Duck Duck Go may have to remove a result due to some government forcing them to do so. These centralized sources must remove the data or risk fines and even a shutdown.&lt;/p>
+&lt;p>Due to the decentralized, peer-to-peer nature of YaCy this is not an issue. There is no company to strong arm and get results taken offline. The best a government or company can do is force the site where people download the program offline. This won&amp;rsquo;t stop it because there is already numerous people with a copy.&lt;/p>
+&lt;p>The YaCy script will end up on file sharing platforms like BitTorrent in less than a day&amp;rsquo;s time if needed. This happens all the time when even centralized platforms get taken down. Gab grew much faster after Google removed their app from the play store. Now the site teaches people how to download and install the app without the Google Play Store.&lt;/p>
+&lt;p>When traditional hackers are silenced we find ways to screen louder and make it even harder to shut down our projects.&lt;/p>
+&lt;hr>
+&lt;ul>
+&lt;li>&lt;a href="https://jrswab.com">JRSwab&lt;/a>&lt;/li>
+&lt;/ul></description><author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author><guid>/2020/12/04/yacy-search/</guid><pubDate>Fri, 04 Dec 2020 00:00:00 +0000</pubDate></item><item><title>Study Less Study Smart</title><link>/2020/11/19/studyless-study-smart/</link><description>&lt;p>Marty Lobdell - Study Less Study Smart&lt;/p>
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
 &lt;iframe src="https://www.youtube.com/embed/IlU-zDU6aQ0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
 &lt;/div>
@@ -2038,22 +2126,38 @@ you would run iptables -P INPUT DROP.
 &lt;p>And to disable the SSH service so it no longer starts at boot:&lt;/p>
 &lt;blockquote>
 &lt;p>systemctl disable ssh.service&lt;/p>
-&lt;/blockquote></description><author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author><guid>/2020/10/06/enable-ssh/</guid><pubDate>Tue, 06 Oct 2020 00:00:00 +0000</pubDate></item><item><title>Add Firefox profile manager launcher Gnome</title><link>/2020/09/08/gnome-firefox-profiles/</link><description>&lt;p>In terminal:&lt;/p>
+&lt;/blockquote></description><author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author><guid>/2020/10/06/enable-ssh/</guid><pubDate>Tue, 06 Oct 2020 00:00:00 +0000</pubDate></item><item><title>How to run two different Firefox profiles at once on Linux</title><link>/2020/09/08/gnome-firefox-profiles/</link><description>&lt;p>To create a new profile, launch Firefox from a terminal window with the following command:&lt;/p>
 &lt;blockquote>
-&lt;p>/home/user/.local/share/applications/firefox-profiles.desktop&lt;/p>
+&lt;p>firefox &amp;ndash;profilemanager&lt;/p>
 &lt;/blockquote>
-&lt;p>paste and save:&lt;/p>
-&lt;p>paste and save:&lt;/p>
+&lt;p>In the resulting window, click Create Profile&lt;/p>
+&lt;p>Creating a new profile in the Firefox Profile Manager.&lt;/p>
+&lt;p>Click Next in the wizard and then, when prompted, give the new profile a name&lt;/p>
+&lt;p>Naming the new profile.&lt;/p>
+&lt;p>Click Finish and your new profile is ready.&lt;/p>
+&lt;h2 id="how-to-create-a-profile-launcher">How to create a profile launcher &lt;a href="#how-to-create-a-profile-launcher" class="hash">#&lt;/a>&lt;/h2>
+&lt;p>We&amp;rsquo;re going to create a separate launcher for the new profile. This new file must live in the ~/.local/share/applications folder. Create the new launcher with the command:&lt;/p>
 &lt;blockquote>
-&lt;p>Desktop Entry]
-Encoding=UTF-8
-Name=Firefox Profiles
-Exec=firefox -P profiles -no-remote &amp;ndash;class NAMEProfile
+&lt;p>nano ~/.local/share/applications/firefox-NAME.desktop&lt;/p>
+&lt;/blockquote>
+&lt;p>Where NAME is the name of the new profile you just created. In that file, paste the following contents, modifying to fit your needs/installation:&lt;/p>
+&lt;p>[Desktop Entry]&lt;/p>
+&lt;blockquote>
+&lt;p>Encoding=UTF-8
+Name=Firefox NAME
+Exec=firefox -P NAME -no-remote &amp;ndash;class NAMEProfile
 Icon=firefox
 Type=Application
 StartupNotify=True
 StartupWMClass=NAMEProfile&lt;/p>
-&lt;/blockquote></description><author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author><guid>/2020/09/08/gnome-firefox-profiles/</guid><pubDate>Tue, 08 Sep 2020 00:00:00 +0000</pubDate></item><item><title>Simple Password Generator</title><link>/2020/09/04/password-generator/</link><description>&lt;p>#!/bin/bash&lt;/p>
+&lt;/blockquote>
+&lt;p>Where NAME is the name of the new profile.&lt;/p>
+&lt;p>Save and close the file.&lt;/p>
+&lt;p>You should now see a launcher in your desktop menu for the new profile&lt;/p>
+&lt;hr>
+&lt;ul>
+&lt;li>&lt;a href="https://www.techrepublic.com">TechRepublic&lt;/a>&lt;/li>
+&lt;/ul></description><author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author><guid>/2020/09/08/gnome-firefox-profiles/</guid><pubDate>Tue, 08 Sep 2020 00:00:00 +0000</pubDate></item><item><title>Simple Password Generator</title><link>/2020/09/04/password-generator/</link><description>&lt;p>#!/bin/bash&lt;/p>
 &lt;p>#Simple Password Generator&lt;/p>
 &lt;p>echo &amp;ldquo;This is a simple password generator&amp;rdquo;
 echo &amp;ldquo;Please enter the length of the password: &amp;quot;
