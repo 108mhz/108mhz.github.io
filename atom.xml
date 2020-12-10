@@ -1,4 +1,57 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>108Mhz</title><description/><link>/</link><language>en</language><copyright>Copyright 2020, Ronalds Vilcins</copyright><lastBuildDate>Fri, 04 Dec 2020 00:00:00 +0000</lastBuildDate><generator>Hugo - gohugo.io</generator><docs>http://cyber.harvard.edu/rss/rss.html</docs><atom:link href="https://ronaldsvilcins.com/atom.xml" rel="self" type="application/atom+xml"/><item><title>How To Create Easy and Secure Passwords</title><link>/2020/12/04/create-secure-password/</link><description>&lt;p>The first step to making sure our passwords are their best is to leave the &amp;lsquo;password&amp;rsquo; mentality behind. We need to create &amp;lsquo;passphrases&amp;rsquo; instead. A passphrase is like a password but longer, using several words together. The longer the passphrase is, the better off we will be. But there is a point of diminishing returns in the length versus security trade-off.&lt;/p>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>108Mhz</title><description/><link>/</link><language>en</language><copyright>Copyright 2020, Ronalds Vilcins</copyright><lastBuildDate>Thu, 10 Dec 2020 00:00:00 +0000</lastBuildDate><generator>Hugo - gohugo.io</generator><docs>http://cyber.harvard.edu/rss/rss.html</docs><atom:link href="https://ronaldsvilcins.com/atom.xml" rel="self" type="application/atom+xml"/><item><title>CPU Mining on a Raspberry Pi</title><link>/2020/12/10/monero-mining-on-raspberry/</link><description>&lt;p>&lt;a href="https://www.getmonero.org/">Monero&lt;/a> is one of the most profitable cryptocurrencies that can still be mined using a CPU. Unlike other cryptocurrencies that rely on specialized hardware, you can mine XMR (RandomX) using your computer or, in this case, a raspberry pi. With that said if you’re going to use your raspberry pi to mine Monero don’t expect to get rich doing so. This is more of a learning experience if you have a spare raspberry pi lying around or if you simply want to support the coin.&lt;/p>
+&lt;p>To get started, you should already have Raspian running on your pi. If you haven’t done so already I suggest you follow one of the many tutorials out there. Its your choice whether you choose to have a monitor, keyboard and mouse attached to your pi or if you prefer to go headless and utilize SSH. I prefer the latter but this tutorial can be done either way. We’re going to be using XMRig to mine Monero with a mining pool. XMRig only runs on 64-bit so we’ll be using a 64-bit container called raspbian-nspawn-64. First let’s make sure you’re raspberry pi is up to date. Using terminal lets run the following commands:&lt;/p>
+&lt;blockquote>
+&lt;p>sudo apt update
+sudo apt full-upgrade&lt;/p>
+&lt;/blockquote>
+&lt;p>For good measure, lets run clean up to free up some space:&lt;/p>
+&lt;blockquote>
+&lt;p>sudo apt-get clean&lt;/p>
+&lt;/blockquote>
+&lt;p>Reboot if necessary:&lt;/p>
+&lt;blockquote>
+&lt;p>sudo shutdown -r now&lt;/p>
+&lt;/blockquote>
+&lt;p>Once you’re pi is up to date, we can get started installing raspbian-nspawn-64 using the following command:&lt;/p>
+&lt;blockquote>
+&lt;p>sudo apt-get install -y raspbian-nspawn-64&lt;/p>
+&lt;/blockquote>
+&lt;p>If you’re not currently using the official 64-bit kernel, you’ll be prompted to enable it during installation. Select Yes and you should be prompted to reboot afterwards. If you were already using the 64-bit kernel then a reboot isn’t necessary. Once everything is installed and you’ve rebooted if necessary, you can start using the 64-bit container with the following command:&lt;/p>
+&lt;blockquote>
+&lt;blockquote>
+&lt;p>ds64-shell&lt;/p>
+&lt;/blockquote>
+&lt;/blockquote>
+&lt;p>.&lt;/p>
+&lt;p>To return to 32-bit simply type exit. You can toggle between 32-bit and 64-bit with these commands.&lt;/p>
+&lt;p>Now let’s install XMRig from within your 64-bit shell. First you’ll need to install all the dependencies.&lt;/p>
+&lt;blockquote>
+&lt;p>sudo apt-get install git build-essential cmake libuv1-dev libssl-dev libhwloc-dev&lt;/p>
+&lt;/blockquote>
+&lt;p>Once thats finished with hopefully no errors run the following commands:&lt;/p>
+&lt;blockquote>
+&lt;p>git clone &lt;a href="https://github.com/xmrig/xmrig.git">https://github.com/xmrig/xmrig.git&lt;/a>
+cd xmrig
+mkdir build
+cd build
+cmake ..
+make&lt;/p>
+&lt;/blockquote>
+&lt;p>The build process can take some time to complete so be patient. After installation the next step is to choose a mining pool and start mining. I choose supportxmr because of their low pool fee but feel free to choose what best works for you. To start mining type:&lt;/p>
+&lt;blockquote>
+&lt;p>./xmrig &amp;ndash;donate-level 1 -o pool.supportxmr.com:3333 -u 49NU9LmdsTc1KCiiRd9LE4Qm23gt1i75vWHsTGhB8agy93K4cq16KVtLKifsBy3YdzT2Zg69ggDKfDq5YdnfWshG6BZxGh3 -p YourWorkerName&lt;/p>
+&lt;/blockquote>
+&lt;p>Make sure you run this from the build folder. If you aren’t already there then its cd xmrig/build&lt;/p>
+&lt;p>&lt;strong>–donate-level&lt;/strong> can be set to whatever you feel like donating to the pool.&lt;/p>
+&lt;p>&lt;strong>-o&lt;/strong> is the URL of your pool.&lt;/p>
+&lt;p>&lt;strong>-u&lt;/strong> should be your Monero wallet address. Make sure to change that to your address or else you’ll be giving to me free XMR!&lt;/p>
+&lt;p>&lt;strong>-p&lt;/strong> stands for password but since SupportXMR doesnt require a password, this is used to identify your worker so give it a unique name.&lt;/p>
+&lt;p>Thats all you need to get started mining Monero on your Raspberry Pi.&lt;/p>
+&lt;p>For other XMRig options use &lt;strong>./xmrig -h&lt;/strong>&lt;/p>
+&lt;hr>
+&lt;ul>
+&lt;li>&lt;a href="https://blog.ijasoneverett.com/">JasonDev&lt;/a>&lt;/li>
+&lt;/ul></description><author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author><guid>/2020/12/10/monero-mining-on-raspberry/</guid><pubDate>Thu, 10 Dec 2020 00:00:00 +0000</pubDate></item><item><title>How To Create Easy and Secure Passwords</title><link>/2020/12/04/create-secure-password/</link><description>&lt;p>The first step to making sure our passwords are their best is to leave the &amp;lsquo;password&amp;rsquo; mentality behind. We need to create &amp;lsquo;passphrases&amp;rsquo; instead. A passphrase is like a password but longer, using several words together. The longer the passphrase is, the better off we will be. But there is a point of diminishing returns in the length versus security trade-off.&lt;/p>
 &lt;p>In Edward Snowden&amp;rsquo;s original email to the journalist he said:&lt;/p>
 &lt;blockquote>
 &lt;p>Please confirm that no one has ever had a copy of your private key and that it uses a strong passphrase. Assume your adversary is capable of one trillion guesses per second.&lt;/p>
@@ -62,31 +115,7 @@
 &lt;hr>
 &lt;ul>
 &lt;li>&lt;a href="https://jrswab.com">JRSwab&lt;/a>&lt;/li>
-&lt;/ul></description><author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author><guid>/2020/12/04/instagram-on-computer/</guid><pubDate>Fri, 04 Dec 2020 00:00:00 +0000</pubDate></item><item><title>YaCy: decentralized search alternative</title><link>/2020/12/04/yacy-search/</link><description>&lt;p>Today we are getting more in-depth wit YaCy and why it is important. We, as internet users, need to be mindful of who is using our data and how. Does it benefit us to give up our information and privacy?&lt;/p>
-&lt;p>Convenience is often the only benefit found for today&amp;rsquo;s mass data collection of internet users. Search engines are a part of this privacy war playing out in front of us. They collect data to sell ads tailored to our search history at a higher price than they could for random ads.&lt;/p>
-&lt;p>They can do this because there is a level of certainty when estimating clicks on an ad targeted to an individual. Even if they don&amp;rsquo;t raise the cost of the ads and still use this targeted data they win. A better targeted ad will bring more clicks. More clicks means the company who bought the ad has to pay more.&lt;/p>
-&lt;p>Without targeting the ads the number of clicks would be much lower and therefore the search engine makes less money. That is how it all started. These search engines needed money to pay for the servers they used so they sold ads. Once they saw it was profitable, they tracked search history to better target the ads.&lt;/p>
-&lt;p>The companies paying for the ads do not mind paying more each day because they get more clicks. More clicks on their ads means more people to their site. More visitors means more sales and money. There was no backlash when the tracking started because the people to notice it first had enjoyed the change. Those that did not, keep searching without a clue.&lt;/p>
-&lt;p>This is the nature of the centralized model for the sites and online tools we use every day. The providers have bills and employees to pay so money is a necessity. Asking people used to using the service for free to pay for the same would be a death wish. It is much smoother for these search giants to track, log, and use our data to make the money they need.&lt;/p>
-&lt;h2 id="what-is-yacy">What Is YaCy &lt;a href="#what-is-yacy" class="hash">#&lt;/a>&lt;/h2>
-&lt;p>YaCy is a search engine that uses the decentralized peer-to-peer model. When you become a peer, you crawl the web just like the big players. As you gather data you share it with the rest of the network to improve the speed and coverage of YaCy.&lt;/p>
-&lt;p>This search engine is free to use and there are no ads. YaCy can do this because they do not have to pay a server bill since you become one of the many servers on the network. They also do not have to pay anyone to keep the search engine running because there is no single point of failure.&lt;/p>
-&lt;p>The term for this is &amp;ldquo;distributed search engine&amp;rdquo; and there are a few others out there. Some include InfraSearch, Opencola, and FAROO. All of which started in the early 2000s with YaCy starting at the end of 2003 by Michael Christen. Each of these search engines have a similar structure to YaCy. All rely on the nodes to crawl, mine, and query information to display to the users.&lt;/p>
-&lt;h3 id="localized">Localized &lt;a href="#localized" class="hash">#&lt;/a>&lt;/h3>
-&lt;p>With YaCy there is a web interface but the difference, from the well-known search engines, is that you can&amp;rsquo;t just type in yacy.net and look up your question. There is a download for Windows, Mac, and Linux on their site. Once you have the file all you need to do is decompress the directory and run the script.&lt;/p>
-&lt;p>There is no install to use YaCy!&lt;/p>
-&lt;p>After you run the script, the YaCy search page will appear in your default web browser. From there you search as you would on Google, Bing, or Duck Duck Go. Some searches will take more time to complete than others. This all depends on how often the phrase gets a request, far as I can tell.&lt;/p>
-&lt;p>You may also run into a few searches with little or no results. This is the nature of the beast but with more users and nodes this problem will go away. However, you will only run into this if you are searching for something obscure. For over a decade YaCy has run in some form picking up more data to serve to its users.&lt;/p>
-&lt;h3 id="more-than-websites">More Than Websites &lt;a href="#more-than-websites" class="hash">#&lt;/a>&lt;/h3>
-&lt;p>This data is not information on what you are searching for but what the internet has to offer you. There are over one billion documents indexed by YaCy peers. This includes html documents (websites), PDF files, images, and any other data that can store on a web server. Upon the search results loading you may even see files that the big engines won&amp;rsquo;t show.&lt;/p>
-&lt;p>The biggest reason for many people using YaCy is that it will not censor data because it does not have to. Sites like Google, Bing, and Duck Duck Go may have to remove a result due to some government forcing them to do so. These centralized sources must remove the data or risk fines and even a shutdown.&lt;/p>
-&lt;p>Due to the decentralized, peer-to-peer nature of YaCy this is not an issue. There is no company to strong arm and get results taken offline. The best a government or company can do is force the site where people download the program offline. This won&amp;rsquo;t stop it because there is already numerous people with a copy.&lt;/p>
-&lt;p>The YaCy script will end up on file sharing platforms like BitTorrent in less than a day&amp;rsquo;s time if needed. This happens all the time when even centralized platforms get taken down. Gab grew much faster after Google removed their app from the play store. Now the site teaches people how to download and install the app without the Google Play Store.&lt;/p>
-&lt;p>When traditional hackers are silenced we find ways to screen louder and make it even harder to shut down our projects.&lt;/p>
-&lt;hr>
-&lt;ul>
-&lt;li>&lt;a href="https://jrswab.com">JRSwab&lt;/a>&lt;/li>
-&lt;/ul></description><author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author><guid>/2020/12/04/yacy-search/</guid><pubDate>Fri, 04 Dec 2020 00:00:00 +0000</pubDate></item><item><title>Study Less Study Smart</title><link>/2020/11/19/studyless-study-smart/</link><description>&lt;p>Marty Lobdell - Study Less Study Smart&lt;/p>
+&lt;/ul></description><author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author><guid>/2020/12/04/instagram-on-computer/</guid><pubDate>Fri, 04 Dec 2020 00:00:00 +0000</pubDate></item><item><title>Study Less Study Smart</title><link>/2020/11/19/studyless-study-smart/</link><description>&lt;p>Marty Lobdell - Study Less Study Smart&lt;/p>
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
 &lt;iframe src="https://www.youtube.com/embed/IlU-zDU6aQ0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
 &lt;/div>
