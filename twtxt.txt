@@ -1,1 +1,6 @@
 2021-03-25T00:21:25+01:00	Hello, this is twtxt!
+2021-03-25T12:24:25+01:00	How make compost tea: https://is.gd/comptea
+2021-03-25T22:38:27+01:00	Salt ratio table: https://p.teknik.io/GFGG9
+2021-03-25T22:52:24+01:00	Semi-static website generator built in PHP: https://0xff.nu/saisho
+2021-03-25T22:53:14+01:00	Sauerkraut fatti in casa: https://fermentalista.com/sauerkraut-fatti-in-casa/
+2021-03-25T22:57:08+01:00	P2p chat platform: https://cabal.chat/
