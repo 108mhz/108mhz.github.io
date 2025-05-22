@@ -1,0 +1,15 @@
+# Piselli
+
+Semina in semenzaio Centro Nord: no
+Trapianto a dimora Centro Nord: no
+Semina in semenzaio Centro Sud: no
+Trapianto a dimora Centro Sud: no
+Temperatura di germinazione: 5°C
+Semina in pieno campo Centro Nord: da gennaio a maggio
+Semina in pieno campo Centro Sud: da settembre a gennaio
+Profondità di semina: 2 cm
+Tempi di germinazione: 5-10 giorni
+Tempi di raccolta: 100 giorni
+Sesto di impianto: 20 cm tra le piantine, 80 cm tra le file
+Periodo di raccolta Centro Nord: da marzo ad agosto
+Periodo di raccolta Centro Sud: da febbraio a giugno

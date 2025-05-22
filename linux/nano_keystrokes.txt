@@ -1,0 +1,102 @@
+# Nano keystrokes
+
+* File
+
+Ctrl + O Write the current file to disk
+F3 Write the current file to disk
+Ctrl + X Close the current file buffer / Exit from Nano
+F2 Close the current file buffer / Exit from Nano
+Ctrl + R Insert another file into the current one
+F5 Insert another file into the current one
+Alt + < Switch to the previous file buffer
+Alt + , Switch to the previous file buffer
+Alt + > Switch to the next file buffer
+Alt + . Switch to the next file buffer
+Alt + D Count the number of words, lines, and characters
+Ctrl + L Refresh (redraw) the current screen
+
+* Editing
+
+Alt + U Undo the last operation
+Alt + E Redo the last undone operation
+Alt + } Indent the current line
+Alt + { Unindent the current line
+Alt + ^ Copy the current line and store it in the cut buffer
+Alt + 6 Copy the current line and store it in the cut buffer
+Ctrl + K Cut the current line and store it in the cut buffer
+F9 Cut the current line and store it in the cut buffer
+Ctrl + U Uncut from the cut buffer into the current line
+Alt + V Insert the next keystroke verbatim
+Ctrl + I Insert a tab at the cursor position
+Ctrl + M Insert a newline at the cursor position
+Ctrl + D Delete the character under the cursor
+Ctrl + H Delete the character to the left of the cursor
+Alt + T Cut from the cursor position to the end of the file
+Ctrl + W Search for a string or a regular expression
+F6 Search for a string or a regular expression
+F16 Repeat last search
+Alt + W Repeat last search
+Ctrl + T Invoke the spell checker, if available
+F12 Ctrl + T Invoke the spell checker, if available
+Ctrl + \ Replace a string or a regular expression
+F14 Replace a string or a regular expression
+Alt + R Replace a string or a regular expression
+
+* Formatting
+
+Ctrl + J Justify the current paragraph
+F4 Justify the current paragraph
+Alt + J Justify the entire file
+
+* Navigation
+Ctrl + Y Move to the previous screen
+F7 Move to the previous screen
+Ctrl + V Move to the next screen
+F8 Move to the next screen
+Ctrl + B Go back one character
+Ctrl + F Go forward one character
+Alt + Space Go back one word
+Ctrl + Space go forward one word
+Ctrl + _ Go to line and column number
+F13 Go to line and column number
+Alt + G Go to line and column number
+Ctrl + ^ Mark text at the cursor position
+F15 Mark text at the cursor position
+Alt + A Mark text at the cursor position
+Ctrl + C Display the position of the cursor
+F11 Display the position of the cursor
+Ctrl + A Move to the beginning of the current line
+Ctrl + E Move to the end of the current line
+Alt + ( Move to the beginning of the current paragraph
+Alt + 9 Move to the beginning of the current paragraph
+Alt + ) Move to the end of the current paragraph
+Alt + 0 Move to the end of the current paragraph
+Alt + \ Move to the first line of the file
+Alt + | Move to the first line of the file
+Alt + / Move to the last line of the file
+Alt + ? Move to the last line of the file
+M + ] Move to the matching bracket
+Alt + - Scroll up one line without scrolling the cursor
+Alt + _ Scroll up one line without scrolling the cursor
+Alt + + Scroll down one line without scrolling the cursor
+Alt + = Scroll down one line without scrolling the cursor
+
+* Enable / Disable settings
+
+Alt + X Help mode enable/disable
+Alt + C Constant cursor position display enable/disable
+Alt + O Use of one more line for editing enable/disable
+Alt + S Smooth scrolling enable/disable
+Alt + $ Soft wrapping of overlong lines enable/disable
+Alt + P Whitespace display enable/disable
+Alt + Y Colour syntax highlighting enable/disable
+Alt + H Smart home key enable/disable
+Alt + I Auto indent enable/disable
+Alt + K Cut to end enable/disable
+Alt + L Long line wrapping enable/disable
+Alt + Q Conversion of typed tabs to spaces enable/disable
+Alt + B Backup files enable/disable
+Alt + F Multiple file buffers enable/disable
+Alt + M Mouse support enable/disable
+Alt + N No conversion from DOS/Mac format enable/disable
+Alt + Z Suspension enable/disable
