@@ -1,0 +1,77 @@
+#-----------------------------------------
+#
+# | |___      _| |___  _| |_
+# | __\ \ /\ / / __\ \/ / __|
+# | |_ \ V  V /| |_ >  <| |_
+#  \__| \_/\_/  \__/_/\_\\__|
+#
+#-----------------------------------------
+#
+2021-03-25T22:57:08+01:00	P2p chat platform: https://cabal.chat/
+2021-10-19T21:05:50+02:00	Edicola158: https://www.emergenzeweb.it/edicola-518/
+2021-10-19T22:05:47+02:00	Knots: https://nchrs.xyz/site/knots.html
+2021-10-20T08:35:11+02:00	How make compost tea: https://is.gd/comptea
+2021-10-24T00:55:25+02:00	...a source close to the source says the source says...
+2021-11-02T00:18:00+01:00	Useful knots: https://nchrs.xyz/site/knots.html
+2021-11-02T02:27:42+01:00	https://emojicon.dev/
+2021-11-02T02:28:45+01:00	Svg favicon: https://austingil.com/svg-favicons/
+2021-11-03T23:19:21+01:00	Japanese binding: https://www.youtube.com/watch?v=j-r6c_trSxY
+2021-11-03T23:22:35+01:00	Japanese binding 2: https://www.youtube.com/watch?v=rzRH5YxXeFU
+2021-12-22T01:48:37+01:00	Proxy lists: https://www.buymeacoffee.com/politictech/lists-proxy-hidden-service-frontends-supporter-early-access
+2022-01-23T12:04:09+01:00	P2Pool: https://p2pool.io/#pool
+2022-01-29T19:24:07+01:00	Privatebin for the tildeverse: https://paste.tildeverse.org/
+2022-01-29T19:26:53+01:00	Codevoid: https://codevoid.de/
+2022-01-29T19:36:32+01:00	Drawing ASCII: https://asciiflow.com/#/
+2022-01-29T19:50:50+01:00	Temporary file sharing: https://temp.sh/
+2022-01-29T20:22:22+01:00	You Don't Need GUI: http://txti.es/uhc2j
+2022-01-30T00:16:47+01:00	Port checker: https://portchecker.co/
+2022-01-30T22:44:24+01:00	Private sharing: https://wormhole.app/
+2022-02-04T11:45:35+01:00	Full encrypt raspberry:https://rr-developer.github.io/LUKS-on-Raspberry-Pi/
+2022-02-25T22:56:52+01:00	Url shortner:https://url.t0.vc/
+2022-02-25T23:03:14+01:00	t0txt: https://txt.t0.vc
+2022-03-11T00:12:04+01:00	CrimethInc:https://crimethinc.com/2017/03/14/direct-action-guide
+2022-03-11T00:17:27+01:00	Dooble: https://github.com/textbrowser/dooble
+2022-03-11T20:39:23+01:00	Permaculture Lecture Series:http://www.networkearth.org/perma/culture.html
+2022-05-04T19:43:53+02:00	incubatrice:https://www.youtube.com/watch?v=93Rc-1VVSgw
+2022-05-04T23:02:00+02:00	scythe https://www.youtube.com/watch?v=TSB98SEgdXY
+2022-05-04T23:04:57+02:00	scythe: https://www.youtube.com/watch?v=fMISPxDp1hY
+2022-05-04T23:06:27+02:00	samerican scythe: https://www.youtube.com/watch?v=xImLQ24-iXE
+2022-06-19T22:58:58+02:00	Solarpunk: https://nchrs.xyz/solar_punk.html
+2022-06-28T13:03:18+02:00	Cob: https://en.wikipedia.org/wiki/Cob_(material)
+2022-07-01T11:25:01+02:00	Transfer files:https://ostechnix.com/transfer-files-and-folders-between-computers-with-croc/
+2022-07-03T15:33:51+02:00	Green Anarc:https://en.wikipedia.org/wiki/Green_anarchism
+2022-07-08T02:42:01+02:00	..life is but the shipwrenck of our plans...
+2022-07-16T02:06:25+02:00	Tor Proxy Onion.pet
+2022-07-23T10:36:39+02:00	Raspberry media server: https://raspberrytips.com/raspberry-pi-file-server/
+2022-07-27T23:06:01+02:00	Happy wife. Happy life!
+2022-07-29T16:36:09+02:00	Low-tech Mag: https://wiki.lowtechlab.org/wiki/Accueil
+2022-08-02T11:17:32+02:00	Talea rosa:https://youtu.be/YEwIt6h6f-Y
+2022-08-04T01:45:09+02:00	Bitcoin shop in 10 min: https://bitcointalk.org/index.php?topic=1043437.0
+2022-08-04T01:46:37+02:00	Crypto gateways: https://coinsutra.com/bitcoin-payment-gateways-merchants/
+2022-08-06T02:12:51+02:00	Herbert Spencer: When knowledge is not in order, the more we have of it, the greater will be our confusion.
+2022-08-12T11:47:55+02:00	OpenSouce Furniture: https://os-furnitures.tumblr.com/
+2022-08-15T12:21:12+02:00	Leaf: https://100r.co/site/left.html
+2022-09-06T09:13:45+02:00	diy trellis: https://www.simplifiedbuilding.com/projects/trellis-ideas
+2022-10-12T19:43:22+02:00	Seeds: https://www.diyseeds.org/en/home/
+2022-10-24T14:04:36+02:00	Top bar plan: https://www.bee-mindful.com/plans
+2022-11-16T18:48:16+01:00	Nft: https://beebom.com/how-create-nft-free-no-gas-fee/
+2022-11-20T18:30:04+01:00	Ormone radicante: https://antropocene.it/2018/05/17/ormone-radicante-dal-miele-fai-da-te/
+2022-12-08T06:27:30+01:00	Inch to Cm: https://www.claredot.net/it/sez_Conversioni/conv_frazioni_di_pollice.php
+2022-12-18T02:29:37+01:00	Libre translate https://github.com/LibreTranslate/LibreTranslate
+2022-12-20T01:02:41+01:00	Router Planer Jig: http://woodarchivist.com/3897-diy-router-planer-jig/
+2022-12-28T10:01:05+01:00	Potatura ciliegio: https://tinyurl.com/potatura
+2022-12-29T15:17:43+01:00	NUC:https://backyardhive.com/blogs/managing-your-top-bar-hive/the-top-bar-hive-nuc-nucleus
+2023-01-01T08:30:08+01:00	Save the bees: https://www.reddit.com/r/gardening/comments/at3krd/plant_these_to_feed_the_bees/
+2023-01-05T01:37:32+01:00	https://ipaddress.sh/
+2023-01-27T22:36:10+01:00	nodo bellunese:https://www.youtube.com/watch?v=Nsaks3gSt0E
+2023-02-06T13:58:56+01:00	Chinese greenhouse: https://www.youtube.com/watch?v=N6nKXjJhRzo
+2023-02-23T21:12:34+01:00	FPJ: https://www.microfarmguide.com/fermented-plant-juice-fpj/
+2023-02-24T20:49:33+01:00	Natural farming poster:https://www.cgnfindia.com/nfposters.html
+2023-05-11T14:50:22+02:00	Romice: https://youtu.be/0mDDAR9NK_I
+2023-06-21T19:12:31+02:00	Upgrade W10: https://blog.51sec.org/2023/01/how-to-upgrade-windows-10-evaluation.html
+2023-06-25T19:33:18+02:00	Muzik: https://www.youtube.com/watch?v=DKSzY7Dg-rA
+2023-10-12T06:02:14+02:00	Coltivazione elementare: https://youtu.be/s8hQ23ASkPk?si=wy0i2E5Qj0yFoOyt
+2023-11-21T07:31:00+01:00	Beginners knots: https://www.youtube.com/watch?v=OTofaXJb3OI
+2024-02-24T13:03:15+01:00	Identity cleaner: https://codevoid.de/1/idgen
+2025-05-21T01:10:22+02:00	Etherpad: http://board.net
+
