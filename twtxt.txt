@@ -74,4 +74,5 @@
 2023-11-21T07:31:00+01:00	Beginners knots: https://www.youtube.com/watch?v=OTofaXJb3OI
 2024-02-24T13:03:15+01:00	Identity cleaner: https://codevoid.de/1/idgen
 2025-05-21T01:10:22+02:00	Etherpad: http://board.net
+2025-06-18T22:20:22+02:00	Squoosh: https://squoosh.app/
 
